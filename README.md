@@ -44,17 +44,13 @@
 ## Results preview
 <p align="center">
 
-  <img src="docs/img/strategy_comparison_covered_call_strangle_TQQQ.png" width="820" alt="Strategy vs DCA">
+  <img src="output/covered_call_strangle_TQQQ/strategy_comparison_2025-08-15.png" width="820" alt="Strategy vs DCA">
 </p>
 
 <p align="center">
   <img src="docs/img/tqqq_trades_example.png" width="820" alt="TQQQ trades">
 </p>
 
-> [!NOTE]
-> 如果你把 `output/**` 写进了 `.gitignore`，预览图请**复制**到 `docs/img/` 再在 README 中引用。
-
----
 
 ## Setup
 
