@@ -27,7 +27,6 @@ log/
 *.log
 *.pdf
 
-data/
-*csv
-
-
+# --- Ignore CSVs under data/, keep the folder itself ---
+data/**/*.csv
+!data/.gitkeep
