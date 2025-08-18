@@ -440,7 +440,7 @@ html_path = OUTPUT_DIR / "report.html"
 plt.figure(figsize=(12, 6))
 plt.plot(dates, curve_cc.values, label="Strategy: Covered Strangle + TQQQ(FG<15)")
 plt.plot(dates, curve_bh.values, label="Buy & Hold (Quarterly DCA)")
-plt.title("📊 Strategy Comparison: Strangle + TQQQ (FG trigger) vs DCA")
+plt.title("Strategy Comparison: Strangle + TQQQ (FG trigger) vs DCA")
 plt.xlabel("Date")
 plt.ylabel("Portfolio Value (USD)")
 plt.legend()
@@ -461,7 +461,7 @@ if tqqq_sell_events:
     sell_dates = [d for d, _, _, _ in tqqq_sell_events]
     sell_prices = [p for _, p, _, _ in tqqq_sell_events]
     plt.scatter(sell_dates, sell_prices, marker="v", s=64, label="TQQQ SELL")
-plt.title("📈 TQQQ Trades (FG<15 buys, 100% take-profit sells)")
+plt.title("TQQQ Trades (FG<15 buys, 100% take-profit sells)")
 plt.xlabel("Date")
 plt.ylabel("Price (USD)")
 plt.legend()
