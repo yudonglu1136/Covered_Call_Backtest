@@ -23,8 +23,6 @@ venv/
 
 # --- Project artifacts (generated) ---
 output/
-log/
-*.log
 *.pdf
 
 # --- Ignore CSVs under data/, keep the folder itself ---
