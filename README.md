@@ -51,6 +51,33 @@
   <img src="output/covered_call_strangle_TQQQ/tqqq_trades_2025-08-15.png" width="820" alt="TQQQ trades">
 </p>
 
+## Result Summary
+```bash
+
+Backtest Summary (Covered Strangle + TQQQ on FG<15)
+----------------------------
+Final equity (Strategy):    $929,690.82
+Final equity (DCA):         $843,108.50
+Total invested capital:     $540,000.00
+
+Total return (Strategy):    72.16%
+Total return (DCA):         56.13%
+CAGR (Strategy):            14.33%
+CAGR (DCA):                 11.61%
+
+Sharpe (Strategy):          1.19
+Sharpe (DCA):               1.18
+
+Option premium collected:   $60,369.93
+TQQQ realized P&L:          $37,232.11
+TQQQ open position:         312 shares
+
+Excess over DCA:            $86,582.32
+Excess per year:            $21,338.65
+----------------------------
+
+```
+
 
 ## Setup
 
@@ -59,3 +86,4 @@
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt  # pandas, numpy, yfinance, pandas_market_calendars, requests, scipy, matplotlib, python-dotenv, etc.
+```
