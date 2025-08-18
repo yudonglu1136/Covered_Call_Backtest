@@ -1,37 +1,65 @@
-Covered Options Backtests (QQQ)
+<h1 align="center">Covered Options Backtests (QQQ)</h1>
+<p align="center"><em>Layered strategies → clear comparisons → reproducible pipeline</em></p>
 
-This repository implements a progressive ladder of options strategies on QQQ. Each script adds one layer of logic so you can compare risk/return step-by-step.
+<p align="center">
+  <a href="https://github.com/yudonglu1136/Covered_Call_Backtest/actions">
+    <img alt="Backtest CI"
+         src="https://img.shields.io/github/actions/workflow/status/yudonglu1136/Covered_Call_Backtest/run-covered-call.yml?label=Backtest%20CI&logo=githubactions">
+  </a>
+  <img alt="Python"
+       src="https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white">
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-MIT-green.svg"></a>
+</p>
 
-Strategies
+<p align="center">
+  <a href="#highlights">Highlights</a> •
+  <a href="#strategy-ladder">Strategy ladder</a> •
+  <a href="#results-preview">Results</a> •
+  <a href="#setup">Setup</a> •
+  <a href="#data-pipeline">Data pipeline</a> •
+  <a href="#run-backtests">Run backtests</a>
+</p>
 
-Covered Call — covered_call.py
+---
 
-Hold QQQ in 100-share lots.
+## Highlights
+- **Progressive design**: start from covered call and add one feature at a time (CSP → TQQQ overlay → hedge).
+- **Deterministic rules**: IV→Δ targeting, 106% strike floor, CSP 1–3 DTE, hedge 28–31 DTE.
+- **Reproducible**: a one-shot **pipeline** to fetch/update all datasets and generate signals.
+- **Artifacts**: charts, CSVs, logs, and HTML reports saved under `output/**`.
 
-Systematically sell covered calls (15–18 DTE).
+> [!TIP]
+> GitHub 的 README 
 
-Call selection uses an IV→Δ targeting rule with a 106% strike floor.
+## Strategy ladder
+| Level | Strategy | File | Adds on top of previous |
+| :--: | :-- | :-- | :-- |
+| 1 | **Covered Call** | `covered_call.py` | Sell CC (15–18 DTE) with IV→Δ target & **106% floor**; DCA & dividends. |
+| 2 | **Covered Call Strangle** | `covered_call_strangle.py` | + Cash-secured PUT (1–3 DTE) to (re)build 100-lot; fully collateralized. |
+| 3 | **CC Strangle + TQQQ** | `covered_call_strangle_with_TQQQ.py` | + **TQQQ overlay** when **F&G < 15**, integer-share buys, **+100%** TP per batch. |
+| 4 | **Hedged Strategy** | `hedged_strategy.py` | + Protective **ATM PUT** (28–31 DTE) on `put_signal == 1`, track hedge P&L. |
 
-Includes quarterly DCA contributions and dividend handling.
+> In our runs, **Level 3 (CC Strangle + TQQQ)** often shows the best risk/return trade-off (window-dependent).
 
-Covered Call Strangle — covered_call_strangle.py
+## Results preview
+<p align="center">
 
-Everything from Covered Call plus cash-secured puts (1–3 DTE) to (re)build the long QQQ position.
+  <img src="docs/img/strategy_comparison_covered_call_strangle_TQQQ.png" width="820" alt="Strategy vs DCA">
+</p>
 
-Fully collateralized (no over-selling). Handles put assignment and then re-selling calls.
+<p align="center">
+  <img src="docs/img/tqqq_trades_example.png" width="820" alt="TQQQ trades">
+</p>
 
-Covered Call Strangle + TQQQ overlay — covered_call_strangle_with_TQQQ.py
+> [!NOTE]
+> 如果你把 `output/**` 写进了 `.gitignore`，预览图请**复制**到 `docs/img/` 再在 README 中引用。
 
-Adds an opportunistic TQQQ overlay: when the Fear & Greed index < 15, buy integer shares with idle cash; take profit at +100% per batch.
+---
 
-Realized gains can help restore 100-share QQQ lots to continue call selling.
+## Setup
 
-Currently the best performer among the three non-hedged variants in our runs (results vary by window/data).
-
-Hedged Strategy — hedged_strategy.py
-
-Builds on (3) and buys 1× ATM protective put (28–31 DTE) when a divergence-based put_signal == 1.
-
-Tracks hedge premiums, expiries (ITM/OTM settlement), and cumulative hedge P&L.
-
-Complexity intentionally builds layer by layer: Covered Call → +CSP → +TQQQ overlay → +Hedge. Check each strategy’s output folder for concrete metrics.
+### 1) Install dependencies
+```bash
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+pip install -r requirements.txt  # pandas, numpy, yfinance, pandas_market_calendars, requests, scipy, matplotlib, python-dotenv, etc.

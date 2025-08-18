@@ -26,9 +26,8 @@ output/
 log/
 *.log
 *.pdf
-*.png
 
-data/options_with_iv_delta.csv
-data/signals_events.csv
-data/put_signals.csv
-data/TQQQ_with_iv_delta.csv
+data/
+*csv
+
+
