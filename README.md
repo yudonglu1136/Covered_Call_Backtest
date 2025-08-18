@@ -48,7 +48,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/img/tqqq_trades_example.png" width="820" alt="TQQQ trades">
+  <img src="output/covered_call_strangle_TQQQ/tqqq_trades_2025-08-15.png" width="820" alt="TQQQ trades">
 </p>
 
 
