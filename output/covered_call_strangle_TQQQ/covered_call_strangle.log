@@ -1,0 +1,200 @@
+[2021-07-26] 💰 Sold cash-secured PUT +$1,654.96 @ strike $368.00, expiry 2021-07-28, contracts 8; reserved $294,400.00
+[2021-07-28] ✅ PUT assigned: +800 QQQ shares @ $368.00
+[2021-07-29] 💰 Sold CALL +$88.00 @ strike $386.00 (floor $385.34), Δ=0.022, expiry 2021-08-13, contracts 8
+[2021-08-13] 💰 Sold CALL +$77.36 @ strike $390.00 (floor $388.12), Δ=0.019, expiry 2021-08-30, contracts 8
+[2021-08-30] 💰 Sold CALL +$126.40 @ strike $398.00 (floor $397.58), Δ=0.029, expiry 2021-09-17, contracts 8
+[2021-09-17] 💰 Sold CALL +$58.64 @ strike $402.00 (floor $398.60), Δ=0.014, expiry 2021-10-04, contracts 8
+[2021-09-20] 📦 Dividend credited +$331.20 ($0.4140/share on 800 shares)
+[2021-09-20] 🛒 TQQQ buy (FG=12) 117 shares @ $67.71; cash left: $14.49 (reserved: $0.00)
+[2021-10-04] 💰 Sold CALL +$256.88 @ strike $379.00 (floor $378.24), Δ=0.045, expiry 2021-10-22, contracts 8
+[2021-10-22] 💰 Contribution +$15,000, Cash balance (Strategy): $15,271.37
+[2021-10-22] 💰 Sold CALL +$48.00 @ strike $400.00 (floor $396.66), Δ=0.012, expiry 2021-11-08, contracts 8
+[2021-11-08] 💰 Sold CALL +$308.00 @ strike $422.00 (floor $420.49), Δ=0.050, expiry 2021-11-26, contracts 8
+[2021-11-26] 💰 Sold CALL +$200.00 @ strike $418.00 (floor $417.90), Δ=0.036, expiry 2021-12-13, contracts 8
+[2021-12-13] 💰 Sold CALL +$241.60 @ strike $420.00 (floor $419.89), Δ=0.041, expiry 2021-12-31, contracts 8
+[2021-12-20] 📦 Dividend credited +$392.80 ($0.4910/share on 800 shares)
+[2021-12-31] 💰 Sold CALL +$168.00 @ strike $422.00 (floor $421.64), Δ=0.033, expiry 2022-01-18, contracts 8
+[2022-01-18] 💰 Sold CALL +$416.00 @ strike $398.00 (floor $394.61), Δ=0.060, expiry 2022-02-02, contracts 8
+[2022-01-24] 💰 Contribution +$15,000, Cash balance (Strategy): $32,045.77
+[2022-02-02] 💰 Sold CALL +$350.48 @ strike $394.00 (floor $390.10), Δ=0.054, expiry 2022-02-18, contracts 8
+[2022-02-18] 💰 Sold CALL +$394.48 @ strike $370.00 (floor $365.46), Δ=0.059, expiry 2022-03-07, contracts 8
+[2022-03-07] 💰 Sold CALL +$334.56 @ strike $363.00 (floor $355.84), Δ=0.048, expiry 2022-03-23, contracts 8
+[2022-03-08] 💰 Sold cash-secured PUT +$501.03 @ strike $324.00, expiry 2022-03-11, contracts 1; reserved $32,400.00
+[2022-03-11] ⏳ PUT expired worthless @ strike $324.00
+[2022-03-11] 💰 Sold cash-secured PUT +$475.34 @ strike $334.00, expiry 2022-03-14, contracts 1; reserved $33,400.00
+[2022-03-14] ✅ PUT assigned: +100 QQQ shares @ $334.00
+[2022-03-21] 📦 Dividend credited +$390.60 ($0.4340/share on 900 shares)
+[2022-03-23] 💰 Sold CALL +$313.20 @ strike $384.00 (floor $373.48), Δ=0.042, expiry 2022-04-08, contracts 9
+[2022-04-08] 💰 Sold CALL +$509.94 @ strike $372.00 (floor $371.70), Δ=0.071, expiry 2022-04-25, contracts 9
+[2022-04-25] 💰 Contribution +$15,000, Cash balance (Strategy): $16,915.40
+[2022-04-25] 💰 Sold CALL +$414.72 @ strike $360.00 (floor $341.54), Δ=0.050, expiry 2022-05-11, contracts 9
+[2022-05-09] 🛒 TQQQ buy (FG=10) 532 shares @ $32.56; cash left: $8.20 (reserved: $0.00)
+[2022-05-11] 💰 Sold CALL +$243.00 @ strike $337.00 (floor $314.85), Δ=0.031, expiry 2022-05-27, contracts 9
+[2022-05-12] 🛒 TQQQ buy (FG=7) 9 shares @ $27.43; cash left: $4.33 (reserved: $0.00)
+[2022-05-27] 💰 Sold CALL +$328.77 @ strike $335.00 (floor $319.18), Δ=0.046, expiry 2022-06-13, contracts 9
+[2022-06-13] 💰 Sold CALL +$350.64 @ strike $316.00 (floor $295.14), Δ=0.043, expiry 2022-06-30, contracts 9
+[2022-06-17] 🛒 TQQQ buy (FG=13) 30 shares @ $22.07; cash left: $21.64 (reserved: $0.00)
+[2022-06-21] 📦 Dividend credited +$474.30 ($0.5270/share on 900 shares)
+[2022-06-21] 🛒 TQQQ buy (FG=15) 20 shares @ $23.82; cash left: $19.64 (reserved: $0.00)
+[2022-06-30] 💰 Sold CALL +$306.18 @ strike $312.00 (floor $296.19), Δ=0.043, expiry 2022-07-15, contracts 9
+[2022-07-15] 💰 Sold CALL +$317.97 @ strike $318.00 (floor $305.67), Δ=0.048, expiry 2022-08-01, contracts 9
+[2022-07-26] 💰 Contribution +$15,000, Cash balance (Strategy): $15,643.79
+[2022-08-01] 💰 Sold CALL +$261.00 @ strike $344.00 (floor $330.90), Δ=0.039, expiry 2022-08-17, contracts 9
+[2022-08-17] 💰 Sold CALL +$281.43 @ strike $355.00 (floor $347.17), Δ=0.044, expiry 2022-09-02, contracts 9
+[2022-09-02] 💰 Sold CALL +$474.03 @ strike $326.00 (floor $318.97), Δ=0.063, expiry 2022-09-19, contracts 9
+[2022-09-19] 📦 Dividend credited +$467.10 ($0.5190/share on 900 shares)
+[2022-09-19] 💰 Sold CALL +$333.00 @ strike $322.00 (floor $301.84), Δ=0.045, expiry 2022-10-07, contracts 9
+[2022-10-03] 🛒 TQQQ buy (FG=15) 886 shares @ $19.70; cash left: $1.72 (reserved: $0.00)
+[2022-10-07] 💰 Sold CALL +$360.00 @ strike $299.00 (floor $290.15), Δ=0.054, expiry 2022-10-24, contracts 9
+[2022-10-24] 💰 Contribution +$15,000, Cash balance (Strategy): $15,361.72
+[2022-10-24] 💰 Sold CALL +$288.90 @ strike $315.00 (floor $290.85), Δ=0.038, expiry 2022-11-09, contracts 9
+[2022-11-09] 💰 Sold CALL +$264.78 @ strike $295.00 (floor $282.49), Δ=0.042, expiry 2022-11-25, contracts 9
+[2022-11-25] 💰 Sold CALL +$405.00 @ strike $305.00 (floor $302.99), Δ=0.072, expiry 2022-12-12, contracts 9
+[2022-12-12] 💰 Sold CALL +$268.20 @ strike $312.00 (floor $297.74), Δ=0.043, expiry 2022-12-30, contracts 9
+[2022-12-19] 📦 Dividend credited +$589.50 ($0.6550/share on 900 shares)
+[2023-01-03] 💰 Sold CALL +$268.02 @ strike $291.00 (floor $283.43), Δ=0.047, expiry 2023-01-20, contracts 9
+[2023-01-23] 💰 Sold CALL +$238.23 @ strike $315.00 (floor $299.13), Δ=0.039, expiry 2023-02-10, contracts 9
+[2023-01-25] 💰 Contribution +$15,000, Cash balance (Strategy): $32,684.35
+[2023-01-25] 💰 Sold cash-secured PUT +$195.77 @ strike $284.00, expiry 2023-01-27, contracts 1; reserved $28,400.00
+[2023-01-27] ⏳ PUT expired worthless @ strike $284.00
+[2023-01-27] 💰 Sold cash-secured PUT +$71.25 @ strike $292.00, expiry 2023-01-30, contracts 1; reserved $29,200.00
+[2023-01-30] ⏳ PUT expired worthless @ strike $292.00
+[2023-01-30] 💰 Sold cash-secured PUT +$403.60 @ strike $293.00, expiry 2023-02-01, contracts 1; reserved $29,300.00
+[2023-02-01] ⏳ PUT expired worthless @ strike $293.00
+[2023-02-01] 💰 Sold cash-secured PUT +$252.84 @ strike $294.00, expiry 2023-02-03, contracts 1; reserved $29,400.00
+[2023-02-03] ⏳ PUT expired worthless @ strike $294.00
+[2023-02-03] 💰 Sold cash-secured PUT +$148.27 @ strike $305.00, expiry 2023-02-06, contracts 1; reserved $30,500.00
+[2023-02-06] ✅ PUT assigned: +100 QQQ shares @ $305.00
+[2023-02-13] 💰 Sold CALL +$367.00 @ strike $332.00 (floor $317.69), Δ=0.049, expiry 2023-03-03, contracts 10
+[2023-03-06] 💰 Sold CALL +$363.60 @ strike $326.00 (floor $317.49), Δ=0.052, expiry 2023-03-24, contracts 10
+[2023-03-20] 📦 Dividend credited +$472.00 ($0.4720/share on 1000 shares)
+[2023-03-27] 💰 Sold CALL +$350.00 @ strike $332.00 (floor $328.74), Δ=0.056, expiry 2023-04-14, contracts 10
+[2023-04-17] 💰 Sold CALL +$518.90 @ strike $338.00 (floor $335.65), Δ=0.077, expiry 2023-05-05, contracts 10
+[2023-04-26] 💰 Contribution +$15,000, Cash balance (Strategy): $20,327.58
+[2023-05-08] 💰 Sold CALL +$244.10 @ strike $342.00 (floor $340.15), Δ=0.047, expiry 2023-05-26, contracts 10
+[2023-05-30] 💰 Sold CALL +$146.00 @ strike $385.00 (floor $372.11), Δ=0.023, expiry 2023-06-16, contracts 10
+[2023-06-15] ✅ TQQQ take-profit: sell 886 @ $39.74 (entry $19.70, +102%), P&L +$17,751.01
+[2023-06-20] 📦 Dividend credited +$504.00 ($0.5040/share on 1000 shares)
+[2023-06-20] 💰 Sold cash-secured PUT +$208.29 @ strike $366.00, expiry 2023-06-22, contracts 1; reserved $36,600.00
+[2023-06-20] 💰 Sold CALL +$398.40 @ strike $392.00 (floor $386.08), Δ=0.055, expiry 2023-07-07, contracts 10
+[2023-06-22] ✅ PUT assigned: +100 QQQ shares @ $366.00
+[2023-07-10] 💰 Sold CALL +$649.00 @ strike $389.00 (floor $386.09), Δ=0.076, expiry 2023-07-28, contracts 11
+[2023-07-14] ✅ TQQQ take-profit: sell 30 @ $44.22 (entry $22.07, +100%), P&L +$664.50
+[2023-07-27] 💰 Contribution +$15,000, Cash balance (Strategy): $37,413.61
+[2023-07-31] 💰 Sold CALL +$331.98 @ strike $408.00 (floor $404.90), Δ=0.047, expiry 2023-08-18, contracts 11
+[2023-08-04] 💰 Sold cash-secured PUT +$185.42 @ strike $376.00, expiry 2023-08-07, contracts 1; reserved $37,600.00
+[2023-08-07] ✅ PUT assigned: +100 QQQ shares @ $376.00
+[2023-08-21] 💰 Sold CALL +$640.56 @ strike $382.50 (floor $379.40), Δ=0.075, expiry 2023-09-08, contracts 12
+[2023-09-11] 💰 Sold CALL +$353.40 @ strike $397.00 (floor $396.32), Δ=0.050, expiry 2023-09-29, contracts 12
+[2023-09-18] 📦 Dividend credited +$643.20 ($0.5360/share on 1200 shares)
+[2023-10-02] 💰 Sold CALL +$473.76 @ strike $383.00 (floor $378.26), Δ=0.059, expiry 2023-10-20, contracts 12
+[2023-10-23] 💰 Sold CALL +$746.52 @ strike $379.00 (floor $372.69), Δ=0.077, expiry 2023-11-10, contracts 12
+[2023-10-25] 💰 Contribution +$15,000, Cash balance (Strategy): $18,188.45
+[2023-11-13] 💰 Sold CALL +$476.28 @ strike $398.00 (floor $397.51), Δ=0.062, expiry 2023-12-01, contracts 12
+[2023-12-04] 💰 Sold CALL +$379.80 @ strike $408.00 (floor $407.32), Δ=0.052, expiry 2023-12-22, contracts 12
+[2023-12-14] ✅ TQQQ take-profit: sell 20 @ $49.25 (entry $23.82, +107%), P&L +$508.70
+[2023-12-18] 📦 Dividend credited +$969.60 ($0.8080/share on 1200 shares)
+[2023-12-22] ⚠️ CALL assigned: -1200 QQQ shares @ $408.00
+[2023-12-26] 💰 Sold cash-secured PUT +$1,414.56 @ strike $409.00, expiry 2023-12-28, contracts 12; reserved $490,800.00
+[2023-12-28] ⏳ PUT expired worthless @ strike $409.00
+[2024-01-02] 💰 Sold cash-secured PUT +$3,908.76 @ strike $405.78, expiry 2024-01-04, contracts 12; reserved $486,936.00
+[2024-01-04] ✅ PUT assigned: +1200 QQQ shares @ $405.78
+[2024-01-08] 💰 Sold CALL +$678.00 @ strike $420.00 (floor $419.88), Δ=0.085, expiry 2024-01-26, contracts 12
+[2024-01-22] ✅ TQQQ take-profit: sell 9 @ $55.41 (entry $27.43, +102%), P&L +$251.82
+[2024-01-26] 💰 Contribution +$15,000, Cash balance (Strategy): $45,163.14
+[2024-01-26] ⚠️ CALL assigned: -1200 QQQ shares @ $420.00
+[2024-01-26] 💰 Sold cash-secured PUT +$1,926.00 @ strike $424.00, expiry 2024-01-29, contracts 12; reserved $508,800.00
+[2024-01-29] ⏳ PUT expired worthless @ strike $424.00
+[2024-01-29] 💰 Sold cash-secured PUT +$2,652.84 @ strike $424.00, expiry 2024-01-31, contracts 12; reserved $508,800.00
+[2024-01-31] ✅ PUT assigned: +1200 QQQ shares @ $424.00
+[2024-01-31] 💰 Sold cash-secured PUT +$369.15 @ strike $420.78, expiry 2024-02-02, contracts 1; reserved $42,078.00
+[2024-02-01] 💰 Sold CALL +$175.68 @ strike $449.78 (floor $441.82), Δ=0.025, expiry 2024-02-16, contracts 12
+[2024-02-02] ⏳ PUT expired worthless @ strike $420.78
+[2024-02-02] 💰 Sold cash-secured PUT +$80.07 @ strike $424.00, expiry 2024-02-05, contracts 1; reserved $42,400.00
+[2024-02-05] ⏳ PUT expired worthless @ strike $424.00
+[2024-02-05] 💰 Sold cash-secured PUT +$243.48 @ strike $429.00, expiry 2024-02-07, contracts 1; reserved $42,900.00
+[2024-02-07] ⏳ PUT expired worthless @ strike $429.00
+[2024-02-07] 💰 Sold cash-secured PUT +$161.78 @ strike $430.00, expiry 2024-02-09, contracts 1; reserved $43,000.00
+[2024-02-09] ⏳ PUT expired worthless @ strike $430.00
+[2024-02-09] 💰 Sold cash-secured PUT +$102.91 @ strike $434.00, expiry 2024-02-12, contracts 1; reserved $43,400.00
+[2024-02-12] ⏳ PUT expired worthless @ strike $434.00
+[2024-02-12] 💰 Sold cash-secured PUT +$257.42 @ strike $437.00, expiry 2024-02-14, contracts 1; reserved $43,700.00
+[2024-02-14] ✅ PUT assigned: +100 QQQ shares @ $437.00
+[2024-02-20] 💰 Sold CALL +$618.67 @ strike $454.00 (floor $452.12), Δ=0.062, expiry 2024-03-08, contracts 13
+[2024-03-11] 💰 Sold CALL +$704.21 @ strike $464.00 (floor $461.57), Δ=0.067, expiry 2024-03-28, contracts 13
+[2024-03-18] 📦 Dividend credited +$744.90 ($0.5730/share on 1300 shares)
+[2024-03-28] 💰 Sold CALL +$199.29 @ strike $470.00 (floor $469.24), Δ=0.029, expiry 2024-04-12, contracts 13
+[2024-04-15] 💰 Sold CALL +$315.51 @ strike $470.00 (floor $466.37), Δ=0.034, expiry 2024-05-03, contracts 13
+[2024-04-26] 💰 Contribution +$15,000, Cash balance (Strategy): $20,215.05
+[2024-05-06] 💰 Sold CALL +$480.61 @ strike $465.00 (floor $461.35), Δ=0.053, expiry 2024-05-24, contracts 13
+[2024-05-23] ✅ TQQQ take-profit: sell 532 @ $66.50 (entry $32.56, +104%), P&L +$18,056.08
+[2024-05-28] 💰 Sold cash-secured PUT +$198.50 @ strike $459.00, expiry 2024-05-30, contracts 1; reserved $45,900.00
+[2024-05-28] 💰 Sold CALL +$299.65 @ strike $485.00 (floor $484.43), Δ=0.038, expiry 2024-06-14, contracts 13
+[2024-05-30] ✅ PUT assigned: +100 QQQ shares @ $459.00
+[2024-06-17] 💰 Sold CALL +$474.04 @ strike $510.00 (floor $505.83), Δ=0.048, expiry 2024-07-05, contracts 14
+[2024-06-24] 📦 Dividend credited +$1,066.80 ($0.7620/share on 1400 shares)
+[2024-07-08] 💰 Sold CALL +$570.92 @ strike $525.00 (floor $523.84), Δ=0.055, expiry 2024-07-26, contracts 14
+[2024-07-29] 💰 Contribution +$15,000, Cash balance (Strategy): $27,783.57
+[2024-07-29] 💰 Sold CALL +$1,035.72 @ strike $498.00 (floor $491.32), Δ=0.074, expiry 2024-08-16, contracts 14
+[2024-08-19] 💰 Sold CALL +$795.34 @ strike $505.00 (floor $501.30), Δ=0.070, expiry 2024-09-06, contracts 14
+[2024-09-09] 💰 Sold CALL +$944.16 @ strike $481.00 (floor $477.98), Δ=0.078, expiry 2024-09-27, contracts 14
+[2024-09-23] 📦 Dividend credited +$947.80 ($0.6770/share on 1400 shares)
+[2024-09-27] ⚠️ CALL assigned: -1400 QQQ shares @ $481.00
+[2024-09-27] 💰 Sold cash-secured PUT +$4,285.96 @ strike $490.00, expiry 2024-09-30, contracts 14; reserved $686,000.00
+[2024-09-30] ✅ PUT assigned: +1400 QQQ shares @ $490.00
+[2024-10-01] 💰 Sold CALL +$483.98 @ strike $515.00 (floor $514.52), Δ=0.047, expiry 2024-10-18, contracts 14
+[2024-10-21] 💰 Sold CALL +$1,028.44 @ strike $525.00 (floor $520.38), Δ=0.078, expiry 2024-11-08, contracts 14
+[2024-10-25] 💰 Contribution +$15,000, Cash balance (Strategy): $39,704.97
+[2024-11-11] 💰 Sold CALL +$594.58 @ strike $545.00 (floor $543.72), Δ=0.054, expiry 2024-11-29, contracts 14
+[2024-12-02] 💰 Sold CALL +$456.96 @ strike $544.78 (floor $539.12), Δ=0.044, expiry 2024-12-20, contracts 14
+[2024-12-23] 📦 Dividend credited +$1,169.00 ($0.8350/share on 1400 shares)
+[2024-12-23] 💰 Sold CALL +$661.36 @ strike $549.00 (floor $548.13), Δ=0.063, expiry 2025-01-10, contracts 14
+[2025-01-13] 💰 Sold CALL +$1,268.40 @ strike $534.00 (floor $528.77), Δ=0.090, expiry 2025-01-31, contracts 14
+[2025-01-29] 💰 Contribution +$15,000, Cash balance (Strategy): $58,855.27
+[2025-01-29] 💰 Sold cash-secured PUT +$502.48 @ strike $522.00, expiry 2025-01-31, contracts 1; reserved $52,200.00
+[2025-01-31] ⏳ PUT expired worthless @ strike $522.00
+[2025-01-31] 💰 Sold cash-secured PUT +$262.32 @ strike $527.00, expiry 2025-02-03, contracts 1; reserved $52,700.00
+[2025-02-03] ✅ PUT assigned: +100 QQQ shares @ $527.00
+[2025-02-04] 💰 Sold CALL +$1,257.45 @ strike $549.00 (floor $547.15), Δ=0.091, expiry 2025-02-21, contracts 15
+[2025-02-24] 💰 Sold CALL +$322.50 @ strike $558.00 (floor $556.91), Δ=0.031, expiry 2025-03-14, contracts 15
+[2025-03-10] 🛒 TQQQ buy (FG=15) 132 shares @ $64.00; cash left: $52.02 (reserved: $0.00)
+[2025-03-14] 💰 Sold CALL +$728.85 @ strike $515.00 (floor $499.79), Δ=0.052, expiry 2025-03-31, contracts 15
+[2025-03-24] 📦 Dividend credited +$1,074.00 ($0.7160/share on 1500 shares)
+[2025-03-31] 💰 Sold CALL +$1,480.50 @ strike $497.00 (floor $487.33), Δ=0.095, expiry 2025-04-17, contracts 15
+[2025-04-03] 🛒 TQQQ buy (FG=8) 63 shares @ $52.43; cash left: $32.28 (reserved: $0.00)
+[2025-04-17] 💰 Sold CALL +$1,152.45 @ strike $481.00 (floor $471.76), Δ=0.076, expiry 2025-05-02, contracts 15
+[2025-04-30] 💰 Contribution +$15,000, Cash balance (Strategy): $16,184.73
+[2025-05-02] ⚠️ CALL assigned: -1500 QQQ shares @ $481.00
+[2025-05-02] 💰 Sold cash-secured PUT +$3,482.55 @ strike $487.00, expiry 2025-05-05, contracts 15; reserved $730,500.00
+[2025-05-05] ✅ PUT assigned: +1500 QQQ shares @ $487.00
+[2025-05-06] 💰 Sold CALL +$1,110.00 @ strike $514.00 (floor $505.94), Δ=0.076, expiry 2025-05-23, contracts 15
+[2025-05-27] 💰 Sold CALL +$838.05 @ strike $555.00 (floor $544.54), Δ=0.060, expiry 2025-06-13, contracts 15
+[2025-06-13] 💰 Sold CALL +$487.35 @ strike $560.00 (floor $556.70), Δ=0.044, expiry 2025-06-30, contracts 15
+[2025-06-23] 📦 Dividend credited +$886.50 ($0.5910/share on 1500 shares)
+[2025-06-30] 💰 Sold CALL +$485.55 @ strike $585.00 (floor $581.58), Δ=0.044, expiry 2025-07-18, contracts 15
+[2025-07-21] 💰 Sold CALL +$738.60 @ strike $595.00 (floor $593.00), Δ=0.061, expiry 2025-08-08, contracts 15
+[2025-07-31] 💰 Contribution +$15,000, Cash balance (Strategy): $30,213.33
+[2025-08-11] 💰 Sold CALL +$302.85 @ strike $610.00 (floor $606.30), Δ=0.030, expiry 2025-08-29, contracts 15
+
+
+Backtest Summary (Covered Strangle + TQQQ on FG<15)
+----------------------------
+Final equity (Strategy):    $929,690.82
+Final equity (DCA):         $843,108.50
+Total invested capital:     $540,000.00
+
+Total return (Strategy):    72.16%
+Total return (DCA):         56.13%
+CAGR (Strategy):            14.33%
+CAGR (DCA):                 11.61%
+
+Sharpe (Strategy):          1.19
+Sharpe (DCA):               1.18
+
+Option premium collected:   $60,369.93
+TQQQ realized P&L:          $37,232.11
+TQQQ open position:         312 shares
+
+Excess over DCA:            $86,582.32
+Excess per year:            $21,338.65
+----------------------------

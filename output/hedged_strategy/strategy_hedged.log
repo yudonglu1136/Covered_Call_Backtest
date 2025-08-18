@@ -1,0 +1,232 @@
+[2021-07-26] 💰 Sold CSP +$1,654.96 @ $368.00, expiry 2021-07-28, contracts 8; reserved $294,400.00
+[2021-07-28] ✅ PUT assigned: +800 @ $368.00
+[2021-07-29] 💰 Sold CALL +$77.36 @ $387.50 (floor $387.17), Δ=0.019, expiry 2021-08-13, contracts 8
+[2021-08-02] 🛡️ Buy Hedge PUT id=1 @ strike $366.00, expiry 2021-08-30, vw $6.98, premium $698.10
+[2021-08-13] 💰 Sold CALL +$77.36 @ $390.00 (floor $389.96), Δ=0.019, expiry 2021-08-30, contracts 8
+[2021-08-30] 🛡️ Hedge PUT expired (id=1): strike $366.00, payoff $0.00, ITM=False
+[2021-08-30] 💰 Sold CALL +$101.68 @ $400.00 (floor $399.46), Δ=0.023, expiry 2021-09-17, contracts 8
+[2021-09-17] 💰 Sold CALL +$58.64 @ $402.00 (floor $400.49), Δ=0.014, expiry 2021-10-04, contracts 8
+[2021-09-20] 📦 Dividend +$331.20 ($0.4140/sh on 800)
+[2021-09-20] 🛒 TQQQ buy(FG=12) 106 @ $67.71, cash $25.84
+[2021-10-04] 💰 Sold CALL +$191.84 @ $381.00 (floor $380.03), Δ=0.035, expiry 2021-10-22, contracts 8
+[2021-10-22] 💰 Contribution +$15,000, Cash: $15,217.68
+[2021-10-22] 💰 Sold CALL +$48.00 @ $400.00 (floor $398.54), Δ=0.012, expiry 2021-11-08, contracts 8
+[2021-11-08] 💰 Sold CALL +$283.44 @ $423.00 (floor $422.48), Δ=0.046, expiry 2021-11-26, contracts 8
+[2021-11-26] 💰 Sold CALL +$197.04 @ $420.00 (floor $419.88), Δ=0.034, expiry 2021-12-13, contracts 8
+[2021-12-06] 🛡️ Buy Hedge PUT id=2 @ strike $384.00, expiry 2022-01-03, vw $11.02, premium $1,102.08
+[2021-12-13] 🛡️ Buy Hedge PUT id=3 @ strike $398.00, expiry 2022-01-10, vw $10.64, premium $1,064.25
+[2021-12-13] 💰 Sold CALL +$182.40 @ $422.00 (floor $421.88), Δ=0.032, expiry 2021-12-31, contracts 8
+[2021-12-20] 📦 Dividend +$392.80 ($0.4910/sh on 800)
+[2021-12-31] 💰 Sold CALL +$120.00 @ $424.00 (floor $423.64), Δ=0.025, expiry 2022-01-18, contracts 8
+[2022-01-03] 🛡️ Hedge PUT expired (id=2): strike $384.00, payoff $0.00, ITM=False
+[2022-01-10] 🛡️ Hedge PUT expired (id=3): strike $398.00, payoff $2,318.00, ITM=True
+[2022-01-18] 💰 Sold CALL +$416.00 @ $398.00 (floor $396.48), Δ=0.060, expiry 2022-02-02, contracts 8
+[2022-01-24] 💰 Contribution +$15,000, Cash: $32,009.03
+[2022-02-02] 💰 Sold CALL +$350.48 @ $394.00 (floor $391.95), Δ=0.054, expiry 2022-02-18, contracts 8
+[2022-02-18] 💰 Sold CALL +$394.48 @ $370.00 (floor $367.19), Δ=0.059, expiry 2022-03-07, contracts 8
+[2022-03-07] 💰 Sold CALL +$334.56 @ $363.00 (floor $357.53), Δ=0.048, expiry 2022-03-23, contracts 8
+[2022-03-08] 💰 Sold CSP +$501.03 @ $324.00, expiry 2022-03-11, contracts 1; reserved $32,400.00
+[2022-03-11] ⏳ PUT expired worthless @ $324.00
+[2022-03-11] 💰 Sold CSP +$475.34 @ $334.00, expiry 2022-03-14, contracts 1; reserved $33,400.00
+[2022-03-14] ✅ PUT assigned: +100 @ $334.00
+[2022-03-21] 📦 Dividend +$390.60 ($0.4340/sh on 900)
+[2022-03-23] 💰 Sold CALL +$313.20 @ $384.00 (floor $375.25), Δ=0.042, expiry 2022-04-08, contracts 9
+[2022-04-08] 💰 Sold CALL +$540.00 @ $374.00 (floor $373.46), Δ=0.071, expiry 2022-04-25, contracts 9
+[2022-04-25] 💰 Contribution +$15,000, Cash: $16,908.72
+[2022-04-25] 💰 Sold CALL +$414.72 @ $360.00 (floor $343.15), Δ=0.050, expiry 2022-05-11, contracts 9
+[2022-05-09] 🛒 TQQQ buy(FG=10) 532 @ $32.56, cash $1.52
+[2022-05-11] 💰 Sold CALL +$243.00 @ $337.00 (floor $316.35), Δ=0.031, expiry 2022-05-27, contracts 9
+[2022-05-12] 🛒 TQQQ buy(FG=7) 8 @ $27.43, cash $25.08
+[2022-05-27] 💰 Sold CALL +$328.77 @ $335.00 (floor $320.69), Δ=0.046, expiry 2022-06-13, contracts 9
+[2022-06-13] 💰 Sold CALL +$350.64 @ $316.00 (floor $296.54), Δ=0.043, expiry 2022-06-30, contracts 9
+[2022-06-17] 🛒 TQQQ buy(FG=13) 31 @ $22.07, cash $20.32
+[2022-06-21] 📦 Dividend +$474.30 ($0.5270/sh on 900)
+[2022-06-21] 🛒 TQQQ buy(FG=15) 20 @ $23.82, cash $18.32
+[2022-06-30] 💰 Sold CALL +$306.18 @ $312.00 (floor $297.60), Δ=0.043, expiry 2022-07-15, contracts 9
+[2022-07-15] 💰 Sold CALL +$317.97 @ $318.00 (floor $307.11), Δ=0.048, expiry 2022-08-01, contracts 9
+[2022-07-26] 💰 Contribution +$15,000, Cash: $15,642.47
+[2022-08-01] 💰 Sold CALL +$261.00 @ $344.00 (floor $332.47), Δ=0.039, expiry 2022-08-17, contracts 9
+[2022-08-17] 💰 Sold CALL +$281.43 @ $355.00 (floor $348.81), Δ=0.044, expiry 2022-09-02, contracts 9
+[2022-09-02] 💰 Sold CALL +$474.03 @ $326.00 (floor $320.48), Δ=0.063, expiry 2022-09-19, contracts 9
+[2022-09-19] 📦 Dividend +$467.10 ($0.5190/sh on 900)
+[2022-09-19] 💰 Sold CALL +$333.00 @ $322.00 (floor $303.27), Δ=0.045, expiry 2022-10-07, contracts 9
+[2022-10-03] 🛒 TQQQ buy(FG=15) 886 @ $19.70, cash $0.40
+[2022-10-07] 💰 Sold CALL +$360.00 @ $299.00 (floor $291.52), Δ=0.054, expiry 2022-10-24, contracts 9
+[2022-10-24] 💰 Contribution +$15,000, Cash: $15,360.40
+[2022-10-24] 💰 Sold CALL +$288.90 @ $315.00 (floor $292.23), Δ=0.038, expiry 2022-11-09, contracts 9
+[2022-11-09] 💰 Sold CALL +$264.78 @ $295.00 (floor $283.83), Δ=0.042, expiry 2022-11-25, contracts 9
+[2022-11-25] 💰 Sold CALL +$405.00 @ $305.00 (floor $304.42), Δ=0.072, expiry 2022-12-12, contracts 9
+[2022-12-12] 💰 Sold CALL +$268.20 @ $312.00 (floor $299.15), Δ=0.043, expiry 2022-12-30, contracts 9
+[2022-12-19] 📦 Dividend +$589.50 ($0.6550/sh on 900)
+[2023-01-03] 💰 Sold CALL +$268.02 @ $291.00 (floor $284.77), Δ=0.047, expiry 2023-01-20, contracts 9
+[2023-01-23] 💰 Sold CALL +$238.23 @ $315.00 (floor $300.55), Δ=0.039, expiry 2023-02-10, contracts 9
+[2023-01-25] 💰 Contribution +$15,000, Cash: $32,683.03
+[2023-01-25] 💰 Sold CSP +$195.77 @ $284.00, expiry 2023-01-27, contracts 1; reserved $28,400.00
+[2023-01-27] ⏳ PUT expired worthless @ $284.00
+[2023-01-27] 💰 Sold CSP +$71.25 @ $292.00, expiry 2023-01-30, contracts 1; reserved $29,200.00
+[2023-01-30] ⏳ PUT expired worthless @ $292.00
+[2023-01-30] 💰 Sold CSP +$403.60 @ $293.00, expiry 2023-02-01, contracts 1; reserved $29,300.00
+[2023-02-01] ⏳ PUT expired worthless @ $293.00
+[2023-02-01] 💰 Sold CSP +$252.84 @ $294.00, expiry 2023-02-03, contracts 1; reserved $29,400.00
+[2023-02-03] ⏳ PUT expired worthless @ $294.00
+[2023-02-03] 💰 Sold CSP +$148.27 @ $305.00, expiry 2023-02-06, contracts 1; reserved $30,500.00
+[2023-02-06] ✅ PUT assigned: +100 @ $305.00
+[2023-02-13] 💰 Sold CALL +$367.00 @ $332.00 (floor $319.20), Δ=0.049, expiry 2023-03-03, contracts 10
+[2023-03-06] 🛡️ Buy Hedge PUT id=4 @ strike $301.00, expiry 2023-04-06, vw $7.35, premium $735.03
+[2023-03-06] 💰 Sold CALL +$363.60 @ $326.00 (floor $319.00), Δ=0.052, expiry 2023-03-24, contracts 10
+[2023-03-20] 📦 Dividend +$472.00 ($0.4720/sh on 1000)
+[2023-03-27] 💰 Sold CALL +$350.00 @ $332.00 (floor $330.30), Δ=0.056, expiry 2023-04-14, contracts 10
+[2023-04-06] 🛡️ Hedge PUT expired (id=4): strike $301.00, payoff $0.00, ITM=False
+[2023-04-17] 💰 Sold CALL +$518.90 @ $338.00 (floor $337.24), Δ=0.077, expiry 2023-05-05, contracts 10
+[2023-04-26] 💰 Contribution +$15,000, Cash: $19,591.23
+[2023-05-01] 🛡️ Buy Hedge PUT id=5 @ strike $322.00, expiry 2023-05-26, vw $5.67, premium $566.97
+[2023-05-08] 🛡️ Buy Hedge PUT id=6 @ strike $322.50, expiry 2023-06-02, vw $5.72, premium $571.73
+[2023-05-08] 💰 Sold CALL +$244.10 @ $342.00 (floor $341.77), Δ=0.047, expiry 2023-05-26, contracts 10
+[2023-05-15] 🛡️ Buy Hedge PUT id=7 @ strike $326.00, expiry 2023-06-09, vw $5.60, premium $559.97
+[2023-05-26] 🛡️ Hedge PUT expired (id=5): strike $322.00, payoff $0.00, ITM=False
+[2023-05-30] 💰 Sold CALL +$146.00 @ $385.00 (floor $373.87), Δ=0.023, expiry 2023-06-16, contracts 10
+[2023-06-02] 🛡️ Hedge PUT expired (id=6): strike $322.50, payoff $0.00, ITM=False
+[2023-06-09] 🛡️ Hedge PUT expired (id=7): strike $326.00, payoff $0.00, ITM=False
+[2023-06-15] ✅ TQQQ TP: sell 886 @ $39.74 (entry $19.70), P&L +$17,751.01
+[2023-06-20] 📦 Dividend +$504.00 ($0.5040/sh on 1000)
+[2023-06-20] 💰 Sold CSP +$208.29 @ $366.00, expiry 2023-06-22, contracts 1; reserved $36,600.00
+[2023-06-20] 💰 Sold CALL +$398.40 @ $392.00 (floor $387.91), Δ=0.055, expiry 2023-07-07, contracts 10
+[2023-06-22] ✅ PUT assigned: +100 @ $366.00
+[2023-07-10] 💰 Sold CALL +$649.00 @ $389.00 (floor $387.92), Δ=0.076, expiry 2023-07-28, contracts 11
+[2023-07-14] ✅ TQQQ TP: sell 31 @ $44.22 (entry $22.07), P&L +$686.65
+[2023-07-27] 💰 Contribution +$15,000, Cash: $35,022.81
+[2023-07-31] 💰 Sold CALL +$331.98 @ $408.00 (floor $406.82), Δ=0.047, expiry 2023-08-18, contracts 11
+[2023-08-21] 💰 Sold CALL +$587.18 @ $382.50 (floor $381.20), Δ=0.075, expiry 2023-09-08, contracts 11
+[2023-09-11] 🛡️ Buy Hedge PUT id=8 @ strike $376.00, expiry 2023-10-06, vw $6.71, premium $670.99
+[2023-09-11] 💰 Sold CALL +$206.25 @ $399.00 (floor $398.20), Δ=0.035, expiry 2023-09-29, contracts 11
+[2023-09-18] 📦 Dividend +$589.60 ($0.5360/sh on 1100)
+[2023-09-22] 💰 Sold CSP +$187.54 @ $360.00, expiry 2023-09-25, contracts 1; reserved $36,000.00
+[2023-09-25] ✅ PUT assigned: +100 @ $360.00
+[2023-10-02] 💰 Sold CALL +$473.76 @ $383.00 (floor $380.05), Δ=0.059, expiry 2023-10-20, contracts 12
+[2023-10-06] 🛡️ Hedge PUT expired (id=8): strike $376.00, payoff $2,035.00, ITM=True
+[2023-10-23] 💰 Sold CALL +$746.52 @ $379.00 (floor $374.46), Δ=0.077, expiry 2023-11-10, contracts 12
+[2023-10-25] 💰 Contribution +$15,000, Cash: $18,509.65
+[2023-11-13] 💰 Sold CALL +$330.00 @ $400.00 (floor $399.40), Δ=0.046, expiry 2023-12-01, contracts 12
+[2023-12-04] 💰 Sold CALL +$315.96 @ $410.00 (floor $409.26), Δ=0.043, expiry 2023-12-22, contracts 12
+[2023-12-14] ✅ TQQQ TP: sell 20 @ $49.25 (entry $23.82), P&L +$508.70
+[2023-12-18] 📦 Dividend +$969.60 ($0.8080/sh on 1200)
+[2023-12-27] 📦 Dividend +$259.20 ($0.2160/sh on 1200)
+[2023-12-27] 💰 Sold CALL +$138.96 @ $439.78 (floor $435.61), Δ=0.021, expiry 2024-01-12, contracts 12
+[2024-01-16] 💰 Sold CALL +$303.96 @ $434.00 (floor $432.81), Δ=0.041, expiry 2024-02-02, contracts 12
+[2024-01-22] ✅ TQQQ TP: sell 8 @ $55.41 (entry $27.43), P&L +$223.84
+[2024-01-22] 🛡️ Buy Hedge PUT id=9 @ strike $423.00, expiry 2024-02-16, vw $6.91, premium $691.37
+[2024-01-26] 💰 Contribution +$15,000, Cash: $36,564.24
+[2024-02-05] 💰 Sold CALL +$358.68 @ $455.00 (floor $454.81), Δ=0.045, expiry 2024-02-23, contracts 12
+[2024-02-16] 🛡️ Hedge PUT expired (id=9): strike $423.00, payoff $0.00, ITM=False
+[2024-02-26] 💰 Sold CALL +$254.64 @ $469.78 (floor $463.86), Δ=0.031, expiry 2024-03-15, contracts 12
+[2024-03-04] 🛡️ Buy Hedge PUT id=10 @ strike $446.00, expiry 2024-04-05, vw $8.31, premium $830.58
+[2024-03-18] 📦 Dividend +$687.60 ($0.5730/sh on 1200)
+[2024-03-18] 🛡️ Buy Hedge PUT id=11 @ strike $439.00, expiry 2024-04-12, vw $7.47, premium $746.84
+[2024-03-18] 💰 Sold CALL +$310.92 @ $470.00 (floor $465.05), Δ=0.037, expiry 2024-04-05, contracts 12
+[2024-03-25] 🛡️ Buy Hedge PUT id=12 @ strike $444.00, expiry 2024-04-19, vw $6.46, premium $646.37
+[2024-04-01] 🛡️ Buy Hedge PUT id=13 @ strike $445.00, expiry 2024-04-26, vw $7.02, premium $701.59
+[2024-04-05] 🛡️ Hedge PUT expired (id=10): strike $446.00, payoff $922.00, ITM=True
+[2024-04-08] 💰 Sold CALL +$301.20 @ $470.00 (floor $467.89), Δ=0.038, expiry 2024-04-26, contracts 12
+[2024-04-12] 🛡️ Hedge PUT expired (id=11): strike $439.00, payoff $0.00, ITM=False
+[2024-04-19] 🛡️ Hedge PUT expired (id=12): strike $444.00, payoff $2,178.00, ITM=True
+[2024-04-26] 💰 Contribution +$15,000, Cash: $53,651.90
+[2024-04-26] 🛡️ Hedge PUT expired (id=13): strike $445.00, payoff $1,738.00, ITM=True
+[2024-04-26] 💰 Sold CSP +$133.17 @ $428.00, expiry 2024-04-29, contracts 1; reserved $42,800.00
+[2024-04-29] ⏳ PUT expired worthless @ $428.00
+[2024-04-29] 💰 Sold CSP +$342.57 @ $433.00, expiry 2024-05-01, contracts 1; reserved $43,300.00
+[2024-04-29] 💰 Sold CALL +$510.60 @ $459.78 (floor $459.12), Δ=0.058, expiry 2024-05-17, contracts 12
+[2024-05-01] ✅ PUT assigned: +100 @ $433.00
+[2024-05-13] 🛡️ Buy Hedge PUT id=14 @ strike $444.00, expiry 2024-06-07, vw $7.35, premium $734.95
+[2024-05-20] 💰 Sold CALL +$361.14 @ $480.00 (floor $479.10), Δ=0.043, expiry 2024-06-07, contracts 13
+[2024-05-23] ✅ TQQQ TP: sell 532 @ $66.50 (entry $32.56), P&L +$18,056.08
+[2024-05-28] 💰 Sold CSP +$198.50 @ $459.00, expiry 2024-05-30, contracts 1; reserved $45,900.00
+[2024-05-30] ✅ PUT assigned: +100 @ $459.00
+[2024-06-07] 🛡️ Hedge PUT expired (id=14): strike $444.00, payoff $0.00, ITM=False
+[2024-06-10] 💰 Sold CALL +$504.00 @ $489.78 (floor $489.53), Δ=0.052, expiry 2024-06-28, contracts 14
+[2024-06-24] 📦 Dividend +$1,066.80 ($0.7620/sh on 1400)
+[2024-07-01] 💰 Sold CALL +$269.08 @ $510.00 (floor $508.84), Δ=0.032, expiry 2024-07-19, contracts 14
+[2024-07-22] 💰 Sold CALL +$862.12 @ $511.00 (floor $510.03), Δ=0.071, expiry 2024-08-09, contracts 14
+[2024-07-29] 💰 Contribution +$15,000, Cash: $20,080.93
+[2024-08-12] 💰 Sold CALL +$1,220.94 @ $483.00 (floor $478.47), Δ=0.085, expiry 2024-08-30, contracts 14
+[2024-09-03] 💰 Sold CALL +$350.84 @ $504.78 (floor $501.59), Δ=0.032, expiry 2024-09-20, contracts 14
+[2024-09-23] 📦 Dividend +$947.80 ($0.6770/sh on 1400)
+[2024-09-23] 💰 Sold CALL +$533.96 @ $515.00 (floor $511.93), Δ=0.049, expiry 2024-10-11, contracts 14
+[2024-10-14] 💰 Sold CALL +$525.28 @ $530.00 (floor $525.52), Δ=0.047, expiry 2024-11-01, contracts 14
+[2024-10-25] 💰 Contribution +$15,000, Cash: $38,659.75
+[2024-10-28] 🛡️ Buy Hedge PUT id=15 @ strike $498.00, expiry 2024-11-22, vw $11.03, premium $1,103.15
+[2024-11-04] 💰 Sold CALL +$1,100.40 @ $519.00 (floor $516.03), Δ=0.078, expiry 2024-11-22, contracts 14
+[2024-11-22] 🛡️ Hedge PUT expired (id=15): strike $498.00, payoff $0.00, ITM=False
+[2024-11-25] 💰 Sold CALL +$178.22 @ $545.00 (floor $540.49), Δ=0.020, expiry 2024-12-13, contracts 14
+[2024-12-13] 💰 Sold CALL +$147.84 @ $565.00 (floor $562.29), Δ=0.018, expiry 2024-12-31, contracts 14
+[2024-12-23] 📦 Dividend +$1,169.00 ($0.8350/sh on 1400)
+[2024-12-31] 💰 Sold CALL +$195.02 @ $549.78 (floor $547.91), Δ=0.022, expiry 2025-01-17, contracts 14
+[2025-01-21] 💰 Sold CALL +$471.24 @ $560.00 (floor $555.95), Δ=0.042, expiry 2025-02-07, contracts 14
+[2025-01-29] 💰 Contribution +$15,000, Cash: $55,818.32
+[2025-01-29] 💰 Sold CSP +$502.48 @ $522.00, expiry 2025-01-31, contracts 1; reserved $52,200.00
+[2025-01-31] ⏳ PUT expired worthless @ $522.00
+[2025-01-31] 💰 Sold CSP +$262.32 @ $527.00, expiry 2025-02-03, contracts 1; reserved $52,700.00
+[2025-02-03] ✅ PUT assigned: +100 @ $527.00
+[2025-02-03] 🛡️ Buy Hedge PUT id=16 @ strike $513.00, expiry 2025-02-28, vw $10.90, premium $1,089.56
+[2025-02-10] 🛡️ Buy Hedge PUT id=17 @ strike $527.00, expiry 2025-03-07, vw $8.70, premium $870.05
+[2025-02-10] 💰 Sold CALL +$549.00 @ $559.00 (floor $558.85), Δ=0.049, expiry 2025-02-28, contracts 15
+[2025-02-28] 🛡️ Hedge PUT expired (id=16): strike $513.00, payoff $1,287.00, ITM=True
+[2025-03-03] 💰 Sold CALL +$847.50 @ $543.00 (floor $542.21), Δ=0.057, expiry 2025-03-21, contracts 15
+[2025-03-07] 🛡️ Hedge PUT expired (id=17): strike $527.00, payoff $3,984.00, ITM=True
+[2025-03-10] 🛒 TQQQ buy(FG=15) 134 @ $64.00, cash $15.01
+[2025-03-24] 📦 Dividend +$1,074.00 ($0.7160/sh on 1500)
+[2025-03-24] 💰 Sold CALL +$1,435.35 @ $517.00 (floor $517.00), Δ=0.100, expiry 2025-04-11, contracts 15
+[2025-04-03] 🛒 TQQQ buy(FG=8) 48 @ $52.43, cash $7.72
+[2025-04-14] 💰 Sold CALL +$1,003.35 @ $497.00 (floor $492.33), Δ=0.068, expiry 2025-04-30, contracts 15
+[2025-04-16] 🛒 TQQQ buy(FG=14) 21 @ $46.83, cash $27.64
+[2025-04-30] 💰 Contribution +$15,000, Cash: $15,027.64
+[2025-04-30] 💰 Sold CALL +$1,186.35 @ $505.00 (floor $495.16), Δ=0.079, expiry 2025-05-16, contracts 15
+[2025-05-16] ⚠️ CALL assigned: -1500 @ $505.00
+[2025-05-16] 💰 Sold CSP +$3,526.60 @ $521.00, expiry 2025-05-19, contracts 14; reserved $729,400.00
+[2025-05-19] ✅ PUT assigned: +1400 @ $521.00
+[2025-05-20] 💰 Sold CALL +$677.74 @ $555.00 (floor $550.64), Δ=0.056, expiry 2025-06-06, contracts 14
+[2025-06-09] 💰 Sold CALL +$470.96 @ $565.00 (floor $561.95), Δ=0.044, expiry 2025-06-27, contracts 14
+[2025-06-23] 📦 Dividend +$827.40 ($0.5910/sh on 1400)
+[2025-06-23] 🛡️ Buy Hedge PUT id=18 @ strike $527.00, expiry 2025-07-18, vw $9.33, premium $932.72
+[2025-06-30] 💰 Sold CALL +$453.18 @ $585.00 (floor $584.34), Δ=0.044, expiry 2025-07-18, contracts 14
+[2025-07-18] 🛡️ Hedge PUT expired (id=18): strike $527.00, payoff $0.00, ITM=False
+[2025-07-21] 💰 Sold CALL +$376.18 @ $600.00 (floor $595.82), Δ=0.036, expiry 2025-08-08, contracts 14
+[2025-07-31] 💰 Contribution +$15,000, Cash: $64,713.33
+[2025-08-01] 💰 Sold CSP +$504.84 @ $559.00, expiry 2025-08-04, contracts 1; reserved $55,900.00
+[2025-08-04] ⏳ PUT expired worthless @ $559.00
+[2025-08-04] 🛡️ Buy Hedge PUT id=19 @ strike $559.00, expiry 2025-08-29, vw $8.54, premium $854.34
+[2025-08-04] 💰 Sold CSP +$200.39 @ $560.00, expiry 2025-08-06, contracts 1; reserved $56,000.00
+[2025-08-06] ⏳ PUT expired worthless @ $560.00
+[2025-08-06] 💰 Sold CSP +$230.35 @ $563.00, expiry 2025-08-08, contracts 1; reserved $56,300.00
+[2025-08-08] ⏳ PUT expired worthless @ $563.00
+[2025-08-08] 💰 Sold CSP +$136.23 @ $572.00, expiry 2025-08-11, contracts 1; reserved $57,200.00
+[2025-08-11] ⏳ PUT expired worthless @ $572.00
+[2025-08-11] 💰 Sold CSP +$326.80 @ $575.00, expiry 2025-08-13, contracts 1; reserved $57,500.00
+[2025-08-11] 💰 Sold CALL +$282.66 @ $610.00 (floor $609.17), Δ=0.030, expiry 2025-08-29, contracts 14
+[2025-08-13] ⏳ PUT expired worthless @ $575.00
+[2025-08-13] ✅ TQQQ TP: sell 21 @ $96.05 (entry $46.83), P&L +$1,033.62
+[2025-08-13] 💰 Sold CSP +$297.96 @ $583.00, expiry 2025-08-15, contracts 1; reserved $58,300.00
+[2025-08-15] ✅ PUT assigned: +100 @ $583.00
+
+
+Backtest Summary (Covered Strangle + TQQQ on FG<15 + Hedge PUTs stacked on signals)
+----------------------------
+Final equity (Strategy):    $906,462.63
+Final equity (DCA):         $843,108.50
+Total invested capital:     $540,000.00
+
+Total return (Strategy):    67.86%
+Total return (DCA):         56.13%
+CAGR (Strategy):            13.62%
+CAGR (DCA):                 11.61%
+Sharpe (Strategy):          1.17
+Sharpe (DCA):               1.18
+
+Option premium collected:   $42,061.41
+TQQQ realized P&L:          $38,259.90
+TQQQ open position:         288 shares
+
+Hedge premium paid:         $15,170.64
+Hedge payouts received:     $14,462.00
+Hedge net P&L:              $-708.64
+Open hedge count:           1
+----------------------------
