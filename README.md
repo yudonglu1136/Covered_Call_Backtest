@@ -104,7 +104,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 3) Generate all datasets (one-shot pipeline)
+### Data-pipeline
 
 ```bash
 python data_gen/run_pipeline.py
@@ -123,7 +123,7 @@ data_gen/fetch_fear_and_greed_index.py #(5 times to fill gaps)
 
 ```
 
-### 4) Run the baseline backtest (Covered Call)
+### Run-Backtests
 
 ```bash
 python covered_call.py
