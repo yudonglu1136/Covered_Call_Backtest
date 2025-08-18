@@ -29,7 +29,8 @@
 - **Artifacts**: charts, CSVs, logs, and HTML reports saved under `output/**`.
 
 > [!TIP]
-> GitHub 的 README 
+> Run the data pipeline before backtesting: python `data_gen/run_pipeline.py`
+
 
 ## Strategy ladder
 | Level | Strategy | File | Adds on top of previous |
@@ -81,9 +82,55 @@ Excess per year:            $21,338.65
 
 ## Setup
 
-### 1) Install dependencies
+### 1) Create your `.env` and add API keys
+```bash
+cp .env.example .env
+# Then open .env and fill in:
+# POLYGON_API_KEY=your_polygon_key
+# FRED_API_KEY=your_fred_key
+# RAPIDAPI_KEY=your_rapidapi_key
+
+```
+
+### 2) Install dependencies (virtualenv recommended)
+
 ```bash
 python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-pip install -r requirements.txt  # pandas, numpy, yfinance, pandas_market_calendars, requests, scipy, matplotlib, python-dotenv, etc.
+# macOS / Linux
+source .venv/bin/activate
+# Windows (PowerShell)
+# .venv\Scripts\Activate.ps1
+
+pip install -r requirements.txt
 ```
+
+### 3) Generate all datasets (one-shot pipeline)
+
+```bash
+python data_gen/run_pipeline.py
+```
+
+This runs, in order:
+
+```bash
+data_gen/update_qqq_options_dataset.py
+
+data_gen/QQQ_TQQQ_update.py
+
+data_gen/generate_put_signals.py
+
+data_gen/fetch_fear_and_greed_index.py #(5 times to fill gaps)
+
+```
+
+### 4) Run the baseline backtest (Covered Call)
+
+```bash
+python covered_call.py
+```
+
+Outputs will appear under:
+
+- `output/covered_call/` — charts (`strategy_comparison_*.png/pdf`), `equity_curves.csv`, `summary.txt`, `report.html`
+
+- `log/` — detailed run logs
