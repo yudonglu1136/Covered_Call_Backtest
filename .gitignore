@@ -1,8 +1,8 @@
 # --- Secrets / env files ---
 .env
-.env.*
 .envrc
-*.env
+.env.*          # ignore .env.<anything> ...
+!.env.example   # ...but keep the template
 
 # --- Python cache / build ---
 __pycache__/
@@ -20,8 +20,6 @@ venv/
 
 # --- OS junk ---
 .DS_Store
-
-
 
 # --- Ignore CSVs under data/, keep the folder itself ---
 data/**/*.csv
