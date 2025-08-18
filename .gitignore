@@ -1,0 +1,34 @@
+# --- Secrets / env files ---
+.env
+.env.*
+.envrc
+*.env
+
+# --- Python cache / build ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.pyd
+*.pyo
+
+# --- Virtualenvs ---
+.venv/
+venv/
+
+# --- OS junk ---
+.DS_Store
+
+# --- Project artifacts (generated) ---
+output/
+log/
+*.log
+*.pdf
+*.png
+
+data/options_with_iv_delta.csv
+data/signals_events.csv
+data/put_signals.csv
+data/TQQQ_with_iv_delta.csv

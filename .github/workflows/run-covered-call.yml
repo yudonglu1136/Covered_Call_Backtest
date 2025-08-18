@@ -1,0 +1,54 @@
+name: Run Covered Call Backtest
+
+on:
+  workflow_dispatch: {}   # run manually from the Actions tab
+  # schedule:
+  #   - cron: "15 2 * * 1-5"  # optional: weekdays at 02:15 UTC
+
+jobs:
+  pipeline-and-backtest:
+    runs-on: ubuntu-latest
+
+    env:
+      # Make these available to your scripts:
+      POLYGON_API_KEY: ${{ secrets.POLYGON_API_KEY }}
+      FRED_API_KEY:    ${{ secrets.FRED_API_KEY }}
+      RAPIDAPI_KEY:    ${{ secrets.RAPIDAPI_KEY }}
+      PIP_DISABLE_PIP_VERSION_CHECK: "1"
+      PYTHONUNBUFFERED: "1"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Data pipeline (update datasets)
+        working-directory: data_gen
+        run: |
+          python update_qqq_options_dataset.py
+          python QQQ_TQQQ_update.py
+          python generate_put_signals.py
+          for i in {1..5}; do python fetch_fear_and_greed_index.py; done
+
+      - name: Run pure Covered Call backtest
+        run: |
+          python covered_call.py
+
+      - name: Upload artifacts (results)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: covered_call_outputs
+          path: |
+            output/covered_call/**
+            log/**
+

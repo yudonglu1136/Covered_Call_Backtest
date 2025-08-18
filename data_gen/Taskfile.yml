@@ -1,0 +1,29 @@
+# File: Taskfile.yml
+# Usage:
+#   1) Install go-task: https://taskfile.dev/installation/
+#   2) From repo root:  task pipeline
+# Notes:
+#   - Commands run in ./data_gen to keep paths robust.
+#   - Ensure your Python environment & API keys (e.g., POLYGON_API_KEY) are set beforehand.
+
+version: "3"
+
+tasks:
+  pipeline:
+    desc: "Run the full pipeline sequentially (update -> QQQ/TQQQ update -> put signals -> F&G x5)."
+    dir: "./data_gen"
+    cmds:
+      - echo "[STEP 1/4] update_qqq_options_dataset.py"
+      - python update_qqq_options_dataset.py
+
+      - echo "[STEP 2/4] QQQ_TQQQ_update.py"
+      - python QQQ_TQQQ_update.py
+
+      - echo "[STEP 3/4] generate_put_signals.py"
+      - python generate_put_signals.py
+
+      - echo "[STEP 4/4] fetch_fear_and_greed_index.py x5"
+      - bash -lc 'for i in {1..5}; do echo "  -> Run $i/5"; python fetch_fear_and_greed_index.py; done'
+
+    # Optional: stop the pipeline on first error (default behavior)
+    ignore_error: false
