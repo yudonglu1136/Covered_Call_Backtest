@@ -116,7 +116,7 @@ Open hedge count:                 0
 </p>
 
 <p align="center">
-  <img src="output/hedged_strategy/hedge_put_yearly_stats.png" width="820" alt="TQQQ trades">
+  <img src="output/hedged_strategy/hedge_overview_2021-07-26_to_2025-08-21.png" width="820" alt="TQQQ trades">
 
 </p>
 
