@@ -1,0 +1,149 @@
+[2021-07-26] 🛒 Bought 800 shares (cash deployment) @ $367.49
+[2021-07-26] 💰 Sold CALL +$306.64 @ strike $385.00, Δ=0.058, expiry 2021-08-13, contracts 8
+[2021-08-13] 💰 Sold CALL +$313.04 @ strike $380.00, Δ=0.068, expiry 2021-08-30, contracts 8
+[2021-08-30] 💰 Sold CALL +$126.40 @ strike $398.00, Δ=0.029, expiry 2021-09-17, contracts 8
+[2021-09-17] 💰 Sold CALL +$402.64 @ strike $388.00, Δ=0.078, expiry 2021-10-04, contracts 8
+[2021-09-20] 📦 Dividend credited +$331.20 ($0.4140/share on 800 shares)
+[2021-10-04] 💰 Sold CALL +$318.72 @ strike $375.00, Δ=0.057, expiry 2021-10-20, contracts 8
+[2021-10-20] ⚠️ CALL assigned: -800 shares @ $375.00
+[2021-10-20] 🔁 Post-assignment repurchase 800 shares @ $375.94
+[2021-10-21] 💰 Sold CALL +$316.88 @ strike $390.00, Δ=0.064, expiry 2021-11-05, contracts 8
+[2021-10-22] 💰 Contribution +$15,000, Cash balance (Strategy): $22,371.52
+[2021-11-05] ⚠️ CALL assigned: -800 shares @ $390.00
+[2021-11-05] 🔁 Post-assignment repurchase 800 shares @ $400.04
+[2021-11-08] 💰 Sold CALL +$283.44 @ strike $423.00, Δ=0.046, expiry 2021-11-26, contracts 8
+[2021-11-26] 💰 Sold CALL +$398.88 @ strike $416.00, Δ=0.061, expiry 2021-12-13, contracts 8
+[2021-12-13] 💰 Sold CALL +$361.76 @ strike $418.00, Δ=0.056, expiry 2021-12-31, contracts 8
+[2021-12-20] 📦 Dividend credited +$392.80 ($0.4910/share on 800 shares)
+[2021-12-31] 💰 Sold CALL +$479.68 @ strike $415.00, Δ=0.079, expiry 2022-01-18, contracts 8
+[2022-01-18] 💰 Sold CALL +$337.28 @ strike $399.00, Δ=0.051, expiry 2022-02-02, contracts 8
+[2022-01-24] 💰 Contribution +$15,000, Cash balance (Strategy): $31,593.36
+[2022-02-02] 💰 Sold CALL +$267.60 @ strike $396.00, Δ=0.043, expiry 2022-02-18, contracts 8
+[2022-02-18] 💰 Sold CALL +$394.48 @ strike $370.00, Δ=0.059, expiry 2022-03-07, contracts 8
+[2022-02-24] 🛒 Bought 100 shares (cash deployment) @ $318.84
+[2022-03-07] 💰 Sold CALL +$342.00 @ strike $367.50, Δ=0.041, expiry 2022-03-25, contracts 9
+[2022-03-21] 📦 Dividend credited +$390.60 ($0.4340/share on 900 shares)
+[2022-03-25] 💰 Sold CALL +$459.00 @ strike $384.00, Δ=0.062, expiry 2022-04-11, contracts 9
+[2022-04-11] 💰 Sold CALL +$340.74 @ strike $370.00, Δ=0.048, expiry 2022-04-27, contracts 9
+[2022-04-25] 💰 Contribution +$15,000, Cash balance (Strategy): $16,903.78
+[2022-04-27] 💰 Sold CALL +$278.82 @ strike $359.00, Δ=0.034, expiry 2022-05-13, contracts 9
+[2022-05-13] 💰 Sold CALL +$262.26 @ strike $338.00, Δ=0.034, expiry 2022-05-31, contracts 9
+[2022-05-31] 💰 Sold CALL +$207.00 @ strike $345.00, Δ=0.029, expiry 2022-06-15, contracts 9
+[2022-06-15] 💰 Sold CALL +$263.61 @ strike $318.00, Δ=0.035, expiry 2022-06-30, contracts 9
+[2022-06-21] 📦 Dividend credited +$474.30 ($0.5270/share on 900 shares)
+[2022-06-30] 💰 Sold CALL +$243.00 @ strike $315.00, Δ=0.035, expiry 2022-07-18, contracts 9
+[2022-07-18] 💰 Sold CALL +$304.92 @ strike $325.00, Δ=0.042, expiry 2022-08-05, contracts 9
+[2022-07-26] 💰 Contribution +$15,000, Cash balance (Strategy): $33,937.69
+[2022-07-26] 🛒 Bought 100 shares (cash deployment) @ $298.53
+[2022-08-05] 💰 Sold CALL +$310.00 @ strike $348.00, Δ=0.043, expiry 2022-08-22, contracts 10
+[2022-08-22] 💰 Sold CALL +$371.00 @ strike $342.00, Δ=0.051, expiry 2022-09-07, contracts 10
+[2022-09-07] 💰 Sold CALL +$331.00 @ strike $326.00, Δ=0.044, expiry 2022-09-23, contracts 10
+[2022-09-19] 📦 Dividend credited +$519.00 ($0.5190/share on 1000 shares)
+[2022-09-23] 💰 Sold CALL +$410.00 @ strike $306.00, Δ=0.052, expiry 2022-10-10, contracts 10
+[2022-10-10] 💰 Sold CALL +$315.30 @ strike $300.00, Δ=0.041, expiry 2022-10-26, contracts 10
+[2022-10-24] 💰 Contribution +$15,000, Cash balance (Strategy): $21,340.99
+[2022-10-26] 💰 Sold CALL +$248.70 @ strike $320.00, Δ=0.030, expiry 2022-11-11, contracts 10
+[2022-11-11] 💰 Sold CALL +$236.40 @ strike $315.00, Δ=0.035, expiry 2022-11-28, contracts 10
+[2022-11-28] 💰 Sold CALL +$246.70 @ strike $312.00, Δ=0.037, expiry 2022-12-14, contracts 10
+[2022-12-14] 💰 Sold CALL +$343.80 @ strike $314.00, Δ=0.048, expiry 2022-12-30, contracts 10
+[2022-12-19] 📦 Dividend credited +$655.00 ($0.6550/share on 1000 shares)
+[2023-01-03] 💰 Sold CALL +$306.80 @ strike $294.00, Δ=0.045, expiry 2023-01-20, contracts 10
+[2023-01-23] 💰 Sold CALL +$264.70 @ strike $315.00, Δ=0.039, expiry 2023-02-10, contracts 10
+[2023-01-25] 💰 Contribution +$15,000, Cash balance (Strategy): $38,643.09
+[2023-01-25] 🛒 Bought 100 shares (cash deployment) @ $283.77
+[2023-02-13] 💰 Sold CALL +$403.70 @ strike $332.00, Δ=0.049, expiry 2023-03-03, contracts 11
+[2023-03-06] 💰 Sold CALL +$399.96 @ strike $326.00, Δ=0.052, expiry 2023-03-24, contracts 11
+[2023-03-20] 📦 Dividend credited +$519.20 ($0.4720/share on 1100 shares)
+[2023-03-27] 💰 Sold CALL +$374.66 @ strike $334.00, Δ=0.052, expiry 2023-04-14, contracts 11
+[2023-04-17] 💰 Sold CALL +$570.79 @ strike $338.00, Δ=0.077, expiry 2023-05-05, contracts 11
+[2023-04-26] 💰 Contribution +$15,000, Cash balance (Strategy): $27,534.40
+[2023-05-08] 💰 Sold CALL +$561.88 @ strike $338.00, Δ=0.086, expiry 2023-05-26, contracts 11
+[2023-05-26] ⚠️ CALL assigned: -1100 shares @ $338.00
+[2023-05-26] 🔁 Post-assignment repurchase 1100 shares @ $340.76
+[2023-05-30] 💰 Sold CALL +$160.60 @ strike $385.00, Δ=0.023, expiry 2023-06-16, contracts 11
+[2023-06-20] 📦 Dividend credited +$554.40 ($0.5040/share on 1100 shares)
+[2023-06-20] 💰 Sold CALL +$331.87 @ strike $394.00, Δ=0.044, expiry 2023-07-07, contracts 11
+[2023-07-10] 💰 Sold CALL +$545.27 @ strike $390.00, Δ=0.067, expiry 2023-07-28, contracts 11
+[2023-07-27] 💰 Contribution +$15,000, Cash balance (Strategy): $41,652.42
+[2023-07-27] 🛒 Bought 100 shares (cash deployment) @ $383.07
+[2023-07-31] 💰 Sold CALL +$356.64 @ strike $410.00, Δ=0.044, expiry 2023-08-18, contracts 12
+[2023-08-21] 💰 Sold CALL +$640.56 @ strike $382.50, Δ=0.075, expiry 2023-09-08, contracts 12
+[2023-09-11] 💰 Sold CALL +$353.40 @ strike $397.00, Δ=0.050, expiry 2023-09-29, contracts 12
+[2023-09-18] 📦 Dividend credited +$643.20 ($0.5360/share on 1200 shares)
+[2023-10-02] 💰 Sold CALL +$409.80 @ strike $384.00, Δ=0.052, expiry 2023-10-20, contracts 12
+[2023-10-23] 💰 Sold CALL +$562.32 @ strike $380.00, Δ=0.063, expiry 2023-11-10, contracts 12
+[2023-10-25] 💰 Contribution +$15,000, Cash balance (Strategy): $21,311.34
+[2023-11-13] 💰 Sold CALL +$530.40 @ strike $397.00, Δ=0.068, expiry 2023-12-01, contracts 12
+[2023-12-04] 💰 Sold CALL +$660.72 @ strike $404.00, Δ=0.084, expiry 2023-12-22, contracts 12
+[2023-12-18] 📦 Dividend credited +$969.60 ($0.8080/share on 1200 shares)
+[2023-12-22] ⚠️ CALL assigned: -1200 shares @ $404.00
+[2023-12-22] 🔁 Post-assignment repurchase 1200 shares @ $409.00
+[2023-12-27] 📦 Dividend credited +$259.20 ($0.2160/share on 1200 shares)
+[2023-12-27] 💰 Sold CALL +$478.32 @ strike $429.78, Δ=0.067, expiry 2024-01-12, contracts 12
+[2024-01-16] 💰 Sold CALL +$656.76 @ strike $430.00, Δ=0.077, expiry 2024-02-02, contracts 12
+[2024-01-26] 💰 Contribution +$15,000, Cash balance (Strategy): $33,866.34
+[2024-02-05] 💰 Sold CALL +$713.64 @ strike $449.00, Δ=0.083, expiry 2024-02-23, contracts 12
+[2024-02-26] 💰 Sold CALL +$234.72 @ strike $470.00, Δ=0.029, expiry 2024-03-15, contracts 12
+[2024-03-18] 📦 Dividend credited +$687.60 ($0.5730/share on 1200 shares)
+[2024-03-18] 💰 Sold CALL +$604.68 @ strike $465.00, Δ=0.064, expiry 2024-04-05, contracts 12
+[2024-04-08] 💰 Sold CALL +$642.60 @ strike $465.00, Δ=0.072, expiry 2024-04-26, contracts 12
+[2024-04-26] 💰 Contribution +$15,000, Cash balance (Strategy): $51,749.58
+[2024-04-26] 🛒 Bought 100 shares (cash deployment) @ $427.62
+[2024-04-29] 💰 Sold CALL +$553.15 @ strike $459.78, Δ=0.058, expiry 2024-05-17, contracts 13
+[2024-05-20] 💰 Sold CALL +$361.14 @ strike $480.00, Δ=0.043, expiry 2024-06-07, contracts 13
+[2024-06-10] 💰 Sold CALL +$761.67 @ strike $485.00, Δ=0.080, expiry 2024-06-28, contracts 13
+[2024-06-24] 📦 Dividend credited +$990.60 ($0.7620/share on 1300 shares)
+[2024-07-01] 💰 Sold CALL +$456.17 @ strike $505.00, Δ=0.055, expiry 2024-07-19, contracts 13
+[2024-07-22] 💰 Sold CALL +$1,125.28 @ strike $508.00, Δ=0.093, expiry 2024-08-09, contracts 13
+[2024-07-29] 💰 Contribution +$15,000, Cash balance (Strategy): $28,235.59
+[2024-08-12] 💰 Sold CALL +$905.32 @ strike $484.00, Δ=0.072, expiry 2024-08-30, contracts 13
+[2024-09-03] 💰 Sold CALL +$503.36 @ strike $500.00, Δ=0.048, expiry 2024-09-20, contracts 13
+[2024-09-23] 📦 Dividend credited +$880.10 ($0.6770/share on 1300 shares)
+[2024-09-23] 💰 Sold CALL +$727.48 @ strike $510.00, Δ=0.070, expiry 2024-10-11, contracts 13
+[2024-10-14] 💰 Sold CALL +$752.83 @ strike $525.00, Δ=0.070, expiry 2024-11-01, contracts 13
+[2024-10-25] 💰 Contribution +$15,000, Cash balance (Strategy): $47,004.68
+[2024-11-04] 💰 Sold CALL +$1,027.00 @ strike $521.00, Δ=0.076, expiry 2024-11-22, contracts 13
+[2024-11-25] 💰 Sold CALL +$749.06 @ strike $535.00, Δ=0.072, expiry 2024-12-13, contracts 13
+[2024-12-13] 💰 Sold CALL +$483.99 @ strike $555.00, Δ=0.056, expiry 2024-12-31, contracts 13
+[2024-12-23] 📦 Dividend credited +$1,085.50 ($0.8350/share on 1300 shares)
+[2024-12-31] 💰 Sold CALL +$410.67 @ strike $540.00, Δ=0.049, expiry 2025-01-15, contracts 13
+[2025-01-13] 🛒 Bought 100 shares (cash deployment) @ $501.20
+[2025-01-15] 💰 Sold CALL +$1,070.44 @ strike $541.00, Δ=0.089, expiry 2025-01-31, contracts 14
+[2025-01-29] 💰 Contribution +$15,000, Cash balance (Strategy): $16,711.34
+[2025-02-03] 💰 Sold CALL +$1,094.24 @ strike $547.00, Δ=0.081, expiry 2025-02-21, contracts 14
+[2025-02-24] 💰 Sold CALL +$1,277.78 @ strike $549.00, Δ=0.101, expiry 2025-03-14, contracts 14
+[2025-03-14] 💰 Sold CALL +$680.26 @ strike $515.00, Δ=0.052, expiry 2025-03-31, contracts 14
+[2025-03-24] 📦 Dividend credited +$1,002.40 ($0.7160/share on 1400 shares)
+[2025-03-31] 💰 Sold CALL +$1,106.56 @ strike $498.00, Δ=0.081, expiry 2025-04-17, contracts 14
+[2025-04-17] 💰 Sold CALL +$913.50 @ strike $482.50, Δ=0.066, expiry 2025-05-02, contracts 14
+[2025-04-30] 💰 Contribution +$15,000, Cash balance (Strategy): $37,786.08
+[2025-05-02] ⚠️ CALL assigned: -1400 shares @ $482.50
+[2025-05-02] 🔁 Post-assignment repurchase 1400 shares @ $486.54
+[2025-05-05] 💰 Sold CALL +$1,108.38 @ strike $520.00, Δ=0.078, expiry 2025-05-23, contracts 14
+[2025-05-27] 💰 Sold CALL +$782.18 @ strike $555.00, Δ=0.060, expiry 2025-06-13, contracts 14
+[2025-06-13] 💰 Sold CALL +$454.86 @ strike $560.00, Δ=0.044, expiry 2025-06-30, contracts 14
+[2025-06-23] 📦 Dividend credited +$827.40 ($0.5910/share on 1400 shares)
+[2025-06-30] 💰 Sold CALL +$792.26 @ strike $580.00, Δ=0.071, expiry 2025-07-18, contracts 14
+[2025-07-21] 💰 Sold CALL +$1,316.56 @ strike $590.00, Δ=0.102, expiry 2025-08-08, contracts 14
+[2025-07-31] 💰 Contribution +$15,000, Cash balance (Strategy): $52,411.72
+[2025-08-11] 💰 Sold CALL +$925.96 @ strike $600.00, Δ=0.083, expiry 2025-08-29, contracts 14
+
+
+Backtest Summary (Calls only)
+----------------------------
+Option premium collected:   $40,926.58
+Final equity (Strategy):    $843,427.68
+Final equity (DCA):         $821,478.50
+Total invested capital:     $540,000.00
+
+Total return (Strategy):    56.19%
+Total return (DCA):         52.13%
+CAGR (Strategy):            11.57%
+CAGR (DCA):                 10.85%
+
+Sharpe (Strategy):          1.19
+Sharpe (DCA):               1.15
+
+Excess over DCA:            $21,949.18
+Excess per year:            $5,387.66
+----------------------------

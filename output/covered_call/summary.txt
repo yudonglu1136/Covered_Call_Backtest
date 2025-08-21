@@ -1,0 +1,19 @@
+
+Backtest Summary (Calls only)
+----------------------------
+Option premium collected:   $40,926.58
+Final equity (Strategy):    $843,427.68
+Final equity (DCA):         $821,478.50
+Total invested capital:     $540,000.00
+
+Total return (Strategy):    56.19%
+Total return (DCA):         52.13%
+CAGR (Strategy):            11.57%
+CAGR (DCA):                 10.85%
+
+Sharpe (Strategy):          1.19
+Sharpe (DCA):               1.15
+
+Excess over DCA:            $21,949.18
+Excess per year:            $5,387.66
+----------------------------
