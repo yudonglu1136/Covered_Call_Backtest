@@ -136,7 +136,6 @@ else:
 print(f"[INFO] price_df rows kept: {len(price_df):,} | first: {price_df.index.min().date()} | last: {price_df.index.max().date()}")
 
 dates = price_df.index
-print(dates)
 
 # ============================
 # State Variables

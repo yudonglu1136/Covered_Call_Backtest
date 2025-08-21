@@ -21,6 +21,7 @@ venv/
 # --- OS junk ---
 .DS_Store
 
+report/
 # --- Ignore CSVs under data/, keep the folder itself ---
 data/**/*.csv
 !data/.gitkeep

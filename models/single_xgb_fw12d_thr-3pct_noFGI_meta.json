@@ -1,0 +1,20 @@
+{
+  "tag": "fw12d_thr-3pct_noFGI",
+  "features": [
+    "vol20d",
+    "hyig_diff_bps",
+    "ig_level_pct",
+    "dxy_ma_gap20",
+    "vix_ma_gap20",
+    "regime_high_rate",
+    "regime_easing",
+    "hy_vol_20d_bps",
+    "yc_slope_sq",
+    "vix_yc_inter",
+    "dxy_vix_inter"
+  ],
+  "threshold": 0.7117644548416138,
+  "criterion": "recall_at_precision",
+  "precision_target": 0.999,
+  "start_date": "2015-01-01"
+}

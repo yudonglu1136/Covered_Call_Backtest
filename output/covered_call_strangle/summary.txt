@@ -2,18 +2,18 @@
 Backtest Summary (Covered Strangle: CALLs + cash-secured PUTs)
 ----------------------------
 Option premium collected:   $44,479.05
-Final equity (Strategy):    $888,618.65
-Final equity (DCA):         $843,108.50
+Final equity (Strategy):    $883,503.65
+Final equity (DCA):         $838,334.50
 Total invested capital:     $540,000.00
 
-Total return (Strategy):    64.56%
-Total return (DCA):         56.13%
-CAGR (Strategy):            13.06%
-CAGR (DCA):                 11.61%
+Total return (Strategy):    63.61%
+Total return (DCA):         55.25%
+CAGR (Strategy):            12.86%
+CAGR (DCA):                 11.42%
 
-Sharpe (Strategy):          1.23
-Sharpe (DCA):               1.18
+Sharpe (Strategy):          1.22
+Sharpe (DCA):               1.17
 
-Excess over DCA:            $45,510.15
-Excess per year:            $11,216.21
+Excess over DCA:            $45,169.15
+Excess per year:            $11,102.18
 ----------------------------

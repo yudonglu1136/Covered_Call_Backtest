@@ -11,7 +11,10 @@ from concurrent.futures import ThreadPoolExecutor
 import pandas as pd
 import requests
 
-API_KEY = "tMA6lserffZsvnvkccoHRmcLX8kQwEVd"
+from dotenv import load_dotenv
+load_dotenv()  # will read .env into process env
+
+API_KEY = os.getenv("POLYGON_API_KEY") 
 TICKERS = ["QQQ", "TQQQ"]
 DAYS_BACK = 365 * 10 + 3  # ~10 years
 MAX_WORKERS = 3
