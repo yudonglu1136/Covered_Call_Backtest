@@ -3,43 +3,53 @@
 <head><meta charset="utf-8"><title>Hedged Strategy Report</title></head>
 <body style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial;max-width:1000px;margin:40px auto;">
   <h1>Hedged Strategy — Covered Strangle + TQQQ(FG) + PUT Hedge (stacked)</h1>
+  <p><strong>Backtest Window:</strong> 2021-07-26 → 2025-08-21</p>
   <pre style="background:#f6f8fa;padding:16px;border-radius:8px;white-space:pre-wrap;">
-Backtest Summary (Covered Strangle + TQQQ on FG<15 + Hedge PUTs stacked on signals)
-----------------------------
-Final equity (Strategy):    $906,462.63
-Final equity (DCA):         $843,108.50
+Backtest Summary (Costs ON)  |  Window: 2021-07-26 → 2025-08-21
+---------------------------------------------------------------------------
+Costs: Commission $0.65/ctr | BUY slip +15% | SELL slip -10%
+
+Final equity (Strategy):    $1,083,869.07
+Final equity (DCA):         $838,334.50
 Total invested capital:     $540,000.00
 
-Total return (Strategy):    67.86%
-Total return (DCA):         56.13%
-CAGR (Strategy):            13.62%
-CAGR (DCA):                 11.61%
-Sharpe (Strategy):          1.17
-Sharpe (DCA):               1.18
+Total return (Strategy):    100.72%
+Total return (DCA):         55.25%
+CAGR (Strategy):            18.68%
+CAGR (DCA):                 11.42%
+Sharpe (Strategy):          1.33
+Sharpe (DCA):               1.17
 
-Option premium collected:   $42,061.41
-TQQQ realized P&L:          $38,259.90
-TQQQ open position:         288 shares
+Max Drawdown (Strategy):    -24.11%  (peak 2025-02-18 → trough 2025-04-07 → rec 2025-05-14)
+Max Drawdown (DCA):         -25.69%  (peak 2021-11-22 → trough 2022-10-13 → rec 2023-03-27)
 
-Hedge premium paid:         $15,170.64
-Hedge payouts received:     $14,462.00
-Hedge net P&L:              $-708.64
-Open hedge count:           1
-----------------------------
+Option premium collected (net):   $43,221.14
+TQQQ realized P&L:                $59,163.74
+TQQQ open position:               738 shares
+
+Hedge premium paid (after costs): $123,763.10
+Hedge payouts received:           $216,448.00
+Hedge net P&L:                    $92,684.90
+Open hedge count:                 0
+---------------------------------------------------------------------------
 </pre>
 
   <h2>Main Equity Curves</h2>
-  <figure><img src="strategy_comparison_2025-08-15.png" style="max-width:100%;height:auto;"><figcaption>strategy_comparison_2025-08-15.png</figcaption></figure>
+  <figure><img src="strategy_comparison_2021-07-26_to_2025-08-21.png" style="max-width:100%;height:auto;"><figcaption>strategy_comparison_2021-07-26_to_2025-08-21.png</figcaption></figure>
 
   <h2>TQQQ Buy/Sell Events</h2>
-  <figure><img src="tqqq_trades_2025-08-15.png" style="max-width:100%;height:auto;"><figcaption>tqqq_trades_2025-08-15.png</figcaption></figure>
+  <figure><img src="tqqq_trades_2021-07-26_to_2025-08-21.png" style="max-width:100%;height:auto;"><figcaption>tqqq_trades_2021-07-26_to_2025-08-21.png</figcaption></figure>
 
   <h2>Hedge Overview</h2>
-  <figure><img src="hedge_overview_2025-08-15.png" style="max-width:100%;height:auto;"><figcaption>hedge_overview_2025-08-15.png</figcaption></figure>
+  <figure><img src="hedge_overview_2021-07-26_to_2025-08-21.png" style="max-width:100%;height:auto;"><figcaption>hedge_overview_2021-07-26_to_2025-08-21.png</figcaption></figure>
+
+  <h2>Short / Hedge PUT — Yearly Stats</h2>
+  <figure><img src="hedge_put_yearly_stats.png" style="max-width:100%;height:auto;"><figcaption>hedge_put_yearly_stats.png</figcaption></figure>
 
   <p>Equity curves: equity_curves.csv</p>
   <p>TQQQ trades: tqqq_trades.csv</p>
   <p>Hedge trades: hedge_puts.csv</p>
+  <p>Yearly stats: hedge_put_yearly_stats.csv</p>
   <p>Log: strategy_hedged.log</p>
 </body>
 </html>
