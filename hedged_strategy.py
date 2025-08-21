@@ -596,7 +596,7 @@ if (peak_bh is not None) and (trough_bh is not None):
     x_end_b = rec_bh if rec_bh is not None else dates[-1]
     ax.axvspan(peak_bh, x_end_b, color="tab:blue", alpha=0.12, label=f"DCA MDD {mdd_bh:.1%}")
     ax.scatter([trough_bh], [curve_bh.loc[trough_bh]], marker="v", s=60, color="tab:blue")
-ax.set_title(f"📊 Strategy vs DCA (MDD)  | Window: {window_str}")
+ax.set_title(f"Strategy vs DCA (MDD)  | Window: {window_str}")
 ax.set_xlabel("Date"); ax.set_ylabel("Portfolio Value (USD)")
 ax.legend(); ax.grid(True); plt.tight_layout()
 plt.savefig(main_png, dpi=150, bbox_inches="tight"); plt.savefig(main_pdf, bbox_inches="tight"); plt.close()
