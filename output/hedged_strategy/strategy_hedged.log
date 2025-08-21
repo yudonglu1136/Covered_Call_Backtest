@@ -665,16 +665,16 @@ Backtest Summary (Costs ON)  |  Window: 2021-07-26 → 2025-08-21
 ---------------------------------------------------------------------------
 Costs: Commission $0.65/ctr | BUY slip +15% | SELL slip -10%
 
-Final equity (Strategy):    $1,083,869.07
-Final equity (DCA):         $838,334.50
+Final equity (Strategy):    $1,059,105.91
+Final equity (DCA):         $821,478.50
 Total invested capital:     $540,000.00
 
-Total return (Strategy):    100.72%
-Total return (DCA):         55.25%
-CAGR (Strategy):            18.68%
-CAGR (DCA):                 11.42%
-Sharpe (Strategy):          1.33
-Sharpe (DCA):               1.17
+Total return (Strategy):    96.13%
+Total return (DCA):         52.13%
+CAGR (Strategy):            17.98%
+CAGR (DCA):                 10.85%
+Sharpe (Strategy):          1.31
+Sharpe (DCA):               1.15
 
 Max Drawdown (Strategy):    -24.11%  (peak 2025-02-18 → trough 2025-04-07 → rec 2025-05-14)
 Max Drawdown (DCA):         -25.69%  (peak 2021-11-22 → trough 2022-10-13 → rec 2023-03-27)
