@@ -41,6 +41,7 @@
 | 4 | **Hedged Strategy** | `hedged_strategy.py` | + Protective **ATM PUT** (28–31 DTE) on `put_signal == 1`, track hedge P&L. |
 
 > In our runs, **Level 3 (CC Strangle + TQQQ)** often shows the best risk/return trade-off (window-dependent).
+> The **hedge version** delivered the best performance, but since it was trained with XGBoost and hasn’t been live-tested, its results on test data are much weaker than on training data, even though the risk-reward ratio still looks decent."
 
 ## Results preview
 <p align="center">
