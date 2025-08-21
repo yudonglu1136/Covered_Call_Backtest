@@ -45,11 +45,11 @@
 ## Results preview
 <p align="center">
 
-  <img src="output/covered_call_strangle_TQQQ/strategy_comparison_2025-08-19.png" width="820" alt="Strategy vs DCA">
+  <img src="output/covered_call_strangle_TQQQ/strategy_comparison_2025-08-21.png" width="820" alt="Strategy vs DCA">
 </p>
 
 <p align="center">
-  <img src="output/covered_call_strangle_TQQQ/tqqq_trades_2025-08-19.png" width="820" alt="TQQQ trades">
+  <img src="output/covered_call_strangle_TQQQ/tqqq_trades_2025-08-21.png" width="820" alt="TQQQ trades">
 </p>
 
 ## Result Summary
