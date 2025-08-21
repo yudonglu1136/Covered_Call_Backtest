@@ -38,7 +38,7 @@
 | 1 | **Covered Call** | `covered_call.py` | Sell CC (15–18 DTE) with IV→Δ target & **106% floor**; DCA & dividends. |
 | 2 | **Covered Call Strangle** | `covered_call_strangle.py` | + Cash-secured PUT (1–3 DTE) to (re)build 100-lot; fully collateralized. |
 | 3 | **CC Strangle + TQQQ** | `covered_call_strangle_with_TQQQ.py` | + **TQQQ overlay** when **F&G < 15**, integer-share buys, **+100%** TP per batch. |
-| 4 | **Hedged Strategy** | `hedged_strategy.py` | + Protective **ATM PUT** (28–31 DTE) on `put_signal == 1`, track hedge P&L. |
+| 4 | **Hedged Strategy** | `hedged_strategy.py` | + Protective **ATM PUT** (11–12 DTE) on `put_signal == 1`, track hedge P&L. |
 
 > In our runs, **Level 3 (CC Strangle + TQQQ)** often shows the best risk/return trade-off (window-dependent).
 > The **hedge version** delivered the best performance, but since it was trained with XGBoost and hasn’t been live-tested, its results on test data are much weaker than on training data, even though the risk-reward ratio still looks decent."
