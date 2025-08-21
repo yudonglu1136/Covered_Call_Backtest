@@ -45,7 +45,7 @@
 ## Results preview
 <p align="center">
 
-  <img src="output/covered_call_strangle_TQQQ/strategy_comparison_2025-08-15.png" width="820" alt="Strategy vs DCA">
+  <img src="output/covered_call_strangle_TQQQ/strategy_comparison_2025-08-19.png" width="820" alt="Strategy vs DCA">
 </p>
 
 <p align="center">
@@ -78,6 +78,48 @@ Excess per year:            $21,338.65
 ----------------------------
 
 ```
+## Result Updatad 
+
+```bash
+
+Backtest Summary (Costs ON)  |  Window: 2021-07-26 → 2025-08-21
+---------------------------------------------------------------------------
+Costs: Commission $0.65/ctr | BUY slip +15% | SELL slip -10%
+
+Final equity (Strategy):    $1,083,869.07
+Final equity (DCA):         $838,334.50
+Total invested capital:     $540,000.00
+
+Total return (Strategy):    100.72%
+Total return (DCA):         55.25%
+CAGR (Strategy):            18.68%
+CAGR (DCA):                 11.42%
+Sharpe (Strategy):          1.33
+Sharpe (DCA):               1.17
+
+Max Drawdown (Strategy):    -24.11%  (peak 2025-02-18 → trough 2025-04-07 → rec 2025-05-14)
+Max Drawdown (DCA):         -25.69%  (peak 2021-11-22 → trough 2022-10-13 → rec 2023-03-27)
+
+Option premium collected (net):   $43,221.14
+TQQQ realized P&L:                $59,163.74
+TQQQ open position:               738 shares
+
+Hedge premium paid (after costs): $123,763.10
+Hedge payouts received:           $216,448.00
+Hedge net P&L:                    $92,684.90
+Open hedge count:                 0
+
+```
+<p align="center">
+
+  <img src="output/hedged_strategy/strategy_comparison_2021-07-26_to_2025-08-21.png" width="820" alt="Strategy vs DCA">
+</p>
+
+<p align="center">
+  <img src="output/hedged_strategy/hedge_put_yearly_stats.png" width="820" alt="TQQQ trades">
+
+</p>
+
 
 
 ## Setup
