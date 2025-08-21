@@ -160,9 +160,13 @@ data_gen/update_qqq_options_dataset.py
 
 data_gen/QQQ_TQQQ_update.py
 
-data_gen/generate_put_signals.py
+data_gen/build_all_market_data.py
+
+data_gen/fetch_VIX.py
 
 data_gen/fetch_fear_and_greed_index.py #(5 times to fill gaps)
+
+train/make_put_signals_single.py # generated put signals for hedge
 
 ```
 

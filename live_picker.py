@@ -2,7 +2,6 @@
 """
 live_picker.py — Covered Call（日内：reference/contracts -> 聚合价 -> 反解IV/Δ）
 - 不依赖 option_utils / src.quant_utils
-- 仅卖 CALL（已彻底移除 PUT）
 输出：
   data/options_today_polygon.csv
   data/today_recommendations.csv
@@ -19,7 +18,7 @@ from pathlib import Path
 from datetime import datetime
 from dateutil.tz import gettz
 from math import log, sqrt, exp
-from scipy.stats import norm  # 如果没有 scipy，可把正态 CDF 换成自写近似
+from scipy.stats import norm  
 import os
 from dotenv import load_dotenv
 load_dotenv()  # will read .env into process env
@@ -30,12 +29,11 @@ EXCHANGE_TZ = "America/New_York"
 DATA_DIR = Path("data"); DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # DTE/行权/Δ规则
-CALL_MIN_DTE = 28     # 你可以改回 15
-CALL_MAX_DTE = 30      # 你可以改回 18
-CALL_STRIKE_FLOOR_PCT = 1.06   # ≥ 6% 才优先
-DELTA_BAND = 0.01               # “满足目标Δ”的容忍带
+CALL_MIN_DTE = 28     
+CALL_MAX_DTE = 30      
+CALL_STRIKE_FLOOR_PCT = 1.06   
+DELTA_BAND = 0.01               
 
-# 风险利率默认值（年化，十进制）；也可以自己写个抓取函数替换
 RF_DEFAULT = 0.045
 
 API_KEY = os.getenv("POLYGON_API_KEY")
