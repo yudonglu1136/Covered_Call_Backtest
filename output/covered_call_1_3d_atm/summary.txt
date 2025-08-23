@@ -1,0 +1,27 @@
+
+Backtest Summary — 1–3DTE ATM CALLs (prefer OTM) + direct integer-share buys
+Rule: Sell new call Every eligible day; 1–3 DTE ATM (prefer OTM)
+Cash deployment: BUY QQQ integer shares whenever cash is available (no CSP)
+Period: 2021-07-26 → 2025-08-22
+--------------------------------------------------
+Option premium collected (CALL): $1,504,787.30
+CALL assignment count:           224
+CALL total assignment loss:      $1,537,553.50
+Net premium after CALL loss:     $-32,766.20
+
+Days holding ≥100 shares w/o CC: 349  (out of 1025, 34.0%)
+Final equity (Strategy):    $870,497.02
+Final equity (DCA):         $821,926.50
+Total invested capital:     $540,000.00
+
+Total return (Strategy):    61.20%
+Total return (DCA):         52.21%
+CAGR (Strategy):            12.43%
+CAGR (DCA):                 10.85%
+
+Sharpe (Strategy):          1.24
+Sharpe (DCA):               1.15
+
+Excess over DCA:            $48,570.52
+Excess per year:            $11,914.14
+--------------------------------------------------

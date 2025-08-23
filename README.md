@@ -173,7 +173,7 @@ train/make_put_signals_single.py # generated put signals for hedge
 ### Run-Backtests
 
 ```bash
-python covered_call.py
+python scripts/covered_call.py
 ```
 
 Outputs will appear under:

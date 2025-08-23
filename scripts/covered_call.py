@@ -35,24 +35,15 @@ DCA_AMOUNT = 15000
 TRADING_DAYS_PER_YEAR = 252
 RISK_FREE_ANNUAL = 0.00
 
-# ---- Strategy toggles ----
-# 只在某类开盘缺口日卖出：二选一（或都为 False 表示每日可卖）
-SELL_ONLY_ON_GAP_DOWN = False
-SELL_ONLY_ON_GAP_UP   = False   # <<< 你要的“高开才卖”，默认开启
 
+SELL_ONLY_ON_GAP_DOWN = False
+SELL_ONLY_ON_GAP_UP   = False   
 # DTE 窗口
 DTE_MIN, DTE_MAX = 28, 31
 
 # Strike floor 机制
 USE_STRIKE_FLOOR = True
 STRIKE_FLOOR_PCT = 0.07  # floor = 7% OTM
-
-# ============================
-# Helpers
-# ============================
-
-
-
 
 # ============================
 # Load Data
@@ -144,6 +135,7 @@ for i, current_date in enumerate(dates):
         dividend_per_share = float(div_row["dividend"].values[0])
         credited = dividend_per_share * shares
         cash += credited
+        cash_bh += shares_bh * dividend_per_share
         log_lines.append(f"[{current_date.date()}] 📦 Dividend credited +${credited:,.2f} (${dividend_per_share:.4f}/share on {shares} shares)")
 
     # 3) Handle expirations

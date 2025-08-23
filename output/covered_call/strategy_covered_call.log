@@ -94,31 +94,32 @@
 [2025-07-25] 💰 Sold CALL +$546.00 @ strike $605.00, Δ=0.045, expiry 2025-08-22, contracts 14 (reason: Gap-Down day, pick=floor-enforced, floor=7%)
 [2025-07-31] 💰 Contribution +$15,000, Cash balance (Strategy): $58,506.79
 [2025-07-31] 🛒 Bought 100 shares (cash deployment) @ $574.54
+[2025-08-22] 💰 Sold CALL +$1,173.75 @ strike $605.00, Δ=0.076, expiry 2025-09-19, contracts 15 (reason: Gap-Up day, pick=delta-match)
 
 
 Backtest Summary (Calls only)
 Rule: Sell new call Every eligible day; monthly 28-31 DTE
-Period: 2021-07-26 → 2025-08-21
+Period: 2021-07-26 → 2025-08-22
 Strike floor: ON (≥ 7%, enforced 19×)
 --------------------------------------------------
-Option premium collected:   $29,030.69
+Option premium collected:   $30,204.44
 Assignment count:           1
 Total assignment loss:      $10,464.00
-Net premium after loss:     $18,566.69
+Net premium after loss:     $19,740.44
 
-Days holding ≥100 shares w/o CC: 3  (out of 1024, 0.3%)
-Final equity (Strategy):    $847,577.79
-Final equity (DCA):         $821,478.50
+Days holding ≥100 shares w/o CC: 3  (out of 1025, 0.3%)
+Final equity (Strategy):    $849,231.54
+Final equity (DCA):         $821,926.50
 Total invested capital:     $540,000.00
 
-Total return (Strategy):    56.96%
-Total return (DCA):         52.13%
-CAGR (Strategy):            11.70%
+Total return (Strategy):    57.27%
+Total return (DCA):         52.21%
+CAGR (Strategy):            11.75%
 CAGR (DCA):                 10.85%
 
-Sharpe (Strategy):          1.19
+Sharpe (Strategy):          1.20
 Sharpe (DCA):               1.15
 
-Excess over DCA:            $26,099.29
-Excess per year:            $6,406.35
+Excess over DCA:            $27,305.04
+Excess per year:            $6,697.81
 --------------------------------------------------
