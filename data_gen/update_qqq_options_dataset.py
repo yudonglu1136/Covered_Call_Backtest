@@ -4,8 +4,13 @@ import pandas as pd
 import pandas_market_calendars as mcal
 from datetime import datetime, timedelta, date
 from pathlib import Path
-from option_utils import fetch_and_calculate_iv_delta  # your encapsulated fetch function
 
+import sys
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+
+from src.option_utils import (
+    fetch_and_calculate_iv_delta
+)
 TICKER = "QQQ"
 
 # === Robust pathing: resolve data/ based on this script's location ===

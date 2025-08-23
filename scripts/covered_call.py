@@ -15,7 +15,14 @@ import math
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import sys
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
+from src.quant_utils import (
+    normalize_date_series,
+    iv_to_delta, price_on_or_before, shares_affordable_for_put,
+    sharpe_ratio,shares_affordable,deploy_cash_into_shares
+)
 # ============================
 # Config
 # ============================
@@ -43,49 +50,19 @@ STRIKE_FLOOR_PCT = 0.07  # floor = 7% OTM
 # ============================
 # Helpers
 # ============================
-def normalize_date_series(s: pd.Series) -> pd.Series:
-    return pd.to_datetime(s).dt.normalize()
 
-def iv_to_delta(iv: float, steepness: float = 10, mid: float = 0.27,
-                min_delta: float = 0.018, max_delta: float = 0.15) -> float:
-    norm = 1.0 / (1.0 + math.exp(-steepness * (mid - float(iv))))
-    delta_val = min_delta + (max_delta - min_delta) * norm
-    return round(float(delta_val), 4)
 
-def price_on_or_before(idx_price: pd.DataFrame, ts: pd.Timestamp, current_fallback: float) -> float:
-    if ts in idx_price.index:
-        return float(idx_price.loc[ts, "Open"])
-    earlier = idx_price.index[idx_price.index <= ts]
-    if len(earlier) > 0:
-        return float(idx_price.loc[earlier[-1], "Open"])
-    return float(current_fallback)
 
-def shares_affordable(cash: float, price: float) -> int:
-    lots = int(cash // price) // 100
-    return int(lots * 100)
-
-def deploy_cash_into_shares(cash: float, shares: int, price: float):
-    lots_shares = shares_affordable(cash, price)
-    if lots_shares > 0:
-        cost = lots_shares * price
-        return cash - cost, shares + lots_shares, lots_shares
-    return cash, shares, 0
-
-def sharpe_ratio(equity_curve: pd.Series, rf_annual: float = 0.0, periods_per_year: int = 252) -> float:
-    rets = equity_curve.pct_change().dropna()
-    if rets.empty: return 0.0
-    rf_per_period = rf_annual / periods_per_year
-    excess = rets - rf_per_period
-    std = excess.std()
-    if std == 0 or np.isnan(std): return 0.0
-    return float(excess.mean() / std * np.sqrt(periods_per_year))
 
 # ============================
 # Load Data
 # ============================
-df_options = pd.read_csv("data/options_with_iv_delta.csv")
-price_raw  = pd.read_csv("data/QQQ_ohlcv_1d.csv")  # has: date, open, high, low, close, ...
-div_df     = pd.read_csv("data/QQQ_dividends.csv")
+
+DATA_DIR = Path("data")
+
+df_options = pd.read_csv(DATA_DIR / "options_with_iv_delta.csv")
+price_raw  = pd.read_csv(DATA_DIR / "QQQ_ohlcv_1d.csv")  # has: date, open, high, low, close, ...
+div_df     = pd.read_csv(DATA_DIR / "QQQ_dividends.csv")
 
 # Normalize
 df_options["date"] = normalize_date_series(df_options["date"])

@@ -21,6 +21,14 @@ import math
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import sys
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+
+from src.quant_utils import (
+    parse_date_or_none, open_hedge_contracts, normalize_date_series,
+    iv_to_delta, price_on_or_before, shares_affordable_for_put,
+    sharpe_ratio, prep_price_df, compute_mdd, fmt_currency
+)
 
 # ============================
 # Config
@@ -58,63 +66,11 @@ SELL_SLIPPAGE_PCT = 0.10                 # short options sell: received = premiu
 # ============================
 # Helpers
 # ============================
-def parse_date_or_none(x):
-    if x is None: return None
-    if isinstance(x, str) and x.strip() == "": return None
-    return pd.to_datetime(x).normalize()
+
 
 START_TS = parse_date_or_none(START_DATE)
 END_TS   = parse_date_or_none(END_DATE)
 
-def open_hedge_contracts(active_hedges) -> int:
-    return int(sum(int(h.get("contracts", 1)) for h in active_hedges if not h.get("settled", False)))
-
-def normalize_date_series(s: pd.Series) -> pd.Series:
-    return pd.to_datetime(s, errors="coerce").dt.normalize()
-
-def iv_to_delta(iv: float, steepness: float = 10, mid: float = 0.27,
-                min_delta: float = 0.018, max_delta: float = 0.15) -> float:
-    norm = 1.0 / (1.0 + math.exp(-steepness * (mid - float(iv))))
-    delta_val = min_delta + (max_delta - min_delta) * norm
-    return round(float(delta_val), 4)
-
-def price_on_or_before(idx_price: pd.DataFrame, ts: pd.Timestamp, current_fallback: float) -> float:
-    if ts in idx_price.index:
-        return float(idx_price.loc[ts, "Open"])
-    earlier = idx_price.index[idx_price.index <= ts]
-    if len(earlier) > 0:
-        return float(idx_price.loc[earier[-1], "Open"])  # noqa: F821 (kept from original typo guard)
-    return float(current_fallback)
-
-def shares_affordable_for_put(cash_free: float, strike: float) -> int:
-    if strike <= 0: return 0
-    return int(cash_free // (strike * 100))
-
-def sharpe_ratio(equity_curve: pd.Series, rf_annual: float = 0.0, periods_per_year: int = 252) -> float:
-    rets = equity_curve.pct_change().dropna()
-    if rets.empty: return 0.0
-    rf_per_period = rf_annual / periods_per_year
-    excess = rets - rf_per_period
-    std = excess.std()
-    if std == 0 or np.isnan(std): return 0.0
-    return float(excess.mean() / std * np.sqrt(periods_per_year))
-
-def prep_price_df(raw: pd.DataFrame) -> pd.DataFrame:
-    if "date" not in raw.columns:
-        raise KeyError(f"'date' column not found: {list(raw.columns)}")
-    if "Open" not in raw.columns:
-        if "open" in raw.columns:
-            raw = raw.rename(columns={"open": "Open"})
-        else:
-            for alt in ["Close","close","Adj Close","adj_close","adjClose"]:
-                if alt in raw.columns:
-                    raw = raw.rename(columns={alt: "Open"})
-                    break
-    if "Open" not in raw.columns:
-        raise KeyError(f"No 'Open' or 'open'-like column found: {list(raw.columns)}")
-    raw["date"] = normalize_date_series(raw["date"])
-    raw["Open"] = pd.to_numeric(raw["Open"], errors="coerce")
-    return raw[["date","Open"]].dropna()
 
 def pick_atm_option(df_chain: pd.DataFrame, spot: float, d1: int, d2: int):
     def _pick(df):
@@ -138,20 +94,7 @@ def pick_atm_option(df_chain: pd.DataFrame, spot: float, d1: int, d2: int):
     pick = _pick(df)
     return pick
 
-def compute_mdd(curve: pd.Series):
-    if curve.empty: return 0.0, None, None, None
-    roll_max = curve.cummax()
-    dd = curve / roll_max - 1.0
-    trough_date = dd.idxmin()
-    mdd = float(dd.loc[trough_date])
-    peak_date = curve.loc[:trough_date].idxmax()
-    prior_peak_val = float(curve.loc[peak_date])
-    rec = curve.loc[trough_date:]
-    rec_idx = rec[rec >= prior_peak_val]
-    recovery_date = rec_idx.index[0] if not rec_idx.empty else None
-    return mdd, peak_date, trough_date, recovery_date
 
-def fmt_currency(x): return f"${x:,.2f}"
 
 # ============================
 # Load Data
@@ -677,6 +620,5 @@ with open(html_path, "w", encoding="utf-8") as f: f.write(html)
 
 print(f"Figures saved: {main_png}, {tqqq_png}, {hedge_png}, {yr_png}")
 print(f"HTML report saved: {html_path}")
-
 
 
