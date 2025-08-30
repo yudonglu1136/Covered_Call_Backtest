@@ -1,125 +1,154 @@
-[2021-07-26] 🛒 Bought 800 shares (cash deployment) @ $367.49
-[2021-07-26] 💰 Sold CALL +$184.00 @ strike $394.00, Δ=0.033, expiry 2021-08-23, contracts 8 (reason: Gap-Down day, pick=floor-enforced, floor=7%)
-[2021-08-23] 💰 Sold CALL +$232.00 @ strike $395.00, Δ=0.041, expiry 2021-09-22, contracts 8 (reason: Gap-Up day, pick=floor-enforced, floor=7%)
-[2021-09-20] 📦 Dividend credited +$331.20 ($0.4140/share on 800 shares)
-[2021-09-22] 💰 Sold CALL +$344.00 @ strike $393.00, Δ=0.053, expiry 2021-10-22, contracts 8 (reason: Gap-Up day, pick=floor-enforced, floor=7%)
-[2021-10-22] 💰 Contribution +$15,000, Cash balance (Strategy): $22,099.20
-[2021-10-22] 💰 Sold CALL +$128.00 @ strike $404.00, Δ=0.024, expiry 2021-11-19, contracts 8 (reason: Gap-Down day, pick=floor-enforced, floor=7%)
-[2021-11-19] 💰 Sold CALL +$272.00 @ strike $434.00, Δ=0.040, expiry 2021-12-17, contracts 8 (reason: Gap-Up day, pick=delta-match)
-[2021-12-17] 💰 Sold CALL +$538.64 @ strike $416.00, Δ=0.064, expiry 2022-01-14, contracts 8 (reason: Gap-Down day, pick=delta-match)
-[2021-12-20] 📦 Dividend credited +$392.80 ($0.4910/share on 800 shares)
-[2022-01-14] 💰 Sold CALL +$607.12 @ strike $408.00, Δ=0.071, expiry 2022-02-14, contracts 8 (reason: Gap-Down day, pick=delta-match)
-[2022-01-24] 💰 Contribution +$15,000, Cash balance (Strategy): $39,037.76
-[2022-01-24] 🛒 Bought 100 shares (cash deployment) @ $345.90
-[2022-02-14] 💰 Sold CALL +$450.00 @ strike $386.00, Δ=0.048, expiry 2022-03-14, contracts 9 (reason: Gap-Down day, pick=delta-match)
-[2022-03-14] 💰 Sold CALL +$439.92 @ strike $365.00, Δ=0.045, expiry 2022-04-14, contracts 9 (reason: Gap-Down day, pick=delta-match)
-[2022-03-21] 📦 Dividend credited +$390.60 ($0.4340/share on 900 shares)
-[2022-04-14] 💰 Sold CALL +$821.79 @ strike $371.00, Δ=0.086, expiry 2022-05-13, contracts 9 (reason: Gap-Up day, pick=floor-enforced, floor=7%)
-[2022-04-25] 💰 Contribution +$15,000, Cash balance (Strategy): $21,549.57
-[2022-05-13] 💰 Sold CALL +$376.56 @ strike $345.00, Δ=0.040, expiry 2022-06-10, contracts 9 (reason: Gap-Up day, pick=delta-match)
-[2022-06-10] 💰 Sold CALL +$558.00 @ strike $329.00, Δ=0.059, expiry 2022-07-11, contracts 9 (reason: Gap-Down day, pick=delta-match)
-[2022-06-21] 📦 Dividend credited +$474.30 ($0.5270/share on 900 shares)
-[2022-07-11] 💰 Sold CALL +$474.39 @ strike $325.00, Δ=0.057, expiry 2022-08-08, contracts 9 (reason: Gap-Down day, pick=delta-match)
-[2022-07-26] 💰 Contribution +$15,000, Cash balance (Strategy): $38,432.82
-[2022-07-26] 🛒 Bought 100 shares (cash deployment) @ $298.53
-[2022-08-08] 💰 Sold CALL +$535.00 @ strike $355.00, Δ=0.057, expiry 2022-09-06, contracts 10 (reason: Gap-Up day, pick=delta-match)
-[2022-09-06] 💰 Sold CALL +$650.70 @ strike $331.00, Δ=0.063, expiry 2022-10-07, contracts 10 (reason: Gap-Up day, pick=delta-match)
-[2022-09-19] 📦 Dividend credited +$519.00 ($0.5190/share on 1000 shares)
-[2022-10-07] 💰 Sold CALL +$418.10 @ strike $313.00, Δ=0.044, expiry 2022-11-04, contracts 10 (reason: Gap-Down day, pick=delta-match)
-[2022-10-24] 💰 Contribution +$15,000, Cash balance (Strategy): $25,702.62
-[2022-11-04] 💰 Sold CALL +$613.10 @ strike $299.00, Δ=0.065, expiry 2022-12-02, contracts 10 (reason: Gap-Up day, pick=delta-match)
-[2022-12-02] 💰 Sold CALL +$401.20 @ strike $320.00, Δ=0.051, expiry 2022-12-30, contracts 10 (reason: Gap-Down day, pick=delta-match)
-[2022-12-19] 📦 Dividend credited +$655.00 ($0.6550/share on 1000 shares)
-[2022-12-20] 🛒 Bought 100 shares (cash deployment) @ $268.56
-[2022-12-30] 💰 Sold CALL +$542.30 @ strike $292.00, Δ=0.064, expiry 2023-01-27, contracts 11 (reason: Gap-Down day, pick=delta-match)
-[2023-01-25] 💰 Contribution +$15,000, Cash balance (Strategy): $16,058.22
-[2023-01-27] 💰 Sold CALL +$316.47 @ strike $330.00, Δ=0.037, expiry 2023-02-24, contracts 11 (reason: Gap-Down day, pick=delta-match)
-[2023-02-24] 💰 Sold CALL +$720.28 @ strike $319.00, Δ=0.076, expiry 2023-03-24, contracts 11 (reason: Gap-Down day, pick=delta-match)
-[2023-03-20] 📦 Dividend credited +$519.20 ($0.4720/share on 1100 shares)
-[2023-03-24] 💰 Sold CALL +$384.56 @ strike $340.00, Δ=0.047, expiry 2023-04-21, contracts 11 (reason: Gap-Down day, pick=delta-match)
-[2023-04-21] 💰 Sold CALL +$385.99 @ strike $341.00, Δ=0.052, expiry 2023-05-19, contracts 11 (reason: Gap-Down day, pick=delta-match)
-[2023-04-26] 💰 Contribution +$15,000, Cash balance (Strategy): $33,384.72
-[2023-04-26] 🛒 Bought 100 shares (cash deployment) @ $313.44
-[2023-05-19] 💰 Sold CALL +$283.80 @ strike $364.00, Δ=0.037, expiry 2023-06-16, contracts 12 (reason: Gap-Up day, pick=delta-match)
-[2023-06-16] ⚠️ CALL assigned: -1200 shares @ $364.00
-[2023-06-16] 🔁 Post-assignment repurchase 1100 shares @ $372.72
-[2023-06-20] 📦 Dividend credited +$554.40 ($0.5040/share on 1100 shares)
-[2023-06-20] 💰 Sold CALL +$474.54 @ strike $402.00, Δ=0.049, expiry 2023-07-21, contracts 11 (reason: Gap-Down day, pick=delta-match)
-[2023-07-21] 💰 Sold CALL +$364.43 @ strike $410.00, Δ=0.043, expiry 2023-08-18, contracts 11 (reason: Gap-Up day, pick=delta-match)
-[2023-07-27] 💰 Contribution +$15,000, Cash balance (Strategy): $45,525.89
-[2023-07-27] 🛒 Bought 100 shares (cash deployment) @ $383.07
-[2023-08-18] 💰 Sold CALL +$455.16 @ strike $388.00, Δ=0.048, expiry 2023-09-15, contracts 12 (reason: Gap-Down day, pick=delta-match)
-[2023-09-15] 💰 Sold CALL +$143.16 @ strike $404.00, Δ=0.021, expiry 2023-10-13, contracts 12 (reason: Gap-Down day, pick=floor-enforced, floor=7%)
-[2023-09-18] 📦 Dividend credited +$643.20 ($0.5360/share on 1200 shares)
-[2023-10-13] 💰 Sold CALL +$292.32 @ strike $400.00, Δ=0.035, expiry 2023-11-10, contracts 12 (reason: Gap-Up day, pick=floor-enforced, floor=7%)
-[2023-10-25] 💰 Contribution +$15,000, Cash balance (Strategy): $23,752.73
-[2023-11-10] 💰 Sold CALL +$720.24 @ strike $400.00, Δ=0.075, expiry 2023-12-08, contracts 12 (reason: Gap-Up day, pick=delta-match)
-[2023-12-08] 💰 Sold CALL +$204.00 @ strike $426.00, Δ=0.025, expiry 2024-01-05, contracts 12 (reason: Gap-Down day, pick=delta-match)
-[2023-12-18] 📦 Dividend credited +$969.60 ($0.8080/share on 1200 shares)
-[2023-12-27] 📦 Dividend credited +$259.20 ($0.2160/share on 1200 shares)
-[2024-01-05] 💰 Sold CALL +$602.40 @ strike $424.78, Δ=0.063, expiry 2024-02-02, contracts 12 (reason: Gap-Up day, pick=floor-enforced, floor=7%)
-[2024-01-26] 💰 Contribution +$15,000, Cash balance (Strategy): $41,508.17
-[2024-02-02] 💰 Sold CALL +$782.28 @ strike $455.00, Δ=0.074, expiry 2024-03-01, contracts 12 (reason: Gap-Up day, pick=delta-match)
-[2024-03-05] 💰 Sold CALL +$510.60 @ strike $475.00, Δ=0.048, expiry 2024-04-05, contracts 12 (reason: Gap-Down day, pick=floor-enforced, floor=7%)
-[2024-03-18] 📦 Dividend credited +$687.60 ($0.5730/share on 1200 shares)
-[2024-04-05] 💰 Sold CALL +$746.16 @ strike $470.00, Δ=0.069, expiry 2024-05-03, contracts 12 (reason: Gap-Up day, pick=delta-match)
-[2024-04-08] 🛒 Bought 100 shares (cash deployment) @ $441.41
-[2024-04-26] 💰 Contribution +$15,000, Cash balance (Strategy): $15,093.81
-[2024-05-03] 💰 Sold CALL +$679.51 @ strike $465.00, Δ=0.063, expiry 2024-05-31, contracts 13 (reason: Gap-Up day, pick=floor-enforced, floor=7%)
-[2024-05-31] 💰 Sold CALL +$299.00 @ strike $484.00, Δ=0.033, expiry 2024-06-28, contracts 13 (reason: Gap-Up day, pick=floor-enforced, floor=7%)
-[2024-06-24] 📦 Dividend credited +$990.60 ($0.7620/share on 1300 shares)
-[2024-06-28] 💰 Sold CALL +$381.42 @ strike $520.00, Δ=0.036, expiry 2024-07-26, contracts 13 (reason: Gap-Up day, pick=floor-enforced, floor=7%)
-[2024-07-26] 💰 Sold CALL +$1,527.50 @ strike $498.00, Δ=0.097, expiry 2024-08-23, contracts 13 (reason: Gap-Up day, pick=delta-match)
-[2024-07-29] 💰 Contribution +$15,000, Cash balance (Strategy): $33,971.84
-[2024-08-23] 💰 Sold CALL +$988.26 @ strike $515.00, Δ=0.073, expiry 2024-09-20, contracts 13 (reason: Gap-Up day, pick=delta-match)
-[2024-09-20] 💰 Sold CALL +$467.74 @ strike $525.00, Δ=0.039, expiry 2024-10-18, contracts 13 (reason: Gap-Down day, pick=delta-match)
-[2024-09-23] 📦 Dividend credited +$880.10 ($0.6770/share on 1300 shares)
-[2024-10-18] 💰 Sold CALL +$298.09 @ strike $545.00, Δ=0.025, expiry 2024-11-15, contracts 13 (reason: Gap-Up day, pick=delta-match)
-[2024-10-25] 💰 Contribution +$15,000, Cash balance (Strategy): $51,606.03
-[2024-10-25] 🛒 Bought 100 shares (cash deployment) @ $495.14
-[2024-11-15] 💰 Sold CALL +$480.62 @ strike $540.00, Δ=0.039, expiry 2024-12-13, contracts 14 (reason: Gap-Down day, pick=floor-enforced, floor=7%)
-[2024-12-13] 💰 Sold CALL +$318.64 @ strike $570.00, Δ=0.030, expiry 2025-01-10, contracts 14 (reason: Gap-Up day, pick=floor-enforced, floor=7%)
-[2024-12-23] 📦 Dividend credited +$1,169.00 ($0.8350/share on 1400 shares)
-[2025-01-10] 💰 Sold CALL +$1,050.42 @ strike $547.50, Δ=0.071, expiry 2025-02-07, contracts 14 (reason: Gap-Down day, pick=floor-enforced, floor=7%)
-[2025-01-29] 💰 Contribution +$15,000, Cash balance (Strategy): $20,110.71
-[2025-02-07] 💰 Sold CALL +$397.04 @ strike $570.00, Δ=0.033, expiry 2025-03-07, contracts 14 (reason: Gap-Up day, pick=floor-enforced, floor=7%)
-[2025-03-07] 💰 Sold CALL +$1,730.26 @ strike $529.00, Δ=0.096, expiry 2025-04-04, contracts 14 (reason: Gap-Down day, pick=delta-match)
-[2025-03-24] 📦 Dividend credited +$1,002.40 ($0.7160/share on 1400 shares)
-[2025-04-04] 💰 Sold CALL +$1,193.92 @ strike $492.00, Δ=0.058, expiry 2025-05-02, contracts 14 (reason: Gap-Down day, pick=delta-match)
-[2025-04-30] 💰 Contribution +$15,000, Cash balance (Strategy): $39,434.33
-[2025-05-02] 💰 Sold CALL +$1,385.58 @ strike $529.00, Δ=0.082, expiry 2025-05-30, contracts 14 (reason: Gap-Up day, pick=delta-match)
-[2025-05-30] 💰 Sold CALL +$714.42 @ strike $560.00, Δ=0.053, expiry 2025-06-27, contracts 14 (reason: Gap-Down day, pick=floor-enforced, floor=7%)
-[2025-06-23] 📦 Dividend credited +$827.40 ($0.5910/share on 1400 shares)
-[2025-06-27] 💰 Sold CALL +$599.06 @ strike $590.00, Δ=0.046, expiry 2025-07-25, contracts 14 (reason: Gap-Up day, pick=floor-enforced, floor=7%)
-[2025-07-25] 💰 Sold CALL +$546.00 @ strike $605.00, Δ=0.045, expiry 2025-08-22, contracts 14 (reason: Gap-Down day, pick=floor-enforced, floor=7%)
-[2025-07-31] 💰 Contribution +$15,000, Cash balance (Strategy): $58,506.79
-[2025-07-31] 🛒 Bought 100 shares (cash deployment) @ $574.54
-[2025-08-22] 💰 Sold CALL +$1,173.75 @ strike $605.00, Δ=0.076, expiry 2025-09-19, contracts 15 (reason: Gap-Up day, pick=delta-match)
+[2021-07-26] 🛒 Idle buy 800 sh @ $367.49 | locked $0.00
+[2021-07-26] 💰 Sold CALL +$184.00 @ strike $394.00, Δ=0.033, expiry 2021-08-23, contracts 8 (reason: Gap-Down day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=368.49, dd=0.3%)
+[2021-08-23] 💰 Sold CALL +$232.00 @ strike $395.00, Δ=0.041, expiry 2021-09-22, contracts 8 (reason: Gap-Up day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=373.23, dd=1.2%)
+[2021-09-20] 📦 Dividend +$331.20 ($0.4140/sh × 800)
+[2021-09-22] 💰 Sold CALL +$344.00 @ strike $393.00, Δ=0.053, expiry 2021-10-22, contracts 8 (reason: Gap-Up day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=382.11, dd=3.9%)
+[2021-10-22] 💰 Contribution +$0, Cash (Strategy): $7,099.20
+[2021-10-22] 💰 Sold CALL +$128.00 @ strike $404.00, Δ=0.024, expiry 2021-11-19, contracts 8 (reason: Gap-Down day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=382.11, dd=1.6%)
+[2021-11-19] 💰 Sold CALL +$272.00 @ strike $434.00, Δ=0.040, expiry 2021-12-17, contracts 8 (reason: Gap-Up day, pick=delta-match, dyn_floor=7%; 60dHi=403.99, dd=0.1%)
+[2021-12-17] 💰 Sold CALL +$538.64 @ strike $416.00, Δ=0.064, expiry 2022-01-14, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=403.99, dd=5.1%)
+[2021-12-20] 📦 Dividend +$392.80 ($0.4910/sh × 800)
+[2022-01-14] 💰 Sold CALL +$607.12 @ strike $408.00, Δ=0.071, expiry 2022-02-14, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=403.99, dd=7.2%)
+[2022-01-21] ✅ Early close (TP 80%): buyback $0.14 vs sold $0.76, contracts 8, days_left 24
+[2022-01-21] 💰 Sold CALL +$345.68 @ strike $400.00, Δ=0.040, expiry 2022-02-18, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=403.99, dd=11.0%)
+[2022-01-24] 💰 Contribution +$0, Cash (Strategy): $9,271.44
+[2022-02-18] 💰 Sold CALL +$328.00 @ strike $382.00, Δ=0.043, expiry 2022-03-21, contracts 8 (reason: Gap-Up day, pick=delta-match, dyn_floor=7%; 60dHi=403.99, dd=14.3%)
+[2022-03-21] 📦 Dividend +$347.20 ($0.4340/sh × 800)
+[2022-03-21] 💰 Sold CALL +$472.40 @ strike $382.00, Δ=0.060, expiry 2022-04-18, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=403.99, dd=13.3%)
+[2022-04-18] 💰 Sold CALL +$503.84 @ strike $370.00, Δ=0.064, expiry 2022-05-16, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=403.48, dd=16.4%)
+[2022-04-25] 💰 Contribution +$0, Cash (Strategy): $10,922.88
+[2022-05-16] 💰 Sold CALL +$448.00 @ strike $343.00, Δ=0.051, expiry 2022-06-15, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=403.48, dd=25.6%)
+[2022-06-15] 💰 Sold CALL +$376.00 @ strike $328.00, Δ=0.044, expiry 2022-07-15, contracts 8 (reason: Gap-Up day, pick=delta-match, dyn_floor=7%; 60dHi=371.19, dd=24.7%)
+[2022-06-21] 📦 Dividend +$421.60 ($0.5270/sh × 800)
+[2022-07-15] 💰 Sold CALL +$385.60 @ strike $325.00, Δ=0.053, expiry 2022-08-12, contracts 8 (reason: Gap-Up day, pick=delta-match, dyn_floor=7%; 60dHi=371.19, dd=21.9%)
+[2022-07-26] 💰 Contribution +$0, Cash (Strategy): $12,554.08
+[2022-08-12] ⚠️ Assigned: -800 sh @ $325.00
+[2022-08-12] 🗓️ T+2 repurchase on 2022-08-16, locked $260,000.00
+[2022-08-12] ⏸️ Skip buying due to same-day assignment; T+2 scheduled.
+[2022-08-16] 🔓 Unlock cash $260,000.00 for repurchase.
+[2022-08-16] 🔁 T+2 repurchase: +800 sh @ $332.06
+[2022-08-16] 💰 Sold CALL +$429.52 @ strike $366.00, Δ=0.056, expiry 2022-09-16, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=371.19, dd=10.5%)
+[2022-08-22] ✅ Early close (TP 80%): buyback $0.06 vs sold $0.54, contracts 8, days_left 25
+[2022-08-22] 💰 Sold CALL +$547.20 @ strike $346.00, Δ=0.072, expiry 2022-09-19, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=369.30, dd=13.8%)
+[2022-09-19] 📦 Dividend +$415.20 ($0.5190/sh × 800)
+[2022-09-19] 💰 Sold CALL +$400.00 @ strike $328.00, Δ=0.051, expiry 2022-10-17, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=333.06, dd=14.1%)
+[2022-10-17] 💰 Sold CALL +$324.56 @ strike $315.00, Δ=0.040, expiry 2022-11-14, contracts 8 (reason: Gap-Up day, pick=delta-match, dyn_floor=7%; 60dHi=333.06, dd=19.9%)
+[2022-10-24] 💰 Contribution +$0, Cash (Strategy): $8,978.24
+[2022-11-14] 💰 Sold CALL +$404.96 @ strike $325.00, Δ=0.052, expiry 2022-12-14, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=333.06, dd=14.2%)
+[2022-12-14] 💰 Sold CALL +$497.28 @ strike $320.00, Δ=0.066, expiry 2023-01-13, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=333.06, dd=13.5%)
+[2022-12-16] ✅ Early close (TP 80%): buyback $0.10 vs sold $0.62, contracts 8, days_left 28
+[2022-12-16] 💰 Sold CALL +$521.60 @ strike $302.00, Δ=0.076, expiry 2023-01-13, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=333.06, dd=17.1%)
+[2022-12-19] 📦 Dividend +$524.00 ($0.6550/sh × 800)
+[2023-01-13] 💰 Sold CALL +$400.00 @ strike $304.00, Δ=0.066, expiry 2023-02-10, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=320.58, dd=13.8%)
+[2023-01-25] 💰 Contribution +$0, Cash (Strategy): $11,248.48
+[2023-02-10] 💰 Sold CALL +$466.64 @ strike $332.00, Δ=0.064, expiry 2023-03-10, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=311.72, dd=3.9%)
+[2023-02-17] ✅ Early close (TP 80%): buyback $0.10 vs sold $0.58, contracts 8, days_left 21
+[2023-02-17] 💰 Sold CALL +$346.00 @ strike $330.00, Δ=0.055, expiry 2023-03-17, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=311.72, dd=3.4%)
+[2023-02-24] ✅ Early close (TP 80%): buyback $0.06 vs sold $0.43, contracts 8, days_left 21
+[2023-02-24] 💰 Sold CALL +$523.84 @ strike $319.00, Δ=0.076, expiry 2023-03-24, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=311.72, dd=6.4%)
+[2023-03-20] 📦 Dividend +$377.60 ($0.4720/sh × 800)
+[2023-03-24] 💰 Sold CALL +$279.68 @ strike $340.00, Δ=0.047, expiry 2023-04-21, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=311.72, dd=0.8%)
+[2023-04-21] 💰 Sold CALL +$280.72 @ strike $341.00, Δ=0.052, expiry 2023-05-19, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=320.93, dd=1.6%)
+[2023-04-26] 💰 Contribution +$0, Cash (Strategy): $13,390.72
+[2023-05-19] 💰 Sold CALL +$189.20 @ strike $364.00, Δ=0.037, expiry 2023-06-16, contracts 8 (reason: Gap-Up day, pick=delta-match, dyn_floor=7%; 60dHi=337.27, dd=-0.1%)
+[2023-06-16] ⚠️ Assigned: -800 sh @ $364.00
+[2023-06-16] 🗓️ T+2 repurchase on 2023-06-21, locked $291,200.00
+[2023-06-16] ⏸️ Skip buying due to same-day assignment; T+2 scheduled.
+[2023-06-21] 🔓 Unlock cash $291,200.00 for repurchase.
+[2023-06-21] 🔁 T+2 repurchase: +800 sh @ $365.74
+[2023-06-21] 💰 Sold CALL +$395.76 @ strike $396.00, Δ=0.057, expiry 2023-07-21, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=370.26, dd=1.2%)
+[2023-07-21] 💰 Sold CALL +$265.04 @ strike $410.00, Δ=0.043, expiry 2023-08-18, contracts 8 (reason: Gap-Up day, pick=delta-match, dyn_floor=7%; 60dHi=385.74, dd=1.7%)
+[2023-07-27] 💰 Contribution +$0, Cash (Strategy): $12,848.72
+[2023-08-18] 💰 Sold CALL +$303.44 @ strike $388.00, Δ=0.048, expiry 2023-09-15, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=385.74, dd=7.9%)
+[2023-09-15] 💰 Sold CALL +$95.44 @ strike $404.00, Δ=0.021, expiry 2023-10-13, contracts 8 (reason: Gap-Down day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=385.74, dd=2.5%)
+[2023-09-18] 📦 Dividend +$428.80 ($0.5360/sh × 800)
+[2023-09-21] ✅ Early close (TP 80%): buyback $0.02 vs sold $0.12, contracts 8, days_left 22
+[2023-09-21] 💰 Sold CALL +$381.04 @ strike $389.00, Δ=0.059, expiry 2023-10-20, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=385.74, dd=6.5%)
+[2023-10-20] 💰 Sold CALL +$352.16 @ strike $388.00, Δ=0.054, expiry 2023-11-17, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=385.74, dd=6.8%)
+[2023-10-25] 💰 Contribution +$0, Cash (Strategy): $14,393.60
+[2023-10-26] ✅ Early close (TP 80%): buyback $0.08 vs sold $0.44, contracts 8, days_left 22
+[2023-10-26] 💰 Sold CALL +$622.96 @ strike $375.00, Δ=0.083, expiry 2023-11-24, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=385.74, dd=9.5%)
+[2023-11-24] ⚠️ Assigned: -800 sh @ $375.00
+[2023-11-24] 🗓️ T+2 repurchase on 2023-11-28, locked $300,000.00
+[2023-11-24] ⏸️ Skip buying due to same-day assignment; T+2 scheduled.
+[2023-11-28] 🔓 Unlock cash $300,000.00 for repurchase.
+[2023-11-28] 🔁 T+2 repurchase: +800 sh @ $388.41
+[2023-11-28] 💰 Sold CALL +$112.40 @ strike $424.00, Δ=0.022, expiry 2023-12-29, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=390.74, dd=0.6%)
+[2023-12-18] 📦 Dividend +$646.40 ($0.8080/sh × 800)
+[2023-12-27] 📦 Dividend +$172.80 ($0.2160/sh × 800)
+[2023-12-29] 💰 Sold CALL +$128.32 @ strike $444.78, Δ=0.025, expiry 2024-01-26, contracts 8 (reason: Gap-Down day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=411.50, dd=0.1%)
+[2024-01-04] ✅ Early close (TP 80%): buyback $0.03 vs sold $0.16, contracts 8, days_left 22
+[2024-01-04] 💰 Sold CALL +$394.96 @ strike $424.78, Δ=0.062, expiry 2024-02-02, contracts 8 (reason: Gap-Down day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=411.50, dd=3.7%)
+[2024-01-26] 💰 Contribution +$0, Cash (Strategy): $5,659.68
+[2024-02-02] 💰 Sold CALL +$521.52 @ strike $455.00, Δ=0.074, expiry 2024-03-01, contracts 8 (reason: Gap-Up day, pick=delta-match, dyn_floor=7%; 60dHi=429.01, dd=1.2%)
+[2024-03-05] 💰 Sold CALL +$340.40 @ strike $475.00, Δ=0.048, expiry 2024-04-05, contracts 8 (reason: Gap-Down day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=445.61, dd=1.0%)
+[2024-03-18] 📦 Dividend +$458.40 ($0.5730/sh × 800)
+[2024-04-05] 💰 Sold CALL +$497.44 @ strike $470.00, Δ=0.069, expiry 2024-05-03, contracts 8 (reason: Gap-Up day, pick=delta-match, dyn_floor=7%; 60dHi=446.38, dd=2.2%)
+[2024-04-26] 💰 Contribution +$0, Cash (Strategy): $7,477.44
+[2024-05-03] 💰 Sold CALL +$418.16 @ strike $465.00, Δ=0.063, expiry 2024-05-31, contracts 8 (reason: Gap-Up day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=446.38, dd=2.7%)
+[2024-05-31] 💰 Sold CALL +$184.00 @ strike $484.00, Δ=0.033, expiry 2024-06-28, contracts 8 (reason: Gap-Up day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=459.68, dd=1.7%)
+[2024-06-24] 📦 Dividend +$609.60 ($0.7620/sh × 800)
+[2024-06-28] 💰 Sold CALL +$234.72 @ strike $520.00, Δ=0.036, expiry 2024-07-26, contracts 8 (reason: Gap-Up day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=485.21, dd=0.6%)
+[2024-07-26] 💰 Sold CALL +$940.00 @ strike $498.00, Δ=0.097, expiry 2024-08-23, contracts 8 (reason: Gap-Up day, pick=delta-match, dyn_floor=7%; 60dHi=502.96, dd=8.0%)
+[2024-07-29] 💰 Contribution +$0, Cash (Strategy): $9,863.92
+[2024-08-23] 💰 Sold CALL +$608.16 @ strike $515.00, Δ=0.073, expiry 2024-09-20, contracts 8 (reason: Gap-Up day, pick=delta-match, dyn_floor=7%; 60dHi=502.96, dd=4.7%)
+[2024-09-20] 💰 Sold CALL +$287.84 @ strike $525.00, Δ=0.039, expiry 2024-10-18, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=502.96, dd=4.1%)
+[2024-09-23] 📦 Dividend +$541.60 ($0.6770/sh × 800)
+[2024-10-18] 💰 Sold CALL +$183.44 @ strike $545.00, Δ=0.025, expiry 2024-11-15, contracts 8 (reason: Gap-Up day, pick=delta-match, dyn_floor=7%; 60dHi=502.96, dd=1.8%)
+[2024-10-25] 💰 Contribution +$0, Cash (Strategy): $11,484.96
+[2024-11-15] 💰 Sold CALL +$274.64 @ strike $540.00, Δ=0.039, expiry 2024-12-13, contracts 8 (reason: Gap-Down day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=514.14, dd=2.2%)
+[2024-12-13] 💰 Sold CALL +$182.08 @ strike $570.00, Δ=0.030, expiry 2025-01-10, contracts 8 (reason: Gap-Up day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=530.53, dd=0.0%)
+[2024-12-23] 📦 Dividend +$668.00 ($0.8350/sh × 800)
+[2025-01-10] 💰 Sold CALL +$600.24 @ strike $547.50, Δ=0.071, expiry 2025-02-07, contracts 8 (reason: Gap-Down day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=538.17, dd=5.0%)
+[2025-01-29] 💰 Contribution +$0, Cash (Strategy): $13,209.92
+[2025-02-07] 💰 Sold CALL +$226.88 @ strike $570.00, Δ=0.033, expiry 2025-03-07, contracts 8 (reason: Gap-Up day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=538.17, dd=1.5%)
+[2025-03-07] 💰 Sold CALL +$988.72 @ strike $529.00, Δ=0.096, expiry 2025-04-04, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=539.52, dd=9.7%)
+[2025-03-13] ✅ Early close (TP 80%): buyback $0.23 vs sold $1.24, contracts 8, days_left 22
+[2025-03-13] 💰 Sold CALL +$874.00 @ strike $515.00, Δ=0.085, expiry 2025-04-11, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=539.52, dd=11.7%)
+[2025-03-24] 📦 Dividend +$572.80 ($0.7160/sh × 800)
+[2025-04-11] 💰 Sold CALL +$630.48 @ strike $510.00, Δ=0.056, expiry 2025-05-09, contracts 8 (reason: Gap-Down day, pick=delta-match, dyn_floor=7%; 60dHi=539.52, dd=17.6%)
+[2025-04-30] 💰 Contribution +$0, Cash (Strategy): $16,318.80
+[2025-05-09] 💰 Sold CALL +$742.08 @ strike $530.00, Δ=0.079, expiry 2025-06-06, contracts 8 (reason: Gap-Up day, pick=delta-match, dyn_floor=7%; 60dHi=539.52, dd=9.1%)
+[2025-06-10] 💰 Sold CALL +$591.44 @ strike $570.00, Δ=0.072, expiry 2025-07-11, contracts 8 (reason: Gap-Up day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=539.52, dd=1.5%)
+[2025-06-23] 📦 Dividend +$472.80 ($0.5910/sh × 800)
+[2025-07-11] 💰 Sold CALL +$454.64 @ strike $595.00, Δ=0.057, expiry 2025-08-08, contracts 8 (reason: Gap-Down day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=556.25, dd=0.5%)
+[2025-07-31] 💰 Contribution +$0, Cash (Strategy): $18,579.76
+[2025-08-08] 💰 Sold CALL +$223.36 @ strike $615.00, Δ=0.034, expiry 2025-09-05, contracts 8 (reason: Gap-Up day, pick=floor-enforced(7%), dyn_floor=7%; 60dHi=574.55, dd=0.7%)
 
 
 Backtest Summary (Calls only)
-Rule: Sell new call Every eligible day; monthly 28-31 DTE
-Period: 2021-07-26 → 2025-08-22
-Strike floor: ON (≥ 7%, enforced 19×)
+Rules:
+  - Early close: days_left > 20 & profit ≥ 80%
+  - Dynamic floor by 60d high:
+      within 5% -> floor 7%
+      5%~8% drop -> floor 5%
+      >8% drop -> skip sell
+  - T+2 repurchase after assignment (cash locked until T+2)
+Period: 2021-07-26 → 2025-08-29
 --------------------------------------------------
-Option premium collected:   $30,204.44
-Assignment count:           1
-Total assignment loss:      $10,464.00
-Net premium after loss:     $19,740.44
+Option premium collected:    $23,832.24
+Buyback cost (early close):  $653.92
+Assignment count:            3
+Total assignment loss:       $19,636.00
+Net premium after costs:     $3,542.32
+Early take-profit count:     9
+Floor used 7% days:          40
+Floor used 5% days:          23
+Skip (deep drop >8%) days:   0
 
-Days holding ≥100 shares w/o CC: 3  (out of 1025, 0.3%)
-Final equity (Strategy):    $849,231.54
-Final equity (DCA):         $821,926.50
-Total invested capital:     $540,000.00
+Days ≥100 sh w/o CC:         4  (out of 1024, 0.4%)
+Final equity (Strategy):     $478,527.12
+Final equity (DCA):          $473,516.00
+Total invested capital:      $300,000.00
 
-Total return (Strategy):    57.27%
-Total return (DCA):         52.21%
-CAGR (Strategy):            11.75%
-CAGR (DCA):                 10.85%
+Total return (Strategy):     59.51%
+Total return (DCA):          57.84%
+CAGR (Strategy):             12.08%
+CAGR (DCA):                  11.79%
 
-Sharpe (Strategy):          1.20
-Sharpe (DCA):               1.15
+Sharpe (Strategy):           0.61
+Sharpe (DCA):                0.60
 
-Excess over DCA:            $27,305.04
-Excess per year:            $6,697.81
+Excess over DCA:             $5,011.12
+Excess per year:             $1,223.45
 --------------------------------------------------

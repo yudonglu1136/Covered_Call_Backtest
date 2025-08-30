@@ -3,339 +3,314 @@
 [2021-07-29] 💰 Sold CALL +$64.42 @ $387.50 Δ=0.019 exp 2021-08-13 contracts 8
 [2021-08-13] 💰 Sold CALL +$64.42 @ $390.00 Δ=0.019 exp 2021-08-30 contracts 8
 [2021-08-30] 💰 Sold CALL +$86.31 @ $400.00 Δ=0.023 exp 2021-09-17 contracts 8
-[2021-09-02] 🛡️ Buy Hedge PUT id=1 strike $382.00 exp 2021-09-13 cost $409.35
-[2021-09-03] 🛡️ Buy Hedge PUT id=2 strike $379.00 exp 2021-09-15 cost $352.04
-[2021-09-07] 🛡️ Buy Hedge PUT id=3 strike $382.00 exp 2021-09-20 cost $463.09
-[2021-09-08] 🛡️ Buy Hedge PUT id=4 strike $382.00 exp 2021-09-20 cost $588.48
-[2021-09-09] 🛡️ Hedge skipped: cap reached (4/4).
-[2021-09-10] 🛡️ Hedge skipped: cap reached (4/4).
-[2021-09-13] 🛡️ Hedge PUT expired (id=1): strike $382.00, payoff $301.00, ITM=True
-[2021-09-13] 🛡️ Buy Hedge PUT id=5 strike $379.00 exp 2021-09-24 cost $645.90
+[2021-09-07] 🛡️ Buy Hedge PUT id=1 strike $382.00 exp 2021-09-15 cost $337.55
+[2021-09-08] 🛡️ Buy Hedge PUT id=2 strike $382.00 exp 2021-09-15 cost $408.97
+[2021-09-09] 🛡️ Buy Hedge PUT id=3 strike $381.00 exp 2021-09-17 cost $364.62
+[2021-09-10] 🛡️ Buy Hedge PUT id=4 strike $381.00 exp 2021-09-17 cost $412.07
+[2021-09-13] 🛡️ Hedge skipped: cap reached (4/4).
 [2021-09-14] 🛡️ Hedge skipped: cap reached (4/4).
-[2021-09-15] 🛡️ Hedge PUT expired (id=2): strike $379.00, payoff $327.00, ITM=True
-[2021-09-15] 🛡️ Buy Hedge PUT id=6 strike $376.00 exp 2021-09-27 cost $475.43
-[2021-09-16] 🛡️ Hedge skipped: cap reached (4/4).
-[2021-09-17] 🛡️ Hedge skipped: cap reached (4/4).
+[2021-09-15] 🛡️ Hedge PUT expired (id=1): strike $382.00, payoff $627.00, ITM=True
+[2021-09-15] 🛡️ Hedge PUT expired (id=2): strike $382.00, payoff $627.00, ITM=True
+[2021-09-15] 🛡️ Buy Hedge PUT id=5 strike $376.00 exp 2021-09-22 cost $320.06
+[2021-09-17] 🛡️ Hedge PUT expired (id=3): strike $381.00, payoff $318.00, ITM=True
+[2021-09-17] 🛡️ Hedge PUT expired (id=4): strike $381.00, payoff $318.00, ITM=True
 [2021-09-17] 💰 Sold CALL +$47.58 @ $402.00 Δ=0.014 exp 2021-10-04 contracts 8
 [2021-09-20] 📦 Dividend +$331.20 ($0.4140/sh on 800)
-[2021-09-20] 🛡️ Hedge PUT expired (id=3): strike $382.00, payoff $1,454.00, ITM=True
-[2021-09-20] 🛡️ Hedge PUT expired (id=4): strike $382.00, payoff $1,454.00, ITM=True
-[2021-09-20] 🛒 TQQQ buy(FG=12) 122 @ $67.71, cash $19.28
-[2021-09-20] 🛡️ Hedge skipped: need $863.17, have $19.28.
-[2021-09-21] 🛡️ Hedge skipped: need $681.20, have $19.28.
-[2021-09-22] 🛡️ Hedge skipped: need $423.61, have $19.28.
-[2021-09-23] 🛡️ Hedge skipped: need $338.30, have $19.28.
-[2021-09-24] 🛡️ Hedge PUT expired (id=5): strike $379.00, payoff $835.00, ITM=True
-[2021-09-24] 🛡️ Buy Hedge PUT id=7 strike $371.00 exp 2021-10-06 cost $419.62
-[2021-09-27] 🛡️ Hedge PUT expired (id=6): strike $376.00, payoff $580.00, ITM=True
-[2021-09-27] 🛡️ Buy Hedge PUT id=8 strike $370.00 exp 2021-10-08 cost $496.22
-[2021-09-30] 🛒 TQQQ buy(FG=13) 8 @ $63.89, cash $7.33
+[2021-09-20] 🛒 TQQQ buy(FG=12) 114 @ $67.71, cash $5.98
+[2021-09-20] 🛡️ Buy Hedge PUT id=6 strike $367.00 exp 2021-09-27 cost $665.37
+[2021-09-22] 🛡️ Hedge PUT expired (id=5): strike $376.00, payoff $891.00, ITM=True
+[2021-09-23] 🛡️ Buy Hedge PUT id=7 strike $371.00 exp 2021-09-30 cost $324.42
+[2021-09-24] 🛡️ Buy Hedge PUT id=8 strike $371.00 exp 2021-10-01 cost $312.75
+[2021-09-27] 🛡️ Hedge PUT expired (id=6): strike $367.00, payoff $0.00, ITM=False
+[2021-09-28] 🛡️ Buy Hedge PUT id=9 strike $366.00 exp 2021-10-06 cost $858.70
+[2021-09-30] 🛡️ Hedge PUT expired (id=7): strike $371.00, payoff $1,003.00, ITM=True
+[2021-10-01] 🛡️ Hedge PUT expired (id=8): strike $371.00, payoff $1,240.00, ITM=True
+[2021-10-04] 🛒 TQQQ buy(FG=13) 15 @ $62.55, cash $40.48
 [2021-10-04] 💰 Sold CALL +$167.46 @ $381.00 Δ=0.035 exp 2021-10-22 contracts 8
-[2021-10-06] 🛡️ Hedge PUT expired (id=7): strike $371.00, payoff $1,692.00, ITM=True
-[2021-10-08] 🛡️ Hedge PUT expired (id=8): strike $370.00, payoff $592.00, ITM=True
-[2021-10-22] 💰 Contribution +$15,000, Cash: $17,458.78
+[2021-10-06] 🛡️ Hedge PUT expired (id=9): strike $366.00, payoff $1,192.00, ITM=True
+[2021-10-22] 💰 Contribution +$15,000, Cash: $16,399.94
 [2021-10-22] 💰 Sold CALL +$38.00 @ $400.00 Δ=0.012 exp 2021-11-08 contracts 8
 [2021-11-08] 💰 Sold CALL +$249.90 @ $423.00 Δ=0.046 exp 2021-11-26 contracts 8
-[2021-11-17] 🛡️ Buy Hedge PUT id=9 strike $398.00 exp 2021-11-29 cost $491.80
-[2021-11-18] 🛡️ Buy Hedge PUT id=10 strike $400.00 exp 2021-11-29 cost $413.35
-[2021-11-19] 🛡️ Buy Hedge PUT id=11 strike $403.00 exp 2021-12-01 cost $471.51
-[2021-11-22] 🛡️ Buy Hedge PUT id=12 strike $406.00 exp 2021-12-03 cost $554.24
-[2021-11-23] 🛡️ Hedge skipped: cap reached (4/4).
-[2021-11-24] 🛡️ Hedge skipped: cap reached (4/4).
+[2021-11-19] 🛡️ Buy Hedge PUT id=10 strike $403.00 exp 2021-11-26 cost $321.73
+[2021-11-23] 🛡️ Buy Hedge PUT id=11 strike $398.00 exp 2021-12-01 cost $590.70
+[2021-11-24] 🛡️ Buy Hedge PUT id=12 strike $395.00 exp 2021-12-01 cost $480.04
+[2021-11-26] 🛡️ Hedge PUT expired (id=10): strike $403.00, payoff $689.00, ITM=True
+[2021-11-26] 🛡️ Buy Hedge PUT id=13 strike $396.00 exp 2021-12-03 cost $704.60
 [2021-11-26] 💰 Sold CALL +$172.14 @ $420.00 Δ=0.034 exp 2021-12-13 contracts 8
-[2021-11-29] 🛡️ Hedge PUT expired (id=9): strike $398.00, payoff $211.00, ITM=True
-[2021-11-29] 🛡️ Hedge PUT expired (id=10): strike $400.00, payoff $411.00, ITM=True
-[2021-11-29] 🛡️ Buy Hedge PUT id=13 strike $396.00 exp 2021-12-10 cost $660.88
-[2021-12-01] 🛡️ Hedge PUT expired (id=11): strike $403.00, payoff $472.00, ITM=True
-[2021-12-03] 🛡️ Hedge PUT expired (id=12): strike $406.00, payoff $1,469.00, ITM=True
-[2021-12-07] 🛡️ Buy Hedge PUT id=14 strike $393.00 exp 2021-12-20 cost $608.80
-[2021-12-08] 🛡️ Buy Hedge PUT id=15 strike $398.00 exp 2021-12-20 cost $695.04
-[2021-12-10] 🛡️ Hedge PUT expired (id=13): strike $396.00, payoff $0.00, ITM=False
-[2021-12-10] 🛡️ Buy Hedge PUT id=16 strike $397.00 exp 2021-12-22 cost $635.19
+[2021-12-01] 🛡️ Hedge PUT expired (id=11): strike $398.00, payoff $0.00, ITM=False
+[2021-12-01] 🛡️ Hedge PUT expired (id=12): strike $395.00, payoff $0.00, ITM=False
+[2021-12-03] 🛡️ Hedge PUT expired (id=13): strike $396.00, payoff $469.00, ITM=True
+[2021-12-09] 🛡️ Buy Hedge PUT id=14 strike $398.00 exp 2021-12-17 cost $610.61
 [2021-12-13] 💰 Sold CALL +$158.96 @ $422.00 Δ=0.032 exp 2021-12-31 contracts 8
-[2021-12-15] 🛡️ Buy Hedge PUT id=17 strike $388.00 exp 2021-12-27 cost $830.92
+[2021-12-17] 🛡️ Hedge PUT expired (id=14): strike $398.00, payoff $1,467.00, ITM=True
 [2021-12-20] 📦 Dividend +$392.80 ($0.4910/sh on 800)
-[2021-12-20] 🛡️ Hedge PUT expired (id=14): strike $393.00, payoff $1,343.50, ITM=True
-[2021-12-20] 🛡️ Hedge PUT expired (id=15): strike $398.00, payoff $1,843.50, ITM=True
-[2021-12-22] 🛡️ Hedge PUT expired (id=16): strike $397.00, payoff $809.00, ITM=True
-[2021-12-22] 🛡️ Buy Hedge PUT id=18 strike $389.00 exp 2022-01-03 cost $485.10
-[2021-12-23] 🛡️ Buy Hedge PUT id=19 strike $394.00 exp 2022-01-03 cost $326.36
-[2021-12-27] 🛡️ Hedge PUT expired (id=17): strike $388.00, payoff $0.00, ITM=False
-[2021-12-27] 🛡️ Buy Hedge PUT id=20 strike $398.00 exp 2022-01-07 cost $377.16
-[2021-12-28] 🛡️ Buy Hedge PUT id=21 strike $404.00 exp 2022-01-10 cost $634.70
-[2021-12-29] 🛡️ Hedge skipped: cap reached (4/4).
+[2021-12-23] 🛡️ Buy Hedge PUT id=15 strike $394.00 exp 2021-12-31 cost $306.98
+[2021-12-27] 🛡️ Buy Hedge PUT id=16 strike $398.00 exp 2022-01-03 cost $230.51
+[2021-12-28] 🛡️ Buy Hedge PUT id=17 strike $404.00 exp 2022-01-05 cost $509.19
+[2021-12-29] 🛡️ Buy Hedge PUT id=18 strike $402.00 exp 2022-01-05 cost $440.40
 [2021-12-30] 🛡️ Hedge skipped: cap reached (4/4).
-[2021-12-31] 🛡️ Hedge skipped: cap reached (4/4).
+[2021-12-31] 🛡️ Hedge PUT expired (id=15): strike $394.00, payoff $0.00, ITM=False
+[2021-12-31] 🛡️ Buy Hedge PUT id=19 strike $400.00 exp 2022-01-07 cost $458.79
 [2021-12-31] 💰 Sold CALL +$102.80 @ $424.00 Δ=0.025 exp 2022-01-18 contracts 8
-[2022-01-03] 🛡️ Hedge PUT expired (id=18): strike $389.00, payoff $0.00, ITM=False
-[2022-01-03] 🛡️ Hedge PUT expired (id=19): strike $394.00, payoff $0.00, ITM=False
-[2022-01-03] 🛡️ Buy Hedge PUT id=22 strike $399.00 exp 2022-01-14 cost $530.97
-[2022-01-04] 🛡️ Buy Hedge PUT id=23 strike $402.00 exp 2022-01-31 cost $1,118.93
-[2022-01-05] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-01-06] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-01-07] 🛡️ Hedge PUT expired (id=20): strike $398.00, payoff $1,397.00, ITM=True
-[2022-01-07] 🛡️ Buy Hedge PUT id=24 strike $384.00 exp 2022-01-18 cost $741.64
-[2022-01-10] 🛡️ Hedge PUT expired (id=21): strike $404.00, payoff $2,918.00, ITM=True
-[2022-01-10] 🛡️ Buy Hedge PUT id=25 strike $375.00 exp 2022-01-21 cost $891.01
+[2022-01-03] 🛡️ Hedge PUT expired (id=16): strike $398.00, payoff $0.00, ITM=False
+[2022-01-03] 🛡️ Buy Hedge PUT id=20 strike $399.00 exp 2022-01-10 cost $327.81
+[2022-01-04] 🛡️ Hedge skipped: cap reached (4/4).
+[2022-01-05] 🛡️ Hedge PUT expired (id=17): strike $404.00, payoff $926.00, ITM=True
+[2022-01-05] 🛡️ Hedge PUT expired (id=18): strike $402.00, payoff $726.00, ITM=True
+[2022-01-05] 🛡️ Buy Hedge PUT id=21 strike $395.00 exp 2022-01-12 cost $657.85
+[2022-01-06] 🛡️ Buy Hedge PUT id=22 strike $382.50 exp 2022-01-14 cost $550.49
+[2022-01-07] 🛡️ Hedge PUT expired (id=19): strike $400.00, payoff $1,597.00, ITM=True
+[2022-01-07] 🛡️ Buy Hedge PUT id=23 strike $384.00 exp 2022-01-14 cost $697.19
+[2022-01-10] 🛡️ Hedge PUT expired (id=20): strike $399.00, payoff $2,418.00, ITM=True
+[2022-01-10] 🛡️ Buy Hedge PUT id=24 strike $375.00 exp 2022-01-18 cost $687.12
 [2022-01-11] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-01-12] 🛡️ Hedge skipped: cap reached (4/4).
+[2022-01-12] 🛡️ Hedge PUT expired (id=21): strike $395.00, payoff $654.00, ITM=True
+[2022-01-12] 🛡️ Buy Hedge PUT id=25 strike $388.00 exp 2022-01-19 cost $498.42
 [2022-01-13] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-01-14] 🛡️ Hedge PUT expired (id=22): strike $399.00, payoff $2,393.00, ITM=True
-[2022-01-14] 🛡️ Buy Hedge PUT id=26 strike $375.00 exp 2022-01-26 cost $728.92
-[2022-01-18] 🛡️ Hedge PUT expired (id=24): strike $384.00, payoff $996.00, ITM=True
-[2022-01-18] 🛡️ Buy Hedge PUT id=27 strike $374.00 exp 2022-01-31 cost $946.20
+[2022-01-14] 🛡️ Hedge PUT expired (id=22): strike $382.50, payoff $743.00, ITM=True
+[2022-01-14] 🛡️ Hedge PUT expired (id=23): strike $384.00, payoff $893.00, ITM=True
+[2022-01-14] 🛡️ Buy Hedge PUT id=26 strike $375.00 exp 2022-01-21 cost $467.53
+[2022-01-18] 🛡️ Hedge PUT expired (id=24): strike $375.00, payoff $96.00, ITM=True
+[2022-01-18] 🛡️ Buy Hedge PUT id=27 strike $374.00 exp 2022-01-26 cost $760.42
 [2022-01-18] 💰 Sold CALL +$369.20 @ $398.00 Δ=0.060 exp 2022-02-02 contracts 8
-[2022-01-19] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-01-20] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-01-21] 🛡️ Hedge PUT expired (id=25): strike $375.00, payoff $1,553.00, ITM=True
-[2022-01-24] 💰 Contribution +$15,000, Cash: $37,615.84
+[2022-01-19] 🛡️ Hedge PUT expired (id=25): strike $388.00, payoff $1,585.00, ITM=True
+[2022-01-19] 🛡️ Buy Hedge PUT id=28 strike $372.00 exp 2022-01-26 cost $708.75
+[2022-01-20] 🛡️ Buy Hedge PUT id=29 strike $370.00 exp 2022-01-28 cost $759.52
+[2022-01-21] 🛡️ Hedge PUT expired (id=26): strike $375.00, payoff $1,553.00, ITM=True
+[2022-01-21] 🛡️ Buy Hedge PUT id=30 strike $359.00 exp 2022-01-28 cost $927.69
+[2022-01-24] 💰 Contribution +$15,000, Cash: $35,003.39
 [2022-01-24] 💰 Sold CSP +$631.38 @ $346.00 exp 2022-01-26 contracts 1; reserved $34,600.00
 [2022-01-26] ⏳ PUT expired worthless @ $346.00
-[2022-01-26] 🛡️ Hedge PUT expired (id=26): strike $375.00, payoff $2,209.00, ITM=True
+[2022-01-26] 🛡️ Hedge PUT expired (id=27): strike $374.00, payoff $2,109.00, ITM=True
+[2022-01-26] 🛡️ Hedge PUT expired (id=28): strike $372.00, payoff $1,909.00, ITM=True
 [2022-01-26] 💰 Sold CSP +$489.68 @ $353.00 exp 2022-01-28 contracts 1; reserved $35,300.00
 [2022-01-28] ✅ PUT assigned: +100 @ $353.00
-[2022-01-31] 🛡️ Hedge PUT expired (id=23): strike $402.00, payoff $4,880.00, ITM=True
-[2022-01-31] 🛡️ Hedge PUT expired (id=27): strike $374.00, payoff $2,080.00, ITM=True
-[2022-01-31] 🛡️ Buy Hedge PUT id=28 strike $353.00 exp 2022-02-11 cost $559.99
-[2022-02-01] 🛡️ Buy Hedge PUT id=29 strike $364.00 exp 2022-02-14 cost $881.94
-[2022-02-02] 🛡️ Buy Hedge PUT id=30 strike $370.00 exp 2022-02-14 cost $874.33
+[2022-01-28] 🛡️ Hedge PUT expired (id=29): strike $370.00, payoff $2,697.00, ITM=True
+[2022-01-28] 🛡️ Hedge PUT expired (id=30): strike $359.00, payoff $1,597.00, ITM=True
+[2022-02-02] 🛡️ Buy Hedge PUT id=31 strike $370.00 exp 2022-02-09 cost $765.26
 [2022-02-02] 💰 Sold CALL +$349.01 @ $394.00 Δ=0.054 exp 2022-02-18 contracts 9
-[2022-02-04] 🛡️ Buy Hedge PUT id=31 strike $354.00 exp 2022-02-16 cost $763.58
-[2022-02-07] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-02-08] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-02-09] 🛡️ Hedge skipped: cap reached (4/4).
+[2022-02-03] 🛡️ Buy Hedge PUT id=32 strike $359.00 exp 2022-02-11 cost $768.91
+[2022-02-07] 🛡️ Buy Hedge PUT id=33 strike $359.00 exp 2022-02-14 cost $695.56
+[2022-02-08] 🛡️ Buy Hedge PUT id=34 strike $354.00 exp 2022-02-16 cost $607.25
+[2022-02-09] 🛡️ Hedge PUT expired (id=31): strike $370.00, payoff $624.00, ITM=True
+[2022-02-09] 🛡️ Buy Hedge PUT id=35 strike $364.00 exp 2022-02-16 cost $530.85
 [2022-02-10] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-02-11] 🛡️ Hedge PUT expired (id=28): strike $353.00, payoff $0.00, ITM=False
-[2022-02-11] 🛡️ Buy Hedge PUT id=32 strike $358.00 exp 2022-02-22 cost $881.41
-[2022-02-14] 🛡️ Hedge PUT expired (id=29): strike $364.00, payoff $1,751.00, ITM=True
-[2022-02-14] 🛡️ Hedge PUT expired (id=30): strike $370.00, payoff $2,351.00, ITM=True
-[2022-02-14] 🛡️ Buy Hedge PUT id=33 strike $346.00 exp 2022-02-25 cost $855.10
-[2022-02-15] 🛡️ Buy Hedge PUT id=34 strike $353.00 exp 2022-02-28 cost $779.08
-[2022-02-16] 🛡️ Hedge PUT expired (id=31): strike $354.00, payoff $18.00, ITM=True
-[2022-02-16] 🛡️ Buy Hedge PUT id=35 strike $354.00 exp 2022-02-28 cost $818.60
-[2022-02-17] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-02-18] 🛡️ Hedge skipped: cap reached (4/4).
+[2022-02-11] 🛡️ Hedge PUT expired (id=32): strike $359.00, payoff $57.00, ITM=True
+[2022-02-11] 🛡️ Buy Hedge PUT id=36 strike $358.00 exp 2022-02-18 cost $803.48
+[2022-02-14] 🛡️ Hedge PUT expired (id=33): strike $359.00, payoff $1,251.00, ITM=True
+[2022-02-14] 🛡️ Buy Hedge PUT id=37 strike $346.00 exp 2022-02-22 cost $690.33
+[2022-02-15] 🛡️ Hedge skipped: cap reached (4/4).
+[2022-02-16] 🛡️ Hedge PUT expired (id=34): strike $354.00, payoff $18.00, ITM=True
+[2022-02-16] 🛡️ Hedge PUT expired (id=35): strike $364.00, payoff $1,018.00, ITM=True
+[2022-02-16] 🛡️ Buy Hedge PUT id=38 strike $354.00 exp 2022-02-23 cost $613.97
+[2022-02-17] 🛡️ Buy Hedge PUT id=39 strike $353.00 exp 2022-02-25 cost $866.17
+[2022-02-18] 🛡️ Hedge PUT expired (id=36): strike $358.00, payoff $1,159.00, ITM=True
+[2022-02-18] 🛡️ Buy Hedge PUT id=40 strike $346.00 exp 2022-02-25 cost $880.22
 [2022-02-18] 💰 Sold CALL +$393.56 @ $370.00 Δ=0.059 exp 2022-03-07 contracts 9
-[2022-02-22] 🛡️ Hedge PUT expired (id=32): strike $358.00, payoff $1,951.00, ITM=True
-[2022-02-22] 🛡️ Buy Hedge PUT id=36 strike $338.00 exp 2022-03-07 cost $912.30
-[2022-02-24] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-02-25] 🛡️ Hedge PUT expired (id=33): strike $346.00, payoff $469.00, ITM=True
-[2022-02-25] 🛡️ Buy Hedge PUT id=37 strike $341.00 exp 2022-03-09 cost $950.72
-[2022-02-28] 🛡️ Hedge PUT expired (id=34): strike $353.00, payoff $1,049.00, ITM=True
-[2022-02-28] 🛡️ Hedge PUT expired (id=35): strike $354.00, payoff $1,149.00, ITM=True
-[2022-02-28] 🛡️ Buy Hedge PUT id=38 strike $342.50 exp 2022-03-11 cost $849.34
-[2022-03-01] 🛡️ Buy Hedge PUT id=39 strike $346.00 exp 2022-03-14 cost $1,031.98
-[2022-03-02] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-03-03] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-03-04] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-03-07] 🛡️ Hedge PUT expired (id=36): strike $338.00, payoff $71.00, ITM=True
+[2022-02-22] 🛡️ Hedge PUT expired (id=37): strike $346.00, payoff $751.00, ITM=True
+[2022-02-22] 🛡️ Buy Hedge PUT id=41 strike $338.00 exp 2022-03-02 cost $752.17
+[2022-02-23] 🛡️ Hedge PUT expired (id=38): strike $354.00, payoff $1,268.00, ITM=True
+[2022-02-23] 🛡️ Buy Hedge PUT id=42 strike $341.00 exp 2022-03-02 cost $823.69
+[2022-02-25] 🛡️ Hedge PUT expired (id=39): strike $353.00, payoff $1,169.00, ITM=True
+[2022-02-25] 🛡️ Hedge PUT expired (id=40): strike $346.00, payoff $469.00, ITM=True
+[2022-02-25] 🛡️ Buy Hedge PUT id=43 strike $341.00 exp 2022-03-04 cost $518.30
+[2022-02-28] 🛡️ Buy Hedge PUT id=44 strike $343.00 exp 2022-03-07 cost $713.63
+[2022-03-01] 🛡️ Hedge skipped: cap reached (4/4).
+[2022-03-02] 🛡️ Hedge PUT expired (id=41): strike $338.00, payoff $0.00, ITM=False
+[2022-03-02] 🛡️ Hedge PUT expired (id=42): strike $341.00, payoff $0.00, ITM=False
+[2022-03-02] 🛡️ Buy Hedge PUT id=45 strike $343.00 exp 2022-03-09 cost $581.49
+[2022-03-03] 🛡️ Buy Hedge PUT id=46 strike $350.00 exp 2022-03-11 cost $849.79
+[2022-03-04] 🛡️ Hedge PUT expired (id=43): strike $341.00, payoff $116.00, ITM=True
+[2022-03-04] 🛡️ Buy Hedge PUT id=47 strike $340.00 exp 2022-03-11 cost $915.76
+[2022-03-07] 🛡️ Hedge PUT expired (id=44): strike $343.00, payoff $571.00, ITM=True
 [2022-03-07] 💰 Sold CALL +$332.89 @ $363.00 Δ=0.048 exp 2022-03-23 contracts 9
-[2022-03-09] 🛡️ Hedge PUT expired (id=37): strike $341.00, payoff $925.00, ITM=True
-[2022-03-09] 🛡️ Buy Hedge PUT id=40 strike $332.00 exp 2022-03-21 cost $957.44
-[2022-03-10] 🛡️ Buy Hedge PUT id=41 strike $331.00 exp 2022-03-21 cost $998.85
-[2022-03-11] 🛡️ Hedge PUT expired (id=38): strike $342.50, payoff $818.00, ITM=True
-[2022-03-14] 🛡️ Hedge PUT expired (id=39): strike $346.00, payoff $2,287.00, ITM=True
+[2022-03-09] 🛡️ Hedge PUT expired (id=45): strike $343.00, payoff $1,125.00, ITM=True
+[2022-03-11] 🛡️ Hedge PUT expired (id=46): strike $350.00, payoff $1,568.00, ITM=True
+[2022-03-11] 🛡️ Hedge PUT expired (id=47): strike $340.00, payoff $568.00, ITM=True
 [2022-03-21] 📦 Dividend +$390.60 ($0.4340/sh on 900)
-[2022-03-21] 🛡️ Hedge PUT expired (id=40): strike $332.00, payoff $0.00, ITM=False
-[2022-03-21] 🛡️ Hedge PUT expired (id=41): strike $331.00, payoff $0.00, ITM=False
 [2022-03-23] 💰 Sold CALL +$276.03 @ $384.00 Δ=0.042 exp 2022-04-08 contracts 9
-[2022-03-24] 🛡️ Buy Hedge PUT id=42 strike $354.00 exp 2022-04-04 cost $567.83
-[2022-03-25] 🛡️ Buy Hedge PUT id=43 strike $360.00 exp 2022-04-06 cost $811.89
-[2022-03-28] 🛡️ Buy Hedge PUT id=44 strike $359.00 exp 2022-04-08 cost $630.22
-[2022-03-29] 🛡️ Buy Hedge PUT id=45 strike $368.00 exp 2022-04-11 cost $682.29
-[2022-03-30] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-03-31] 🛡️ Hedge skipped: cap reached (4/4).
+[2022-03-28] 🛡️ Buy Hedge PUT id=48 strike $360.00 exp 2022-04-04 cost $506.27
+[2022-03-29] 🛡️ Buy Hedge PUT id=49 strike $368.00 exp 2022-04-06 cost $529.16
+[2022-03-30] 🛡️ Buy Hedge PUT id=50 strike $370.00 exp 2022-04-06 cost $617.38
+[2022-03-31] 🛡️ Buy Hedge PUT id=51 strike $367.00 exp 2022-04-08 cost $663.75
 [2022-04-01] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-04-04] 🛡️ Hedge PUT expired (id=42): strike $354.00, payoff $0.00, ITM=False
-[2022-04-04] 🛡️ Buy Hedge PUT id=46 strike $363.00 exp 2022-04-29 cost $761.93
+[2022-04-04] 🛡️ Hedge PUT expired (id=48): strike $360.00, payoff $0.00, ITM=False
+[2022-04-04] 🛡️ Buy Hedge PUT id=52 strike $362.00 exp 2022-04-11 cost $281.95
 [2022-04-05] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-04-06] 🛡️ Hedge PUT expired (id=43): strike $360.00, payoff $435.00, ITM=True
-[2022-04-06] 🛡️ Buy Hedge PUT id=47 strike $356.00 exp 2022-04-18 cost $847.45
-[2022-04-07] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-04-08] 🛡️ Hedge PUT expired (id=44): strike $359.00, payoff $668.00, ITM=True
-[2022-04-08] 🛡️ Buy Hedge PUT id=48 strike $352.00 exp 2022-04-20 cost $825.82
+[2022-04-06] 🛡️ Hedge PUT expired (id=49): strike $368.00, payoff $1,235.00, ITM=True
+[2022-04-06] 🛡️ Hedge PUT expired (id=50): strike $370.00, payoff $1,435.00, ITM=True
+[2022-04-06] 🛡️ Buy Hedge PUT id=53 strike $356.00 exp 2022-04-13 cost $677.99
+[2022-04-07] 🛡️ Buy Hedge PUT id=54 strike $352.00 exp 2022-04-14 cost $599.58
+[2022-04-08] 🛡️ Hedge PUT expired (id=51): strike $367.00, payoff $1,468.00, ITM=True
+[2022-04-08] 🛡️ Buy Hedge PUT id=55 strike $352.00 exp 2022-04-18 cost $630.84
 [2022-04-08] 💰 Sold CALL +$480.15 @ $374.00 Δ=0.071 exp 2022-04-25 contracts 9
-[2022-04-11] 🛡️ Hedge PUT expired (id=45): strike $368.00, payoff $2,319.00, ITM=True
-[2022-04-11] 🛡️ Buy Hedge PUT id=49 strike $345.00 exp 2022-04-22 cost $838.94
+[2022-04-11] 🛡️ Hedge PUT expired (id=52): strike $362.00, payoff $1,719.00, ITM=True
+[2022-04-11] 🛡️ Buy Hedge PUT id=56 strike $345.00 exp 2022-04-18 cost $662.10
 [2022-04-12] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-04-13] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-04-14] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-04-18] 🛡️ Hedge PUT expired (id=47): strike $356.00, payoff $1,865.00, ITM=True
-[2022-04-18] 🛡️ Buy Hedge PUT id=50 strike $337.50 exp 2022-04-29 cost $735.13
-[2022-04-19] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-04-20] 🛡️ Hedge PUT expired (id=48): strike $352.00, payoff $491.00, ITM=True
-[2022-04-20] 🛡️ Buy Hedge PUT id=51 strike $347.00 exp 2022-05-02 cost $960.64
+[2022-04-13] 🛡️ Hedge PUT expired (id=53): strike $356.00, payoff $1,620.00, ITM=True
+[2022-04-13] 🛡️ Buy Hedge PUT id=57 strike $340.00 exp 2022-04-20 cost $335.79
+[2022-04-14] 🛡️ Hedge PUT expired (id=54): strike $352.00, payoff $556.00, ITM=True
+[2022-04-14] 🛡️ Buy Hedge PUT id=58 strike $346.00 exp 2022-04-22 cost $822.50
+[2022-04-18] 🛡️ Hedge PUT expired (id=55): strike $352.00, payoff $1,465.00, ITM=True
+[2022-04-18] 🛡️ Hedge PUT expired (id=56): strike $345.00, payoff $765.00, ITM=True
+[2022-04-18] 🛡️ Buy Hedge PUT id=59 strike $337.00 exp 2022-04-25 cost $562.33
+[2022-04-19] 🛡️ Buy Hedge PUT id=60 strike $338.00 exp 2022-04-27 cost $431.18
+[2022-04-20] 🛡️ Hedge PUT expired (id=57): strike $340.00, payoff $0.00, ITM=False
+[2022-04-20] 🛡️ Buy Hedge PUT id=61 strike $347.00 exp 2022-04-27 cost $699.41
 [2022-04-21] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-04-22] 🛡️ Hedge PUT expired (id=49): strike $345.00, payoff $1,069.00, ITM=True
-[2022-04-22] 🛡️ Buy Hedge PUT id=52 strike $334.00 exp 2022-05-04 cost $1,071.81
-[2022-04-25] 💰 Contribution +$15,000, Cash: $28,665.52
-[2022-04-25] 🛡️ Hedge skipped: cap reached (4/4).
+[2022-04-22] 🛡️ Hedge PUT expired (id=58): strike $346.00, payoff $1,169.00, ITM=True
+[2022-04-22] 🛡️ Buy Hedge PUT id=62 strike $334.00 exp 2022-04-29 cost $858.83
+[2022-04-25] 💰 Contribution +$15,000, Cash: $28,266.81
+[2022-04-25] 🛡️ Hedge PUT expired (id=59): strike $337.00, payoff $1,327.00, ITM=True
+[2022-04-25] 🛡️ Buy Hedge PUT id=63 strike $324.00 exp 2022-05-02 cost $779.11
 [2022-04-25] 💰 Sold CALL +$367.40 @ $360.00 Δ=0.050 exp 2022-05-11 contracts 9
 [2022-04-26] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-04-27] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-04-28] 🛡️ Hedge skipped: cap reached (4/4).
-[2022-04-29] 🛡️ Hedge PUT expired (id=46): strike $363.00, payoff $3,930.00, ITM=True
-[2022-04-29] 🛡️ Hedge PUT expired (id=50): strike $337.50, payoff $1,380.00, ITM=True
-[2022-04-29] 🛡️ Buy Hedge PUT id=53 strike $324.00 exp 2022-05-11 cost $1,045.30
+[2022-04-27] 🛡️ Hedge PUT expired (id=60): strike $338.00, payoff $2,076.00, ITM=True
+[2022-04-27] 🛡️ Hedge PUT expired (id=61): strike $347.00, payoff $2,976.00, ITM=True
+[2022-04-27] 🛡️ Buy Hedge PUT id=64 strike $317.00 exp 2022-05-04 cost $710.05
+[2022-04-27] 💰 Sold CSP +$398.46 @ $317.50 exp 2022-04-29 contracts 1; reserved $31,750.00
+[2022-04-28] 🛡️ Buy Hedge PUT id=65 strike $322.00 exp 2022-05-06 cost $718.47
+[2022-04-29] ⏳ PUT expired worthless @ $317.50
+[2022-04-29] 🛡️ Hedge PUT expired (id=62): strike $334.00, payoff $1,030.00, ITM=True
+[2022-04-29] 🛡️ Buy Hedge PUT id=66 strike $324.00 exp 2022-05-06 cost $968.47
 [2022-04-29] 💰 Sold CSP +$421.50 @ $324.00 exp 2022-05-02 contracts 1; reserved $32,400.00
 [2022-05-02] ✅ PUT assigned: +100 @ $324.00
-[2022-05-02] 🛡️ Hedge PUT expired (id=51): strike $347.00, payoff $3,417.00, ITM=True
-[2022-05-02] 🛡️ Buy Hedge PUT id=54 strike $313.00 exp 2022-05-13 cost $1,063.56
-[2022-05-03] 🛡️ Buy Hedge PUT id=55 strike $318.00 exp 2022-05-16 cost $993.51
-[2022-05-04] 🛡️ Hedge PUT expired (id=52): strike $334.00, payoff $1,469.00, ITM=True
-[2022-05-04] 🛡️ Buy Hedge PUT id=56 strike $319.00 exp 2022-05-16 cost $1,031.37
-[2022-05-05] 🛡️ Buy Hedge PUT id=57 strike $325.00 exp 2022-05-16 cost $1,207.59
-[2022-05-06] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-05-09] 🛒 TQQQ buy(FG=10) 58 @ $32.56, cash $20.61
-[2022-05-10] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-05-11] 🛡️ Hedge PUT expired (id=53): strike $324.00, payoff $2,556.00, ITM=True
-[2022-05-11] 🛒 TQQQ buy(FG=8) 83 @ $30.85, cash $16.06
+[2022-05-02] 🛡️ Hedge PUT expired (id=63): strike $324.00, payoff $1,117.00, ITM=True
+[2022-05-02] 🛡️ Buy Hedge PUT id=67 strike $313.00 exp 2022-05-09 cost $881.95
+[2022-05-03] 🛡️ Buy Hedge PUT id=68 strike $318.00 exp 2022-05-11 cost $829.20
+[2022-05-04] 🛡️ Hedge PUT expired (id=64): strike $317.00, payoff $0.00, ITM=False
+[2022-05-04] 🛡️ Buy Hedge PUT id=69 strike $319.00 exp 2022-05-11 cost $719.39
+[2022-05-05] 🛡️ Hedge skipped: cap reached (5/5).
+[2022-05-06] 🛡️ Hedge PUT expired (id=65): strike $322.00, payoff $1,105.00, ITM=True
+[2022-05-06] 🛡️ Hedge PUT expired (id=66): strike $324.00, payoff $1,305.00, ITM=True
+[2022-05-06] 🛡️ Buy Hedge PUT id=70 strike $311.00 exp 2022-05-13 cost $868.06
+[2022-05-09] 🛡️ Hedge PUT expired (id=67): strike $313.00, payoff $952.00, ITM=True
+[2022-05-09] 🛒 TQQQ buy(FG=10) 75 @ $32.56, cash $25.48
+[2022-05-09] 🛡️ Buy Hedge PUT id=71 strike $303.00 exp 2022-05-16 cost $1,004.00
+[2022-05-11] 🛡️ Hedge PUT expired (id=68): strike $318.00, payoff $1,956.00, ITM=True
+[2022-05-11] 🛡️ Hedge PUT expired (id=69): strike $319.00, payoff $2,056.00, ITM=True
+[2022-05-11] 🛒 TQQQ buy(FG=8) 98 @ $30.85, cash $10.17
 [2022-05-11] 💰 Sold CALL +$236.50 @ $337.00 Δ=0.031 exp 2022-05-27 contracts 10
-[2022-05-12] 🛒 TQQQ buy(FG=7) 9 @ $27.43, cash $5.69
-[2022-05-13] 🛡️ Hedge PUT expired (id=54): strike $313.00, payoff $1,728.00, ITM=True
-[2022-05-13] 🛒 TQQQ buy(FG=12) 58 @ $29.85, cash $2.39
-[2022-05-13] 🛡️ Hedge skipped: need $745.96, have $2.39.
-[2022-05-16] 🛡️ Hedge PUT expired (id=55): strike $318.00, payoff $1,785.00, ITM=True
-[2022-05-16] 🛡️ Hedge PUT expired (id=56): strike $319.00, payoff $1,885.00, ITM=True
-[2022-05-16] 🛡️ Hedge PUT expired (id=57): strike $325.00, payoff $2,485.00, ITM=True
-[2022-05-16] 🛒 TQQQ buy(FG=14) 197 @ $31.13, cash $24.78
-[2022-05-16] 🛡️ Hedge skipped: need $974.64, have $24.78.
-[2022-05-17] 🛡️ Hedge skipped: need $1,315.03, have $24.78.
-[2022-05-26] 🛡️ Hedge skipped: need $441.42, have $24.78.
-[2022-05-27] 🛡️ Hedge skipped: need $517.13, have $24.78.
+[2022-05-12] 🛒 TQQQ buy(FG=7) 8 @ $27.43, cash $27.23
+[2022-05-13] 🛡️ Hedge PUT expired (id=70): strike $311.00, payoff $1,528.00, ITM=True
+[2022-05-13] 🛒 TQQQ buy(FG=12) 52 @ $29.85, cash $3.03
+[2022-05-16] 🛡️ Hedge PUT expired (id=71): strike $303.00, payoff $285.00, ITM=True
+[2022-05-16] 🛒 TQQQ buy(FG=14) 9 @ $31.13, cash $7.86
+[2022-05-16] 🛡️ Buy Hedge PUT id=72 strike $300.00 exp 2022-05-23 cost $709.80
+[2022-05-23] 🛡️ Hedge PUT expired (id=72): strike $300.00, payoff $1,025.00, ITM=True
+[2022-05-23] 🛒 TQQQ buy(FG=13) 11 @ $27.65, cash $18.92
+[2022-05-27] 🛡️ Buy Hedge PUT id=73 strike $303.00 exp 2022-06-03 cost $383.05
 [2022-05-27] 💰 Sold CALL +$322.27 @ $335.00 Δ=0.046 exp 2022-06-13 contracts 10
-[2022-05-31] 🛡️ Hedge skipped: need $879.84, have $347.05.
-[2022-06-01] 🛡️ Hedge skipped: need $820.46, have $347.05.
-[2022-06-02] 🛡️ Hedge skipped: need $493.82, have $347.05.
-[2022-06-03] 🛡️ Hedge skipped: need $804.29, have $347.05.
-[2022-06-06] 🛡️ Hedge skipped: need $875.39, have $347.05.
-[2022-06-07] 🛡️ Hedge skipped: need $915.49, have $347.05.
-[2022-06-08] 🛡️ Hedge skipped: need $783.97, have $347.05.
-[2022-06-09] 🛡️ Hedge skipped: need $830.24, have $347.05.
-[2022-06-10] 🛡️ Hedge skipped: need $1,035.79, have $347.05.
+[2022-05-31] 🛡️ Buy Hedge PUT id=74 strike $309.00 exp 2022-06-08 cost $663.77
+[2022-06-01] 🛡️ Buy Hedge PUT id=75 strike $310.00 exp 2022-06-08 cost $753.07
+[2022-06-02] 🛡️ Buy Hedge PUT id=76 strike $305.00 exp 2022-06-10 cost $482.80
+[2022-06-03] 🛡️ Hedge PUT expired (id=73): strike $303.00, payoff $0.00, ITM=False
+[2022-06-03] 🛡️ Buy Hedge PUT id=77 strike $309.00 exp 2022-06-10 cost $673.73
+[2022-06-06] 🛡️ Buy Hedge PUT id=78 strike $310.00 exp 2022-06-13 cost $613.08
+[2022-06-07] 🛡️ Hedge skipped: cap reached (5/5).
+[2022-06-08] 🛡️ Hedge PUT expired (id=74): strike $309.00, payoff $0.00, ITM=False
+[2022-06-08] 🛡️ Hedge PUT expired (id=75): strike $310.00, payoff $95.00, ITM=True
+[2022-06-08] 🛡️ Buy Hedge PUT id=79 strike $309.00 exp 2022-06-15 cost $639.41
+[2022-06-09] 🛡️ Buy Hedge PUT id=80 strike $306.00 exp 2022-06-17 cost $674.63
+[2022-06-10] 🛡️ Hedge PUT expired (id=76): strike $305.00, payoff $1,135.00, ITM=True
+[2022-06-10] 🛡️ Hedge PUT expired (id=77): strike $309.00, payoff $1,535.00, ITM=True
+[2022-06-10] 🛡️ Buy Hedge PUT id=81 strike $294.00 exp 2022-06-17 cost $902.00
+[2022-06-13] 🛡️ Hedge PUT expired (id=78): strike $310.00, payoff $3,025.00, ITM=True
+[2022-06-13] 🛡️ Buy Hedge PUT id=82 strike $280.00 exp 2022-06-21 cost $919.41
 [2022-06-13] 💰 Sold CALL +$344.14 @ $316.00 Δ=0.043 exp 2022-06-30 contracts 10
-[2022-06-15] 🛡️ Hedge skipped: need $812.35, have $691.19.
-[2022-06-17] 🛒 TQQQ buy(FG=13) 31 @ $22.07, cash $7.02
+[2022-06-15] 🛡️ Hedge PUT expired (id=79): strike $309.00, payoff $2,958.50, ITM=True
+[2022-06-17] 🛡️ Hedge PUT expired (id=80): strike $306.00, payoff $3,382.00, ITM=True
+[2022-06-17] 🛡️ Hedge PUT expired (id=81): strike $294.00, payoff $2,182.00, ITM=True
+[2022-06-17] 🛒 TQQQ buy(FG=13) 375 @ $22.07, cash $16.63
 [2022-06-21] 📦 Dividend +$527.00 ($0.5270/sh on 1000)
-[2022-06-21] 🛒 TQQQ buy(FG=15) 22 @ $23.82, cash $10.09
-[2022-06-24] 🛡️ Hedge skipped: need $489.05, have $10.09.
-[2022-06-27] 🛡️ Hedge skipped: need $926.09, have $10.09.
+[2022-06-21] 🛡️ Hedge PUT expired (id=82): strike $280.00, payoff $125.00, ITM=True
+[2022-06-21] 🛒 TQQQ buy(FG=15) 28 @ $23.82, cash $1.81
 [2022-06-30] 💰 Sold CALL +$299.68 @ $312.00 Δ=0.043 exp 2022-07-15 contracts 10
 [2022-07-15] 💰 Sold CALL +$311.47 @ $318.00 Δ=0.048 exp 2022-08-01 contracts 10
-[2022-07-21] 🛡️ Hedge skipped: need $654.39, have $621.24.
-[2022-07-26] 💰 Contribution +$15,000, Cash: $15,621.24
+[2022-07-26] 💰 Contribution +$15,000, Cash: $15,612.96
 [2022-08-01] 💰 Sold CALL +$254.50 @ $344.00 Δ=0.039 exp 2022-08-17 contracts 10
-[2022-08-10] 🛡️ Buy Hedge PUT id=58 strike $325.00 exp 2022-08-22 cost $606.53
-[2022-08-11] 🛡️ Buy Hedge PUT id=59 strike $328.00 exp 2022-08-22 cost $623.49
-[2022-08-12] 🛡️ Buy Hedge PUT id=60 strike $326.00 exp 2022-08-24 cost $477.57
-[2022-08-15] 🛡️ Buy Hedge PUT id=61 strike $329.00 exp 2022-08-26 cost $510.72
-[2022-08-16] 🛡️ Buy Hedge PUT id=62 strike $332.00 exp 2022-08-29 cost $670.73
-[2022-08-17] 🛡️ Hedge skipped: cap reached (5/5).
+[2022-08-12] 🛡️ Buy Hedge PUT id=83 strike $326.00 exp 2022-08-19 cost $392.42
+[2022-08-15] 🛡️ Buy Hedge PUT id=84 strike $329.00 exp 2022-08-22 cost $353.79
+[2022-08-16] 🛡️ Buy Hedge PUT id=85 strike $332.00 exp 2022-08-24 cost $506.73
+[2022-08-17] 🛡️ Buy Hedge PUT id=86 strike $329.00 exp 2022-08-24 cost $475.12
 [2022-08-17] 💰 Sold CALL +$274.93 @ $355.00 Δ=0.044 exp 2022-09-02 contracts 10
-[2022-08-18] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-08-19] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-08-22] 🛡️ Hedge PUT expired (id=58): strike $325.00, payoff $650.00, ITM=True
-[2022-08-22] 🛡️ Hedge PUT expired (id=59): strike $328.00, payoff $950.00, ITM=True
-[2022-08-22] 🛡️ Buy Hedge PUT id=63 strike $318.00 exp 2022-09-02 cost $766.71
-[2022-08-23] 🛡️ Buy Hedge PUT id=64 strike $314.00 exp 2022-09-19 cost $988.94
-[2022-08-24] 🛡️ Hedge PUT expired (id=60): strike $326.00, payoff $1,239.00, ITM=True
-[2022-08-24] 🛡️ Buy Hedge PUT id=65 strike $314.00 exp 2022-09-06 cost $642.79
-[2022-08-25] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-08-26] 🛡️ Hedge PUT expired (id=61): strike $329.00, payoff $872.00, ITM=True
-[2022-08-26] 🛡️ Buy Hedge PUT id=66 strike $320.00 exp 2022-09-06 cost $876.94
-[2022-08-29] 🛡️ Hedge PUT expired (id=62): strike $332.00, payoff $2,738.00, ITM=True
-[2022-08-29] 🛡️ Buy Hedge PUT id=67 strike $305.00 exp 2022-09-09 cost $713.56
-[2022-09-02] 🛡️ Hedge PUT expired (id=63): strike $318.00, payoff $1,566.00, ITM=True
+[2022-08-18] 🛡️ Buy Hedge PUT id=87 strike $328.00 exp 2022-08-26 cost $478.68
+[2022-08-19] 🛡️ Hedge PUT expired (id=83): strike $326.00, payoff $0.00, ITM=False
+[2022-08-19] 🛡️ Buy Hedge PUT id=88 strike $326.00 exp 2022-08-26 cost $625.93
+[2022-08-22] 🛡️ Hedge PUT expired (id=84): strike $329.00, payoff $1,050.00, ITM=True
+[2022-08-22] 🛡️ Buy Hedge PUT id=89 strike $319.00 exp 2022-08-29 cost $693.95
+[2022-08-23] 🛡️ Hedge skipped: cap reached (5/5).
+[2022-08-24] 🛡️ Hedge PUT expired (id=85): strike $332.00, payoff $1,839.00, ITM=True
+[2022-08-24] 🛡️ Hedge PUT expired (id=86): strike $329.00, payoff $1,539.00, ITM=True
+[2022-08-24] 🛡️ Buy Hedge PUT id=90 strike $314.00 exp 2022-08-31 cost $469.55
+[2022-08-26] 🛡️ Hedge PUT expired (id=87): strike $328.00, payoff $772.00, ITM=True
+[2022-08-26] 🛡️ Hedge PUT expired (id=88): strike $326.00, payoff $572.00, ITM=True
+[2022-08-26] 🛡️ Buy Hedge PUT id=91 strike $320.00 exp 2022-09-02 cost $870.23
+[2022-08-29] 🛡️ Hedge PUT expired (id=89): strike $319.00, payoff $1,438.00, ITM=True
+[2022-08-29] 🛡️ Buy Hedge PUT id=92 strike $305.00 exp 2022-09-06 cost $558.46
+[2022-08-31] 🛡️ Hedge PUT expired (id=90): strike $314.00, payoff $1,001.00, ITM=True
+[2022-09-02] 🛡️ Hedge PUT expired (id=91): strike $320.00, payoff $1,766.00, ITM=True
 [2022-09-02] 💰 Sold CALL +$467.53 @ $326.00 Δ=0.063 exp 2022-09-19 contracts 10
-[2022-09-06] 🛡️ Hedge PUT expired (id=65): strike $314.00, payoff $1,834.00, ITM=True
-[2022-09-06] 🛡️ Hedge PUT expired (id=66): strike $320.00, payoff $2,434.00, ITM=True
-[2022-09-06] 🛡️ Buy Hedge PUT id=68 strike $296.00 exp 2022-09-19 cost $982.95
-[2022-09-07] 🛡️ Buy Hedge PUT id=69 strike $294.00 exp 2022-09-19 cost $663.86
-[2022-09-08] 🛡️ Buy Hedge PUT id=70 strike $297.00 exp 2022-09-19 cost $644.19
-[2022-09-09] 🛡️ Hedge PUT expired (id=67): strike $305.00, payoff $217.00, ITM=True
-[2022-09-09] 🛡️ Buy Hedge PUT id=71 strike $302.00 exp 2022-09-21 cost $576.81
-[2022-09-12] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-09-13] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-09-14] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-09-15] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-09-16] 🛡️ Hedge skipped: cap reached (5/5).
+[2022-09-06] 🛡️ Hedge PUT expired (id=92): strike $305.00, payoff $934.00, ITM=True
+[2022-09-08] 🛡️ Buy Hedge PUT id=93 strike $297.00 exp 2022-09-16 cost $576.66
+[2022-09-14] 🛡️ Buy Hedge PUT id=94 strike $295.00 exp 2022-09-21 cost $644.66
+[2022-09-15] 🛡️ Buy Hedge PUT id=95 strike $294.00 exp 2022-09-23 cost $719.95
+[2022-09-16] 🛡️ Hedge PUT expired (id=93): strike $297.00, payoff $928.00, ITM=True
+[2022-09-16] 🛡️ Buy Hedge PUT id=96 strike $288.00 exp 2022-09-23 cost $710.54
 [2022-09-19] 📦 Dividend +$519.00 ($0.5190/sh on 1000)
-[2022-09-19] 🛡️ Hedge PUT expired (id=64): strike $314.00, payoff $2,790.00, ITM=True
-[2022-09-19] 🛡️ Hedge PUT expired (id=68): strike $296.00, payoff $990.00, ITM=True
-[2022-09-19] 🛡️ Hedge PUT expired (id=69): strike $294.00, payoff $790.00, ITM=True
-[2022-09-19] 🛡️ Hedge PUT expired (id=70): strike $297.00, payoff $1,090.00, ITM=True
-[2022-09-19] 🛡️ Buy Hedge PUT id=72 strike $286.00 exp 2022-09-30 cost $679.18
+[2022-09-19] 🛡️ Buy Hedge PUT id=97 strike $286.00 exp 2022-09-26 cost $535.71
 [2022-09-19] 💰 Sold CALL +$326.50 @ $322.00 Δ=0.045 exp 2022-10-07 contracts 10
-[2022-09-20] 🛡️ Buy Hedge PUT id=73 strike $288.00 exp 2022-10-03 cost $804.79
-[2022-09-21] 🛡️ Hedge PUT expired (id=71): strike $302.00, payoff $1,241.00, ITM=True
-[2022-09-21] 🛡️ Buy Hedge PUT id=74 strike $290.00 exp 2022-10-03 cost $883.60
-[2022-09-22] 🛡️ Buy Hedge PUT id=75 strike $282.00 exp 2022-10-03 cost $793.18
-[2022-09-23] 🛡️ Buy Hedge PUT id=76 strike $278.00 exp 2022-10-05 cost $928.77
-[2022-09-26] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-09-27] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-09-28] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-09-29] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-09-30] 🛡️ Hedge PUT expired (id=72): strike $286.00, payoff $1,497.00, ITM=True
-[2022-10-03] 🛡️ Hedge PUT expired (id=73): strike $288.00, payoff $1,893.00, ITM=True
-[2022-10-03] 🛡️ Hedge PUT expired (id=74): strike $290.00, payoff $2,093.00, ITM=True
-[2022-10-03] 🛡️ Hedge PUT expired (id=75): strike $282.00, payoff $1,293.00, ITM=True
-[2022-10-03] 🛒 TQQQ buy(FG=15) 1512 @ $19.70, cash $11.45
-[2022-10-03] 🛡️ Hedge skipped: need $737.67, have $11.45.
-[2022-10-04] 🛡️ Hedge skipped: need $624.58, have $11.45.
-[2022-10-05] 🛡️ Hedge PUT expired (id=76): strike $278.00, payoff $0.00, ITM=False
-[2022-10-05] 🛡️ Hedge skipped: need $601.16, have $11.45.
-[2022-10-06] 🛡️ Hedge skipped: need $731.90, have $11.45.
+[2022-09-21] 🛡️ Hedge PUT expired (id=94): strike $295.00, payoff $541.00, ITM=True
+[2022-09-21] 🛡️ Buy Hedge PUT id=98 strike $290.00 exp 2022-09-28 cost $731.43
+[2022-09-23] 🛡️ Hedge PUT expired (id=95): strike $294.00, payoff $1,645.00, ITM=True
+[2022-09-23] 🛡️ Hedge PUT expired (id=96): strike $288.00, payoff $1,045.00, ITM=True
+[2022-09-23] 🛡️ Buy Hedge PUT id=99 strike $278.00 exp 2022-09-30 cost $807.89
+[2022-09-26] 🛡️ Hedge PUT expired (id=97): strike $286.00, payoff $1,097.00, ITM=True
+[2022-09-27] 🛡️ Buy Hedge PUT id=100 strike $278.00 exp 2022-10-05 cost $774.35
+[2022-09-28] 🛡️ Hedge PUT expired (id=98): strike $290.00, payoff $1,554.00, ITM=True
+[2022-09-30] 🛡️ Hedge PUT expired (id=99): strike $278.00, payoff $697.00, ITM=True
+[2022-10-03] 🛒 TQQQ buy(FG=15) 1266 @ $19.70, cash $0.82
+[2022-10-05] 🛡️ Hedge PUT expired (id=100): strike $278.00, payoff $0.00, ITM=False
+[2022-10-06] 🛡️ Buy Hedge PUT id=101 strike $281.00 exp 2022-10-14 cost $673.61
 [2022-10-07] 💰 Sold CALL +$353.50 @ $299.00 Δ=0.054 exp 2022-10-24 contracts 10
-[2022-10-18] 🛡️ Hedge skipped: need $872.17, have $364.95.
-[2022-10-19] 🛡️ Hedge skipped: need $797.16, have $364.95.
-[2022-10-21] 🛡️ Hedge skipped: need $516.49, have $364.95.
-[2022-10-24] 💰 Contribution +$15,000, Cash: $15,364.95
-[2022-10-24] 🛡️ Buy Hedge PUT id=77 strike $276.00 exp 2022-11-04 cost $853.79
+[2022-10-14] 🛡️ Hedge PUT expired (id=101): strike $281.00, payoff $980.00, ITM=True
+[2022-10-24] 💰 Contribution +$15,000, Cash: $15,660.72
+[2022-10-24] 🛡️ Buy Hedge PUT id=102 strike $276.00 exp 2022-10-31 cost $604.11
 [2022-10-24] 💰 Sold CALL +$282.40 @ $315.00 Δ=0.038 exp 2022-11-09 contracts 10
-[2022-10-25] 🛡️ Buy Hedge PUT id=78 strike $279.00 exp 2022-11-07 cost $677.97
-[2022-10-26] 🛡️ Buy Hedge PUT id=79 strike $278.00 exp 2022-11-07 cost $702.12
-[2022-10-27] 🛡️ Buy Hedge PUT id=80 strike $277.00 exp 2022-11-07 cost $826.03
-[2022-10-28] 🛡️ Buy Hedge PUT id=81 strike $272.00 exp 2022-11-09 cost $471.01
-[2022-10-31] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-11-01] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-11-04] 🛡️ Hedge PUT expired (id=77): strike $276.00, payoff $1,047.00, ITM=True
-[2022-11-07] 🛡️ Hedge PUT expired (id=78): strike $279.00, payoff $1,325.00, ITM=True
-[2022-11-07] 🛡️ Hedge PUT expired (id=79): strike $278.00, payoff $1,225.00, ITM=True
-[2022-11-07] 🛡️ Hedge PUT expired (id=80): strike $277.00, payoff $1,125.00, ITM=True
-[2022-11-09] 🛡️ Hedge PUT expired (id=81): strike $272.00, payoff $424.00, ITM=True
+[2022-10-26] 🛡️ Buy Hedge PUT id=103 strike $278.00 exp 2022-11-02 cost $521.93
+[2022-10-27] 🛡️ Buy Hedge PUT id=104 strike $277.00 exp 2022-11-04 cost $800.61
+[2022-10-28] 🛡️ Buy Hedge PUT id=105 strike $272.00 exp 2022-11-04 cost $412.80
+[2022-10-31] 🛡️ Hedge PUT expired (id=102): strike $276.00, payoff $0.00, ITM=False
+[2022-10-31] 🛡️ Buy Hedge PUT id=106 strike $279.00 exp 2022-11-07 cost $647.23
+[2022-11-01] 🛡️ Buy Hedge PUT id=107 strike $281.00 exp 2022-11-09 cost $720.92
+[2022-11-02] 🛡️ Hedge PUT expired (id=103): strike $278.00, payoff $292.00, ITM=True
+[2022-11-04] 🛡️ Hedge PUT expired (id=104): strike $277.00, payoff $1,147.00, ITM=True
+[2022-11-04] 🛡️ Hedge PUT expired (id=105): strike $272.00, payoff $647.00, ITM=True
+[2022-11-07] 🛡️ Hedge PUT expired (id=106): strike $279.00, payoff $1,325.00, ITM=True
+[2022-11-09] 🛡️ Hedge PUT expired (id=107): strike $281.00, payoff $1,324.00, ITM=True
 [2022-11-09] 💰 Sold CALL +$258.28 @ $295.00 Δ=0.042 exp 2022-11-25 contracts 10
 [2022-11-25] 💰 Sold CALL +$398.50 @ $305.00 Δ=0.072 exp 2022-12-12 contracts 10
-[2022-11-30] 🛡️ Buy Hedge PUT id=82 strike $280.00 exp 2022-12-12 cost $301.94
-[2022-12-01] 🛡️ Buy Hedge PUT id=83 strike $294.00 exp 2022-12-12 cost $525.39
-[2022-12-02] 🛡️ Buy Hedge PUT id=84 strike $289.00 exp 2022-12-13 cost $514.39
-[2022-12-05] 🛡️ Buy Hedge PUT id=85 strike $290.00 exp 2022-12-16 cost $719.16
-[2022-12-06] 🛡️ Buy Hedge PUT id=86 strike $287.00 exp 2022-12-19 cost $954.97
-[2022-12-07] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-12-08] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-12-09] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-12-12] 🛡️ Hedge PUT expired (id=82): strike $280.00, payoff $0.00, ITM=False
-[2022-12-12] 🛡️ Hedge PUT expired (id=83): strike $294.00, payoff $1,178.00, ITM=True
-[2022-12-12] 🛡️ Buy Hedge PUT id=87 strike $282.00 exp 2022-12-23 cost $735.51
+[2022-12-02] 🛡️ Buy Hedge PUT id=108 strike $289.00 exp 2022-12-09 cost $294.10
+[2022-12-06] 🛡️ Buy Hedge PUT id=109 strike $287.00 exp 2022-12-13 cost $695.23
+[2022-12-08] 🛡️ Buy Hedge PUT id=110 strike $282.00 exp 2022-12-15 cost $604.05
+[2022-12-09] 🛡️ Hedge PUT expired (id=108): strike $289.00, payoff $619.00, ITM=True
+[2022-12-09] 🛡️ Buy Hedge PUT id=111 strike $283.00 exp 2022-12-16 cost $617.71
 [2022-12-12] 💰 Sold CALL +$261.70 @ $312.00 Δ=0.043 exp 2022-12-30 contracts 10
-[2022-12-13] 🛡️ Hedge PUT expired (id=84): strike $289.00, payoff $0.00, ITM=False
-[2022-12-13] 🛡️ Buy Hedge PUT id=88 strike $297.00 exp 2023-01-13 cost $1,230.03
-[2022-12-14] 🛡️ Buy Hedge PUT id=89 strike $288.00 exp 2022-12-27 cost $610.09
-[2022-12-15] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-12-16] 🛡️ Hedge PUT expired (id=85): strike $290.00, payoff $1,380.00, ITM=True
-[2022-12-16] 🛡️ Buy Hedge PUT id=90 strike $276.00 exp 2022-12-27 cost $550.26
+[2022-12-13] 🛡️ Hedge PUT expired (id=109): strike $287.00, payoff $0.00, ITM=False
+[2022-12-13] 🛡️ Buy Hedge PUT id=112 strike $297.00 exp 2022-12-20 cost $917.84
+[2022-12-14] 🛡️ Buy Hedge PUT id=113 strike $288.00 exp 2022-12-21 cost $486.04
+[2022-12-15] 🛡️ Hedge PUT expired (id=110): strike $282.00, payoff $0.00, ITM=False
+[2022-12-16] 🛡️ Hedge PUT expired (id=111): strike $283.00, payoff $680.00, ITM=True
+[2022-12-16] 🛡️ Buy Hedge PUT id=114 strike $276.00 exp 2022-12-23 cost $534.58
 [2022-12-19] 📦 Dividend +$655.00 ($0.6550/sh on 1000)
-[2022-12-19] 🛡️ Hedge PUT expired (id=86): strike $287.00, payoff $1,313.00, ITM=True
-[2022-12-19] 🛡️ Buy Hedge PUT id=91 strike $274.00 exp 2022-12-30 cost $666.38
-[2022-12-20] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-12-21] 🛡️ Hedge skipped: cap reached (5/5).
-[2022-12-23] 🛡️ Hedge PUT expired (id=87): strike $282.00, payoff $1,653.00, ITM=True
-[2022-12-27] 🛡️ Hedge PUT expired (id=89): strike $288.00, payoff $2,126.00, ITM=True
-[2022-12-27] 🛡️ Hedge PUT expired (id=90): strike $276.00, payoff $926.00, ITM=True
-[2022-12-30] 🛡️ Hedge PUT expired (id=91): strike $274.00, payoff $1,038.00, ITM=True
+[2022-12-20] 🛡️ Hedge PUT expired (id=112): strike $297.00, payoff $2,844.00, ITM=True
+[2022-12-20] 🛡️ Buy Hedge PUT id=115 strike $269.00 exp 2022-12-27 cost $359.67
+[2022-12-21] 🛡️ Hedge PUT expired (id=113): strike $288.00, payoff $1,740.00, ITM=True
+[2022-12-23] 🛡️ Hedge PUT expired (id=114): strike $276.00, payoff $1,053.00, ITM=True
+[2022-12-27] 🛡️ Hedge PUT expired (id=115): strike $269.00, payoff $226.00, ITM=True
 [2023-01-03] 💰 Sold CALL +$261.52 @ $291.00 Δ=0.047 exp 2023-01-20 contracts 10
-[2023-01-13] 🛡️ Hedge PUT expired (id=88): strike $297.00, payoff $2,050.00, ITM=True
 [2023-01-23] 💰 Sold CALL +$231.73 @ $315.00 Δ=0.039 exp 2023-02-10 contracts 10
-[2023-01-25] 💰 Contribution +$15,000, Cash: $39,185.04
+[2023-01-25] 💰 Contribution +$15,000, Cash: $36,690.02
 [2023-01-25] 💰 Sold CSP +$175.54 @ $284.00 exp 2023-01-27 contracts 1; reserved $28,400.00
 [2023-01-27] ⏳ PUT expired worthless @ $284.00
 [2023-01-27] 💰 Sold CSP +$63.48 @ $292.00 exp 2023-01-30 contracts 1; reserved $29,200.00
@@ -343,302 +318,185 @@
 [2023-01-30] 💰 Sold CSP +$362.59 @ $293.00 exp 2023-02-01 contracts 1; reserved $29,300.00
 [2023-02-01] ⏳ PUT expired worthless @ $293.00
 [2023-02-01] 💰 Sold CSP +$226.91 @ $294.00 exp 2023-02-03 contracts 1; reserved $29,400.00
-[2023-02-02] 🛡️ Buy Hedge PUT id=92 strike $308.00 exp 2023-02-13 cost $486.88
 [2023-02-03] ⏳ PUT expired worthless @ $294.00
-[2023-02-03] 🛡️ Buy Hedge PUT id=93 strike $305.00 exp 2023-02-14 cost $444.66
 [2023-02-03] 💰 Sold CSP +$132.79 @ $305.00 exp 2023-02-06 contracts 1; reserved $30,500.00
 [2023-02-06] ✅ PUT assigned: +100 @ $305.00
-[2023-02-07] 🛡️ Buy Hedge PUT id=94 strike $303.00 exp 2023-03-10 cost $786.20
-[2023-02-08] 🛡️ Buy Hedge PUT id=95 strike $309.00 exp 2023-02-21 cost $838.23
-[2023-02-13] 🛡️ Hedge PUT expired (id=92): strike $308.00, payoff $687.00, ITM=True
-[2023-02-13] 🛡️ Buy Hedge PUT id=96 strike $301.00 exp 2023-02-24 cost $596.06
 [2023-02-13] 💰 Sold CALL +$356.18 @ $332.00 Δ=0.049 exp 2023-03-03 contracts 11
-[2023-02-14] 🛡️ Hedge PUT expired (id=93): strike $305.00, payoff $211.00, ITM=True
-[2023-02-14] 🛡️ Buy Hedge PUT id=97 strike $303.00 exp 2023-02-27 cost $459.57
-[2023-02-15] 🛡️ Buy Hedge PUT id=98 strike $305.00 exp 2023-02-27 cost $407.82
-[2023-02-16] 🛡️ Hedge skipped: cap reached (5/5).
-[2023-02-21] 🛡️ Hedge PUT expired (id=95): strike $309.00, payoff $1,174.00, ITM=True
-[2023-02-24] 🛡️ Hedge PUT expired (id=96): strike $301.00, payoff $924.00, ITM=True
-[2023-02-27] 🛡️ Hedge PUT expired (id=97): strike $303.00, payoff $793.00, ITM=True
-[2023-02-27] 🛡️ Hedge PUT expired (id=98): strike $305.00, payoff $993.00, ITM=True
-[2023-03-03] 🛡️ Buy Hedge PUT id=99 strike $295.00 exp 2023-03-14 cost $424.65
-[2023-03-06] 🛡️ Buy Hedge PUT id=100 strike $301.00 exp 2023-03-17 cost $531.18
 [2023-03-06] 💰 Sold CALL +$352.81 @ $326.00 Δ=0.052 exp 2023-03-24 contracts 11
-[2023-03-10] 🛡️ Hedge PUT expired (id=94): strike $303.00, payoff $1,017.00, ITM=True
-[2023-03-14] 🛡️ Hedge PUT expired (id=99): strike $295.00, payoff $69.00, ITM=True
-[2023-03-17] 🛡️ Hedge PUT expired (id=100): strike $301.00, payoff $0.00, ITM=False
+[2023-03-07] 🛡️ Buy Hedge PUT id=116 strike $300.00 exp 2023-03-14 cost $659.84
+[2023-03-14] 🛡️ Hedge PUT expired (id=116): strike $300.00, payoff $569.00, ITM=True
 [2023-03-20] 📦 Dividend +$519.20 ($0.4720/sh on 1100)
 [2023-03-27] 💰 Sold CALL +$339.35 @ $332.00 Δ=0.056 exp 2023-04-14 contracts 11
 [2023-04-17] 💰 Sold CALL +$506.56 @ $338.00 Δ=0.077 exp 2023-05-05 contracts 11
-[2023-04-26] 💰 Contribution +$15,000, Cash: $27,613.19
+[2023-04-26] 💰 Contribution +$15,000, Cash: $24,134.59
 [2023-05-08] 💰 Sold CALL +$234.51 @ $342.00 Δ=0.047 exp 2023-05-26 contracts 11
 [2023-05-30] 💰 Sold CALL +$137.39 @ $385.00 Δ=0.023 exp 2023-06-16 contracts 11
-[2023-06-15] ✅ TQQQ TP: sell 1512 @ $39.74 (entry $19.70), P&L +$30,292.92
+[2023-06-15] ✅ TQQQ TP: sell 1266 @ $39.74 (entry $19.70), P&L +$25,364.31
 [2023-06-20] 📦 Dividend +$554.40 ($0.5040/sh on 1100)
 [2023-06-20] 💰 Sold CSP +$373.62 @ $366.00 exp 2023-06-22 contracts 2; reserved $73,200.00
 [2023-06-20] 💰 Sold CALL +$387.27 @ $392.00 Δ=0.055 exp 2023-07-07 contracts 11
 [2023-06-22] ✅ PUT assigned: +200 @ $366.00
 [2023-07-10] 💰 Sold CALL +$681.85 @ $389.00 Δ=0.076 exp 2023-07-28 contracts 13
-[2023-07-14] ✅ TQQQ TP: sell 31 @ $44.22 (entry $22.07), P&L +$686.65
-[2023-07-19] 🛡️ Buy Hedge PUT id=101 strike $387.00 exp 2023-07-31 cost $568.92
-[2023-07-27] 💰 Contribution +$15,000, Cash: $32,671.01
-[2023-07-28] 🛡️ Buy Hedge PUT id=102 strike $381.00 exp 2023-08-08 cost $410.99
-[2023-07-31] 🛡️ Hedge PUT expired (id=101): strike $387.00, payoff $321.00, ITM=True
-[2023-07-31] 🛡️ Buy Hedge PUT id=103 strike $384.00 exp 2023-08-11 cost $545.93
+[2023-07-14] ✅ TQQQ TP: sell 375 @ $44.22 (entry $22.07), P&L +$8,306.25
+[2023-07-27] 💰 Contribution +$15,000, Cash: $35,196.97
 [2023-07-31] 💰 Sold CALL +$344.66 @ $408.00 Δ=0.047 exp 2023-08-18 contracts 13
-[2023-08-01] 🛡️ Buy Hedge PUT id=104 strike $382.00 exp 2023-08-14 cost $512.16
-[2023-08-02] 🛡️ Buy Hedge PUT id=105 strike $379.00 exp 2023-08-14 cost $825.20
-[2023-08-03] 🛡️ Buy Hedge PUT id=106 strike $372.00 exp 2023-08-14 cost $444.40
-[2023-08-04] 🛡️ Buy Hedge PUT id=107 strike $376.00 exp 2023-08-15 cost $505.83
-[2023-08-07] 🛡️ Hedge skipped: cap reached (6/6).
-[2023-08-08] 🛡️ Hedge PUT expired (id=102): strike $381.00, payoff $836.00, ITM=True
-[2023-08-08] 🛡️ Buy Hedge PUT id=108 strike $373.00 exp 2023-08-21 cost $670.81
-[2023-08-11] 🛡️ Hedge PUT expired (id=103): strike $384.00, payoff $1,801.00, ITM=True
-[2023-08-14] 🛡️ Hedge PUT expired (id=104): strike $382.00, payoff $1,657.00, ITM=True
-[2023-08-14] 🛡️ Hedge PUT expired (id=105): strike $379.00, payoff $1,357.00, ITM=True
-[2023-08-14] 🛡️ Hedge PUT expired (id=106): strike $372.00, payoff $657.00, ITM=True
-[2023-08-15] 🛡️ Hedge PUT expired (id=107): strike $376.00, payoff $664.00, ITM=True
 [2023-08-18] 💰 Sold CSP +$123.71 @ $355.00 exp 2023-08-21 contracts 1; reserved $35,500.00
 [2023-08-21] ⏳ PUT expired worthless @ $355.00
-[2023-08-21] 🛡️ Hedge PUT expired (id=108): strike $373.00, payoff $1,338.00, ITM=True
-[2023-08-21] 💰 Sold CSP +$212.67 @ $360.00 exp 2023-08-23 contracts 1; reserved $36,000.00
 [2023-08-21] 💰 Sold CALL +$616.10 @ $382.50 Δ=0.075 exp 2023-09-08 contracts 13
-[2023-08-23] ⏳ PUT expired worthless @ $360.00
-[2023-08-23] 💰 Sold CSP +$167.10 @ $365.00 exp 2023-08-25 contracts 1; reserved $36,500.00
-[2023-08-25] ✅ PUT assigned: +100 @ $365.00
-[2023-09-05] 🛡️ Buy Hedge PUT id=109 strike $377.00 exp 2023-09-18 cost $468.77
-[2023-09-06] 🛡️ Buy Hedge PUT id=110 strike $377.00 exp 2023-09-18 cost $598.47
-[2023-09-07] 🛡️ Buy Hedge PUT id=111 strike $370.00 exp 2023-09-18 cost $495.69
-[2023-09-08] 🛡️ Buy Hedge PUT id=112 strike $372.00 exp 2023-09-19 cost $415.27
-[2023-09-11] 🛡️ Hedge skipped: need $545.97, have $372.71.
-[2023-09-11] 💰 Sold CALL +$227.15 @ $399.00 Δ=0.035 exp 2023-09-29 contracts 14
-[2023-09-12] 🛡️ Buy Hedge PUT id=113 strike $375.00 exp 2023-09-25 cost $585.72
-[2023-09-13] 🛡️ Hedge skipped: need $477.04, have $14.14.
-[2023-09-14] 🛡️ Hedge skipped: need $421.98, have $14.14.
-[2023-09-15] 🛡️ Hedge skipped: need $755.80, have $14.14.
-[2023-09-18] 📦 Dividend +$750.40 ($0.5360/sh on 1400)
-[2023-09-18] 🛡️ Hedge PUT expired (id=109): strike $377.00, payoff $768.00, ITM=True
-[2023-09-18] 🛡️ Hedge PUT expired (id=110): strike $377.00, payoff $768.00, ITM=True
-[2023-09-18] 🛡️ Hedge PUT expired (id=111): strike $370.00, payoff $68.00, ITM=True
-[2023-09-18] 🛡️ Buy Hedge PUT id=114 strike $369.00 exp 2023-09-29 cost $422.03
-[2023-09-19] 🛡️ Hedge PUT expired (id=112): strike $372.00, payoff $268.00, ITM=True
-[2023-09-19] 🛡️ Buy Hedge PUT id=115 strike $369.00 exp 2023-10-02 cost $516.03
-[2023-09-25] 🛡️ Hedge PUT expired (id=113): strike $375.00, payoff $1,807.00, ITM=True
-[2023-09-29] 🛡️ Hedge PUT expired (id=114): strike $369.00, payoff $746.00, ITM=True
-[2023-10-02] 🛡️ Hedge PUT expired (id=115): strike $369.00, payoff $1,046.00, ITM=True
+[2023-08-25] 💰 Sold CSP +$203.94 @ $362.00 exp 2023-08-28 contracts 1; reserved $36,200.00
+[2023-08-28] ⏳ PUT expired worthless @ $362.00
+[2023-09-07] 🛡️ Buy Hedge PUT id=117 strike $370.00 exp 2023-09-14 cost $380.13
+[2023-09-11] 🛡️ Buy Hedge PUT id=118 strike $376.00 exp 2023-09-18 cost $421.24
+[2023-09-11] 💰 Sold CALL +$210.93 @ $399.00 Δ=0.035 exp 2023-09-29 contracts 13
+[2023-09-12] 🛡️ Buy Hedge PUT id=119 strike $375.00 exp 2023-09-19 cost $425.53
+[2023-09-13] 🛡️ Buy Hedge PUT id=120 strike $373.00 exp 2023-09-20 cost $381.10
+[2023-09-14] 🛡️ Hedge PUT expired (id=117): strike $370.00, payoff $0.00, ITM=False
+[2023-09-14] 🛡️ Buy Hedge PUT id=121 strike $376.00 exp 2023-09-21 cost $399.35
+[2023-09-18] 📦 Dividend +$696.80 ($0.5360/sh on 1300)
+[2023-09-18] 🛡️ Hedge PUT expired (id=118): strike $376.00, payoff $668.00, ITM=True
+[2023-09-19] 🛡️ Hedge PUT expired (id=119): strike $375.00, payoff $568.00, ITM=True
+[2023-09-19] 🛡️ Buy Hedge PUT id=122 strike $369.00 exp 2023-09-26 cost $423.30
+[2023-09-20] 🛡️ Hedge PUT expired (id=120): strike $373.00, payoff $205.00, ITM=True
+[2023-09-20] 🛡️ Buy Hedge PUT id=123 strike $371.00 exp 2023-09-27 cost $510.49
+[2023-09-21] 🛡️ Hedge PUT expired (id=121): strike $376.00, payoff $1,520.00, ITM=True
+[2023-09-22] 💰 Sold CSP +$168.14 @ $360.00 exp 2023-09-25 contracts 1; reserved $36,000.00
+[2023-09-25] ✅ PUT assigned: +100 @ $360.00
+[2023-09-26] 🛡️ Hedge PUT expired (id=122): strike $369.00, payoff $1,201.00, ITM=True
+[2023-09-27] 🛡️ Hedge PUT expired (id=123): strike $371.00, payoff $1,562.00, ITM=True
 [2023-10-02] 💰 Sold CALL +$488.35 @ $383.00 Δ=0.059 exp 2023-10-20 contracts 14
-[2023-10-09] 🛡️ Buy Hedge PUT id=116 strike $362.00 exp 2023-10-20 cost $529.59
-[2023-10-10] 🛡️ Buy Hedge PUT id=117 strike $367.00 exp 2023-10-23 cost $427.87
-[2023-10-11] 🛡️ Buy Hedge PUT id=118 strike $370.00 exp 2023-10-23 cost $541.53
-[2023-10-12] 🛡️ Buy Hedge PUT id=119 strike $372.00 exp 2023-10-23 cost $491.87
-[2023-10-13] 🛡️ Buy Hedge PUT id=120 strike $371.00 exp 2023-10-24 cost $563.67
-[2023-10-16] 🛡️ Buy Hedge PUT id=121 strike $367.00 exp 2023-10-27 cost $474.08
-[2023-10-17] 🛡️ Buy Hedge PUT id=122 strike $366.00 exp 2023-10-30 cost $498.01
-[2023-10-18] 🛡️ Hedge skipped: cap reached (7/7).
-[2023-10-19] 🛡️ Hedge skipped: cap reached (7/7).
-[2023-10-20] 🛡️ Hedge PUT expired (id=116): strike $362.00, payoff $254.00, ITM=True
-[2023-10-23] 🛡️ Hedge PUT expired (id=117): strike $367.00, payoff $1,374.00, ITM=True
-[2023-10-23] 🛡️ Hedge PUT expired (id=118): strike $370.00, payoff $1,674.00, ITM=True
-[2023-10-23] 🛡️ Hedge PUT expired (id=119): strike $372.00, payoff $1,874.00, ITM=True
+[2023-10-11] 🛡️ Buy Hedge PUT id=124 strike $370.00 exp 2023-10-18 cost $399.93
+[2023-10-12] 🛡️ Buy Hedge PUT id=125 strike $372.00 exp 2023-10-19 cost $424.86
+[2023-10-13] 🛡️ Buy Hedge PUT id=126 strike $371.00 exp 2023-10-20 cost $616.10
+[2023-10-17] 🛡️ Buy Hedge PUT id=127 strike $366.00 exp 2023-10-24 cost $412.64
+[2023-10-18] 🛡️ Hedge PUT expired (id=124): strike $370.00, payoff $433.00, ITM=True
+[2023-10-18] 🛡️ Buy Hedge PUT id=128 strike $366.00 exp 2023-10-25 cost $507.74
+[2023-10-19] 🛡️ Hedge PUT expired (id=125): strike $372.00, payoff $719.00, ITM=True
+[2023-10-19] 🛡️ Buy Hedge PUT id=129 strike $365.00 exp 2023-10-26 cost $575.19
+[2023-10-20] 🛡️ Hedge PUT expired (id=126): strike $371.00, payoff $1,154.00, ITM=True
 [2023-10-23] 💰 Sold CALL +$774.75 @ $379.00 Δ=0.077 exp 2023-11-10 contracts 14
-[2023-10-24] 🛡️ Hedge PUT expired (id=120): strike $371.00, payoff $1,349.00, ITM=True
-[2023-10-24] 🛡️ Buy Hedge PUT id=123 strike $358.00 exp 2023-11-06 cost $667.04
-[2023-10-25] 💰 Contribution +$15,000, Cash: $23,891.89
-[2023-10-27] 🛡️ Hedge PUT expired (id=121): strike $367.00, payoff $2,057.00, ITM=True
-[2023-10-30] 🛡️ Hedge PUT expired (id=122): strike $366.00, payoff $1,817.00, ITM=True
-[2023-11-06] 🛡️ Hedge PUT expired (id=123): strike $358.00, payoff $0.00, ITM=False
+[2023-10-24] 🛡️ Hedge PUT expired (id=127): strike $366.00, payoff $849.00, ITM=True
+[2023-10-25] 💰 Contribution +$15,000, Cash: $20,825.73
+[2023-10-25] 🛡️ Hedge PUT expired (id=128): strike $366.00, payoff $930.00, ITM=True
+[2023-10-26] 🛡️ Hedge PUT expired (id=129): strike $365.00, payoff $1,588.00, ITM=True
 [2023-11-13] 💰 Sold CALL +$337.40 @ $400.00 Δ=0.046 exp 2023-12-01 contracts 14
 [2023-12-04] 💰 Sold CALL +$322.66 @ $410.00 Δ=0.043 exp 2023-12-22 contracts 14
-[2023-12-14] ✅ TQQQ TP: sell 22 @ $49.25 (entry $23.82), P&L +$559.57
+[2023-12-14] ✅ TQQQ TP: sell 28 @ $49.25 (entry $23.82), P&L +$712.18
 [2023-12-18] 📦 Dividend +$1,131.20 ($0.8080/sh on 1400)
-[2023-12-26] 🛡️ Buy Hedge PUT id=124 strike $427.00 exp 2024-01-19 cost $1,921.15
 [2023-12-27] 📦 Dividend +$302.40 ($0.2160/sh on 1400)
-[2023-12-27] 🛡️ Buy Hedge PUT id=125 strike $410.78 exp 2024-01-08 cost $403.61
 [2023-12-27] 💰 Sold CALL +$136.81 @ $439.78 Δ=0.021 exp 2024-01-12 contracts 14
-[2023-12-28] 🛡️ Buy Hedge PUT id=126 strike $412.78 exp 2024-01-08 cost $438.64
-[2024-01-08] 🛡️ Hedge PUT expired (id=125): strike $410.78, payoff $1,279.00, ITM=True
-[2024-01-08] 🛡️ Hedge PUT expired (id=126): strike $412.78, payoff $1,479.00, ITM=True
 [2024-01-16] 💰 Sold CALL +$310.06 @ $434.00 Δ=0.041 exp 2024-02-02 contracts 14
-[2024-01-19] 🛡️ Hedge PUT expired (id=124): strike $427.00, payoff $1,178.00, ITM=True
-[2024-01-22] ✅ TQQQ TP: sell 9 @ $55.41 (entry $27.43), P&L +$251.82
-[2024-01-26] 💰 Contribution +$15,000, Cash: $48,061.21
+[2024-01-22] ✅ TQQQ TP: sell 8 @ $55.41 (entry $27.43), P&L +$223.84
+[2024-01-22] ✅ TQQQ TP: sell 11 @ $55.41 (entry $27.65), P&L +$305.36
+[2024-01-26] 💰 Contribution +$15,000, Cash: $43,316.04
 [2024-01-26] 💰 Sold CSP +$143.80 @ $424.00 exp 2024-01-29 contracts 1; reserved $42,400.00
 [2024-01-29] ⏳ PUT expired worthless @ $424.00
 [2024-01-29] 💰 Sold CSP +$198.31 @ $424.00 exp 2024-01-31 contracts 1; reserved $42,400.00
 [2024-01-31] ✅ PUT assigned: +100 @ $424.00
 [2024-02-05] 💰 Sold CALL +$393.77 @ $455.00 Δ=0.045 exp 2024-02-23 contracts 15
-[2024-02-12] ✅ TQQQ TP: sell 58 @ $60.21 (entry $29.85), P&L +$1,760.88
+[2024-02-12] ✅ TQQQ TP: sell 52 @ $60.21 (entry $29.85), P&L +$1,578.72
 [2024-02-26] 💰 Sold CALL +$276.72 @ $469.78 Δ=0.031 exp 2024-03-15 contracts 15
-[2024-03-04] ✅ TQQQ TP: sell 83 @ $63.09 (entry $30.85), P&L +$2,675.92
-[2024-03-04] ✅ TQQQ TP: sell 197 @ $63.09 (entry $31.13), P&L +$6,296.12
+[2024-03-04] ✅ TQQQ TP: sell 98 @ $63.09 (entry $30.85), P&L +$3,159.52
+[2024-03-04] ✅ TQQQ TP: sell 9 @ $63.09 (entry $31.13), P&L +$287.64
 [2024-03-18] 📦 Dividend +$859.50 ($0.5730/sh on 1500)
 [2024-03-18] 💰 Sold CALL +$340.03 @ $470.00 Δ=0.037 exp 2024-04-05 contracts 15
-[2024-04-01] 🛡️ Buy Hedge PUT id=127 strike $445.00 exp 2024-04-12 cost $548.86
-[2024-04-02] 🛡️ Buy Hedge PUT id=128 strike $440.00 exp 2024-04-15 cost $607.90
-[2024-04-03] 🛡️ Buy Hedge PUT id=129 strike $439.00 exp 2024-04-15 cost $397.55
-[2024-04-04] 🛡️ Buy Hedge PUT id=130 strike $446.00 exp 2024-04-15 cost $630.56
-[2024-04-05] 🛡️ Buy Hedge PUT id=131 strike $437.00 exp 2024-04-16 cost $430.29
-[2024-04-08] 🛡️ Buy Hedge PUT id=132 strike $441.00 exp 2024-04-19 cost $604.19
+[2024-04-03] 🛡️ Buy Hedge PUT id=130 strike $439.00 exp 2024-04-10 cost $304.53
+[2024-04-05] 🛡️ Buy Hedge PUT id=131 strike $437.00 exp 2024-04-12 cost $399.83
+[2024-04-08] 🛡️ Buy Hedge PUT id=132 strike $441.00 exp 2024-04-15 cost $483.74
 [2024-04-08] 💰 Sold CALL +$329.10 @ $470.00 Δ=0.038 exp 2024-04-26 contracts 15
-[2024-04-09] 🛡️ Buy Hedge PUT id=133 strike $443.00 exp 2024-04-22 cost $685.42
-[2024-04-10] 🛡️ Hedge skipped: cap reached (7/7).
-[2024-04-11] 🛡️ Hedge skipped: cap reached (7/7).
-[2024-04-12] 🛡️ Hedge PUT expired (id=127): strike $445.00, payoff $390.00, ITM=True
-[2024-04-12] 🛡️ Buy Hedge PUT id=134 strike $441.00 exp 2024-04-23 cost $702.94
-[2024-04-15] 🛡️ Hedge PUT expired (id=128): strike $440.00, payoff $0.00, ITM=False
-[2024-04-15] 🛡️ Hedge PUT expired (id=129): strike $439.00, payoff $0.00, ITM=False
-[2024-04-15] 🛡️ Hedge PUT expired (id=130): strike $446.00, payoff $394.00, ITM=True
-[2024-04-15] 🛡️ Buy Hedge PUT id=135 strike $442.00 exp 2024-04-26 cost $813.53
-[2024-04-16] 🛡️ Hedge PUT expired (id=131): strike $437.00, payoff $610.00, ITM=True
-[2024-04-16] 🛡️ Buy Hedge PUT id=136 strike $430.00 exp 2024-05-17 cost $1,005.63
-[2024-04-19] 🛡️ Hedge PUT expired (id=132): strike $441.00, payoff $1,878.00, ITM=True
-[2024-04-22] 🛡️ Hedge PUT expired (id=133): strike $443.00, payoff $2,569.00, ITM=True
-[2024-04-23] 🛡️ Hedge PUT expired (id=134): strike $441.00, payoff $2,023.00, ITM=True
-[2024-04-26] 💰 Contribution +$15,000, Cash: $45,796.95
-[2024-04-26] 🛡️ Hedge PUT expired (id=135): strike $442.00, payoff $1,438.00, ITM=True
-[2024-04-26] 💰 Sold CSP +$119.20 @ $428.00 exp 2024-04-29 contracts 1; reserved $42,800.00
-[2024-04-29] ⏳ PUT expired worthless @ $428.00
-[2024-04-29] 💰 Sold CSP +$307.66 @ $433.00 exp 2024-05-01 contracts 1; reserved $43,300.00
+[2024-04-09] 🛡️ Buy Hedge PUT id=133 strike $443.00 exp 2024-04-16 cost $554.80
+[2024-04-10] 🛡️ Hedge PUT expired (id=130): strike $439.00, payoff $200.00, ITM=True
+[2024-04-10] 🛡️ Buy Hedge PUT id=134 strike $437.00 exp 2024-04-17 cost $443.25
+[2024-04-11] 🛡️ Buy Hedge PUT id=135 strike $440.00 exp 2024-04-18 cost $419.85
+[2024-04-12] 🛡️ Hedge PUT expired (id=131): strike $437.00, payoff $0.00, ITM=False
+[2024-04-12] 🛡️ Buy Hedge PUT id=136 strike $441.00 exp 2024-04-19 cost $568.44
+[2024-04-15] 🛡️ Hedge PUT expired (id=132): strike $441.00, payoff $0.00, ITM=False
+[2024-04-15] 🛡️ Buy Hedge PUT id=137 strike $442.00 exp 2024-04-22 cost $548.97
+[2024-04-16] 🛡️ Hedge PUT expired (id=133): strike $443.00, payoff $1,210.00, ITM=True
+[2024-04-16] 🛡️ Buy Hedge PUT id=138 strike $431.00 exp 2024-04-23 cost $513.57
+[2024-04-17] 🛡️ Hedge PUT expired (id=134): strike $437.00, payoff $390.00, ITM=True
+[2024-04-18] 🛡️ Hedge PUT expired (id=135): strike $440.00, payoff $1,351.00, ITM=True
+[2024-04-19] 🛡️ Hedge PUT expired (id=136): strike $441.00, payoff $1,878.00, ITM=True
+[2024-04-22] 🛡️ Hedge PUT expired (id=137): strike $442.00, payoff $2,469.00, ITM=True
+[2024-04-23] 🛡️ Hedge PUT expired (id=138): strike $431.00, payoff $1,023.00, ITM=True
+[2024-04-26] 💰 Contribution +$15,000, Cash: $32,622.85
 [2024-04-29] 💰 Sold CALL +$564.68 @ $459.78 Δ=0.058 exp 2024-05-17 contracts 15
-[2024-05-01] ✅ PUT assigned: +100 @ $433.00
-[2024-05-17] 🛡️ Hedge PUT expired (id=136): strike $430.00, payoff $0.00, ITM=False
-[2024-05-20] 💰 Sold CALL +$389.63 @ $480.00 Δ=0.043 exp 2024-06-07 contracts 16
-[2024-05-23] ✅ TQQQ TP: sell 58 @ $66.50 (entry $32.56), P&L +$1,968.52
-[2024-05-28] 🛡️ Buy Hedge PUT id=137 strike $459.00 exp 2024-06-28 cost $835.18
-[2024-05-29] 🛡️ Buy Hedge PUT id=138 strike $455.00 exp 2024-06-10 cost $433.36
-[2024-05-30] 🛡️ Buy Hedge PUT id=139 strike $455.00 exp 2024-06-10 cost $550.75
-[2024-06-06] 🛡️ Buy Hedge PUT id=140 strike $464.00 exp 2024-06-17 cost $573.07
-[2024-06-10] 🛡️ Hedge PUT expired (id=138): strike $455.00, payoff $0.00, ITM=False
-[2024-06-10] 🛡️ Hedge PUT expired (id=139): strike $455.00, payoff $0.00, ITM=False
-[2024-06-10] 💰 Sold CALL +$508.00 @ $489.78 Δ=0.052 exp 2024-06-28 contracts 16
-[2024-06-11] 🛡️ Buy Hedge PUT id=141 strike $464.00 exp 2024-06-24 cost $539.10
-[2024-06-17] 🛡️ Hedge PUT expired (id=140): strike $464.00, payoff $0.00, ITM=False
-[2024-06-20] 🛡️ Buy Hedge PUT id=142 strike $486.00 exp 2024-07-01 cost $698.57
-[2024-06-24] 📦 Dividend +$1,219.20 ($0.7620/sh on 1600)
-[2024-06-24] 🛡️ Hedge PUT expired (id=141): strike $464.00, payoff $0.00, ITM=False
-[2024-06-24] 🛡️ Buy Hedge PUT id=143 strike $478.00 exp 2024-07-05 cost $568.27
-[2024-06-25] 🛡️ Buy Hedge PUT id=144 strike $476.00 exp 2024-07-08 cost $471.63
-[2024-06-26] 🛡️ Buy Hedge PUT id=145 strike $479.00 exp 2024-07-08 cost $483.18
-[2024-06-27] 🛡️ Buy Hedge PUT id=146 strike $480.00 exp 2024-07-08 cost $387.34
-[2024-06-28] 🛡️ Hedge PUT expired (id=137): strike $459.00, payoff $0.00, ITM=False
-[2024-06-28] 🛡️ Buy Hedge PUT id=147 strike $482.00 exp 2024-07-09 cost $403.85
-[2024-07-01] 🛡️ Hedge PUT expired (id=142): strike $486.00, payoff $596.00, ITM=True
-[2024-07-01] 💰 Sold CALL +$266.37 @ $510.00 Δ=0.032 exp 2024-07-19 contracts 16
-[2024-07-05] 🛡️ Hedge PUT expired (id=143): strike $478.00, payoff $0.00, ITM=False
-[2024-07-08] 🛡️ Hedge PUT expired (id=144): strike $476.00, payoff $0.00, ITM=False
-[2024-07-08] 🛡️ Hedge PUT expired (id=145): strike $479.00, payoff $0.00, ITM=False
-[2024-07-08] 🛡️ Hedge PUT expired (id=146): strike $480.00, payoff $0.00, ITM=False
-[2024-07-09] 🛡️ Hedge PUT expired (id=147): strike $482.00, payoff $0.00, ITM=False
-[2024-07-11] 🛡️ Buy Hedge PUT id=148 strike $503.00 exp 2024-07-22 cost $780.43
-[2024-07-12] 🛡️ Buy Hedge PUT id=149 strike $493.00 exp 2024-07-23 cost $431.67
-[2024-07-15] 🛡️ Buy Hedge PUT id=150 strike $497.00 exp 2024-07-26 cost $621.64
-[2024-07-16] 🛡️ Buy Hedge PUT id=151 strike $498.00 exp 2024-07-29 cost $726.14
-[2024-07-17] 🛡️ Buy Hedge PUT id=152 strike $488.00 exp 2024-07-29 cost $799.65
-[2024-07-18] 🛡️ Buy Hedge PUT id=153 strike $486.00 exp 2024-07-29 cost $1,165.60
-[2024-07-19] 🛡️ Buy Hedge PUT id=154 strike $479.00 exp 2024-07-30 cost $733.26
-[2024-07-22] 🛡️ Hedge PUT expired (id=148): strike $503.00, payoff $2,184.00, ITM=True
-[2024-07-22] 🛡️ Buy Hedge PUT id=155 strike $481.00 exp 2024-08-02 cost $809.40
-[2024-07-22] 💰 Sold CALL +$876.35 @ $511.00 Δ=0.071 exp 2024-08-09 contracts 16
-[2024-07-23] 🛡️ Hedge PUT expired (id=149): strike $493.00, payoff $1,159.00, ITM=True
-[2024-07-23] 🛡️ Buy Hedge PUT id=156 strike $481.00 exp 2024-08-05 cost $704.85
-[2024-07-24] 🛡️ Buy Hedge PUT id=157 strike $474.00 exp 2024-08-05 cost $971.19
-[2024-07-25] 🛡️ Hedge skipped: cap reached (8/8).
-[2024-07-26] 🛡️ Hedge PUT expired (id=150): strike $497.00, payoff $3,435.00, ITM=True
-[2024-07-26] 🛡️ Buy Hedge PUT id=158 strike $460.00 exp 2024-08-06 cost $723.56
-[2024-07-29] 💰 Contribution +$15,000, Cash: $20,005.34
-[2024-07-29] 🛡️ Hedge PUT expired (id=151): strike $498.00, payoff $3,229.00, ITM=True
-[2024-07-29] 🛡️ Hedge PUT expired (id=152): strike $488.00, payoff $2,229.00, ITM=True
-[2024-07-29] 🛡️ Hedge PUT expired (id=153): strike $486.00, payoff $2,029.00, ITM=True
-[2024-07-29] 🛡️ Buy Hedge PUT id=159 strike $466.00 exp 2024-08-09 cost $954.98
-[2024-07-30] 🛡️ Hedge PUT expired (id=154): strike $479.00, payoff $1,315.00, ITM=True
-[2024-07-30] 🛡️ Buy Hedge PUT id=160 strike $466.00 exp 2024-08-12 cost $1,069.06
-[2024-07-31] 🛡️ Buy Hedge PUT id=161 strike $468.00 exp 2024-08-12 cost $810.49
-[2024-08-01] 🛡️ Buy Hedge PUT id=162 strike $472.00 exp 2024-08-12 cost $917.68
-[2024-08-02] 🛡️ Hedge PUT expired (id=155): strike $481.00, payoff $3,011.00, ITM=True
-[2024-08-05] 🛡️ Hedge PUT expired (id=156): strike $481.00, payoff $5,629.00, ITM=True
-[2024-08-05] 🛡️ Hedge PUT expired (id=157): strike $474.00, payoff $4,929.00, ITM=True
-[2024-08-06] 🛡️ Hedge PUT expired (id=158): strike $460.00, payoff $2,277.00, ITM=True
-[2024-08-09] 🛡️ Hedge PUT expired (id=159): strike $466.00, payoff $1,926.00, ITM=True
-[2024-08-12] 🛡️ Hedge PUT expired (id=160): strike $466.00, payoff $1,461.00, ITM=True
-[2024-08-12] 🛡️ Hedge PUT expired (id=161): strike $468.00, payoff $1,661.00, ITM=True
-[2024-08-12] 🛡️ Hedge PUT expired (id=162): strike $472.00, payoff $2,061.00, ITM=True
-[2024-08-12] 💰 Sold CSP +$391.95 @ $451.00 exp 2024-08-14 contracts 1; reserved $45,100.00
+[2024-05-20] 💰 Sold CALL +$365.28 @ $480.00 Δ=0.043 exp 2024-06-07 contracts 15
+[2024-05-23] ✅ TQQQ TP: sell 75 @ $66.50 (entry $32.56), P&L +$2,545.50
+[2024-05-31] 🛡️ Buy Hedge PUT id=139 strike $452.00 exp 2024-06-07 cost $621.68
+[2024-06-07] 🛡️ Hedge PUT expired (id=139): strike $452.00, payoff $0.00, ITM=False
+[2024-06-10] 💰 Sold CALL +$476.25 @ $489.78 Δ=0.052 exp 2024-06-28 contracts 15
+[2024-06-12] 🛡️ Buy Hedge PUT id=140 strike $472.00 exp 2024-06-20 cost $299.02
+[2024-06-20] 🛡️ Hedge PUT expired (id=140): strike $472.00, payoff $0.00, ITM=False
+[2024-06-24] 📦 Dividend +$1,143.00 ($0.7620/sh on 1500)
+[2024-07-01] 💰 Sold CALL +$249.72 @ $510.00 Δ=0.032 exp 2024-07-19 contracts 15
+[2024-07-16] 🛡️ Buy Hedge PUT id=141 strike $498.00 exp 2024-07-23 cost $625.18
+[2024-07-19] 🛡️ Buy Hedge PUT id=142 strike $479.00 exp 2024-07-26 cost $728.15
+[2024-07-22] 💰 Sold CALL +$821.58 @ $511.00 Δ=0.071 exp 2024-08-09 contracts 15
+[2024-07-23] 🛡️ Hedge PUT expired (id=141): strike $498.00, payoff $1,659.00, ITM=True
+[2024-07-25] 🛡️ Buy Hedge PUT id=143 strike $464.00 exp 2024-08-01 cost $720.47
+[2024-07-26] 🛡️ Hedge PUT expired (id=142): strike $479.00, payoff $1,635.00, ITM=True
+[2024-07-26] 🛡️ Buy Hedge PUT id=144 strike $462.50 exp 2024-08-02 cost $786.20
+[2024-07-29] 💰 Contribution +$15,000, Cash: $55,744.15
+[2024-07-29] 🛡️ Buy Hedge PUT id=145 strike $466.00 exp 2024-08-05 cost $762.75
+[2024-07-29] 💰 Sold CSP +$429.77 @ $466.00 exp 2024-07-31 contracts 1; reserved $46,600.00
+[2024-07-30] 🛡️ Buy Hedge PUT id=146 strike $466.00 exp 2024-08-06 cost $942.70
+[2024-07-31] ⏳ PUT expired worthless @ $466.00
+[2024-07-31] 💰 Sold CSP +$330.24 @ $468.00 exp 2024-08-02 contracts 1; reserved $46,800.00
+[2024-08-01] 🛡️ Hedge PUT expired (id=143): strike $464.00, payoff $0.00, ITM=False
+[2024-08-01] 🛡️ Buy Hedge PUT id=147 strike $472.00 exp 2024-08-08 cost $825.28
+[2024-08-02] ✅ PUT assigned: +100 @ $468.00
+[2024-08-02] 🛡️ Hedge PUT expired (id=144): strike $462.50, payoff $1,161.00, ITM=True
+[2024-08-02] 🛡️ Buy Hedge PUT id=148 strike $451.00 exp 2024-08-09 cost $949.95
+[2024-08-05] 🛡️ Hedge PUT expired (id=145): strike $466.00, payoff $4,129.00, ITM=True
+[2024-08-06] 🛡️ Hedge PUT expired (id=146): strike $466.00, payoff $2,877.00, ITM=True
+[2024-08-08] 🛡️ Hedge PUT expired (id=147): strike $472.00, payoff $3,094.00, ITM=True
+[2024-08-09] 🛡️ Hedge PUT expired (id=148): strike $451.00, payoff $426.00, ITM=True
 [2024-08-12] 💰 Sold CALL +$1,245.42 @ $483.00 Δ=0.085 exp 2024-08-30 contracts 16
-[2024-08-14] ⏳ PUT expired worthless @ $451.00
-[2024-08-14] 💰 Sold CSP +$370.93 @ $464.00 exp 2024-08-16 contracts 1; reserved $46,400.00
-[2024-08-16] ⏳ PUT expired worthless @ $464.00
-[2024-08-16] 💰 Sold CSP +$183.24 @ $473.00 exp 2024-08-19 contracts 1; reserved $47,300.00
-[2024-08-19] ⏳ PUT expired worthless @ $473.00
-[2024-08-19] 🛡️ Buy Hedge PUT id=163 strike $475.00 exp 2024-08-30 cost $550.73
-[2024-08-19] 💰 Sold CSP +$183.04 @ $475.00 exp 2024-08-21 contracts 1; reserved $47,500.00
-[2024-08-21] ⏳ PUT expired worthless @ $475.00
-[2024-08-21] 🛡️ Buy Hedge PUT id=164 strike $481.00 exp 2024-09-03 cost $734.28
-[2024-08-21] 💰 Sold CSP +$296.71 @ $481.00 exp 2024-08-23 contracts 1; reserved $48,100.00
-[2024-08-22] 🛡️ Buy Hedge PUT id=165 strike $485.00 exp 2024-09-03 cost $1,040.09
-[2024-08-23] ✅ PUT assigned: +100 @ $481.00
-[2024-08-23] 🛡️ Hedge skipped: need $685.46, have $256.32.
-[2024-08-26] 🛡️ Hedge skipped: need $886.01, have $256.32.
-[2024-08-27] 🛡️ Hedge skipped: need $758.17, have $256.32.
-[2024-08-28] 🛡️ Hedge skipped: need $1,008.56, have $256.32.
-[2024-08-29] 🛡️ Hedge skipped: need $486.69, have $256.32.
-[2024-08-30] 🛡️ Hedge PUT expired (id=163): strike $475.00, payoff $0.00, ITM=False
-[2024-08-30] 🛡️ Hedge skipped: need $606.06, have $256.32.
-[2024-09-03] 🛡️ Hedge PUT expired (id=164): strike $481.00, payoff $780.00, ITM=True
-[2024-09-03] 🛡️ Hedge PUT expired (id=165): strike $485.00, payoff $1,180.00, ITM=True
-[2024-09-03] 💰 Sold CALL +$372.37 @ $504.78 Δ=0.032 exp 2024-09-20 contracts 17
-[2024-09-04] 🛡️ Buy Hedge PUT id=166 strike $460.00 exp 2024-09-16 cost $709.12
-[2024-09-16] 🛡️ Hedge PUT expired (id=166): strike $460.00, payoff $0.00, ITM=False
-[2024-09-23] 📦 Dividend +$1,150.90 ($0.6770/sh on 1700)
-[2024-09-23] 💰 Sold CALL +$572.49 @ $515.00 Δ=0.049 exp 2024-10-11 contracts 17
-[2024-10-14] 💰 Sold CALL +$563.01 @ $530.00 Δ=0.047 exp 2024-11-01 contracts 17
-[2024-10-25] 💰 Contribution +$15,000, Cash: $19,165.97
-[2024-11-01] 🛡️ Buy Hedge PUT id=167 strike $485.00 exp 2024-11-12 cost $826.21
-[2024-11-04] 💰 Sold CALL +$1,191.53 @ $519.00 Δ=0.078 exp 2024-11-22 contracts 17
-[2024-11-12] 🛡️ Hedge PUT expired (id=167): strike $485.00, payoff $0.00, ITM=False
-[2024-11-25] 💰 Sold CALL +$183.72 @ $545.00 Δ=0.020 exp 2024-12-13 contracts 17
-[2024-12-13] 💰 Sold CALL +$150.52 @ $565.00 Δ=0.018 exp 2024-12-31 contracts 17
-[2024-12-16] 🛡️ Buy Hedge PUT id=168 strike $533.00 exp 2024-12-27 cost $433.66
-[2024-12-17] 🛡️ Buy Hedge PUT id=169 strike $536.00 exp 2024-12-30 cost $646.92
-[2024-12-23] 📦 Dividend +$1,419.50 ($0.8350/sh on 1700)
-[2024-12-27] 🛡️ Hedge PUT expired (id=168): strike $533.00, payoff $699.00, ITM=True
-[2024-12-30] 🛡️ Hedge PUT expired (id=169): strike $536.00, payoff $2,049.00, ITM=True
-[2024-12-31] 💰 Sold CALL +$202.08 @ $549.78 Δ=0.022 exp 2025-01-17 contracts 17
-[2025-01-07] 🛡️ Buy Hedge PUT id=170 strike $526.00 exp 2025-02-07 cost $1,202.65
-[2025-01-21] 💰 Sold CALL +$503.95 @ $560.00 Δ=0.042 exp 2025-02-07 contracts 17
-[2025-01-29] 💰 Contribution +$15,000, Cash: $37,455.83
-[2025-02-07] 🛡️ Hedge PUT expired (id=170): strike $526.00, payoff $0.00, ITM=False
+[2024-09-03] 💰 Sold CALL +$350.46 @ $504.78 Δ=0.032 exp 2024-09-20 contracts 16
+[2024-09-23] 📦 Dividend +$1,083.20 ($0.6770/sh on 1600)
+[2024-09-23] 💰 Sold CALL +$538.82 @ $515.00 Δ=0.049 exp 2024-10-11 contracts 16
+[2024-10-14] 💰 Sold CALL +$529.89 @ $530.00 Δ=0.047 exp 2024-11-01 contracts 16
+[2024-10-25] 💰 Contribution +$15,000, Cash: $36,658.26
+[2024-11-04] 💰 Sold CALL +$1,121.44 @ $519.00 Δ=0.078 exp 2024-11-22 contracts 16
+[2024-11-25] 💰 Sold CALL +$172.91 @ $545.00 Δ=0.020 exp 2024-12-13 contracts 16
+[2024-12-13] 💰 Sold CALL +$141.66 @ $565.00 Δ=0.018 exp 2024-12-31 contracts 16
+[2024-12-18] 🛡️ Buy Hedge PUT id=149 strike $535.00 exp 2024-12-26 cost $819.71
+[2024-12-23] 📦 Dividend +$1,336.00 ($0.8350/sh on 1600)
+[2024-12-26] 🛡️ Hedge PUT expired (id=149): strike $535.00, payoff $668.00, ITM=True
+[2024-12-31] 💰 Sold CALL +$190.19 @ $549.78 Δ=0.022 exp 2025-01-17 contracts 16
+[2025-01-21] 💰 Sold CALL +$474.30 @ $560.00 Δ=0.042 exp 2025-02-07 contracts 16
+[2025-01-29] 💰 Contribution +$15,000, Cash: $54,943.05
+[2025-01-29] 💰 Sold CSP +$451.58 @ $522.00 exp 2025-01-31 contracts 1; reserved $52,200.00
+[2025-01-31] ⏳ PUT expired worthless @ $522.00
+[2025-01-31] 💰 Sold CSP +$235.44 @ $527.00 exp 2025-02-03 contracts 1; reserved $52,700.00
+[2025-02-03] ✅ PUT assigned: +100 @ $527.00
 [2025-02-10] 💰 Sold CALL +$548.93 @ $559.00 Δ=0.049 exp 2025-02-28 contracts 17
 [2025-03-03] 💰 Sold CALL +$853.40 @ $543.00 Δ=0.057 exp 2025-03-21 contracts 17
-[2025-03-10] 🛒 TQQQ buy(FG=15) 607 @ $64.00, cash $10.16
+[2025-03-10] 🛒 TQQQ buy(FG=15) 67 @ $64.00, cash $44.40
+[2025-03-17] 🛡️ Buy Hedge PUT id=150 strike $480.00 exp 2025-03-24 cost $624.15
+[2025-03-18] 🛡️ Buy Hedge PUT id=151 strike $479.00 exp 2025-03-25 cost $936.34
 [2025-03-24] 📦 Dividend +$1,217.20 ($0.7160/sh on 1700)
-[2025-03-24] 🛡️ Buy Hedge PUT id=171 strike $488.00 exp 2025-04-04 cost $815.71
+[2025-03-24] 🛡️ Hedge PUT expired (id=150): strike $480.00, payoff $0.00, ITM=False
 [2025-03-24] 💰 Sold CALL +$1,453.01 @ $517.00 Δ=0.100 exp 2025-04-11 contracts 17
-[2025-03-25] 🛡️ Buy Hedge PUT id=172 strike $491.00 exp 2025-04-07 cost $787.50
-[2025-03-28] 🛡️ Hedge skipped: need $1,096.69, have $1,077.15.
-[2025-03-31] 🛡️ Hedge skipped: need $1,089.50, have $1,077.15.
-[2025-04-01] 🛡️ Buy Hedge PUT id=173 strike $467.00 exp 2025-04-14 cost $989.05
-[2025-04-02] 🛡️ Hedge skipped: need $758.50, have $88.09.
-[2025-04-03] 🛒 TQQQ buy(FG=8) 1 @ $52.43, cash $35.66
-[2025-04-04] 🛡️ Hedge PUT expired (id=171): strike $488.00, payoff $4,986.00, ITM=True
-[2025-04-04] 🛒 TQQQ buy(FG=4) 109 @ $45.99, cash $8.75
-[2025-04-07] 🛡️ Hedge PUT expired (id=172): strike $491.00, payoff $8,234.00, ITM=True
-[2025-04-07] 🛒 TQQQ buy(FG=4) 224 @ $36.75, cash $10.75
-[2025-04-14] 🛡️ Hedge PUT expired (id=173): strike $467.00, payoff $254.00, ITM=True
+[2025-03-25] 🛡️ Hedge PUT expired (id=151): strike $479.00, payoff $0.00, ITM=False
+[2025-03-31] 🛡️ Buy Hedge PUT id=152 strike $462.00 exp 2025-04-07 cost $808.89
+[2025-04-01] 🛡️ Buy Hedge PUT id=153 strike $467.00 exp 2025-04-08 cost $798.63
+[2025-04-02] 🛡️ Buy Hedge PUT id=154 strike $467.00 exp 2025-04-09 cost $615.72
+[2025-04-07] 🛡️ Hedge PUT expired (id=152): strike $462.00, payoff $5,334.00, ITM=True
+[2025-04-07] 🛒 TQQQ buy(FG=4) 116 @ $36.75, cash $1.88
+[2025-04-08] 🛡️ Hedge PUT expired (id=153): strike $467.00, payoff $2,884.00, ITM=True
+[2025-04-08] 🛒 TQQQ buy(FG=4) 63 @ $45.39, cash $26.31
+[2025-04-09] 🛡️ Hedge PUT expired (id=154): strike $467.00, payoff $5,143.00, ITM=True
+[2025-04-10] 🛒 TQQQ buy(FG=8) 106 @ $48.68, cash $9.23
 [2025-04-14] 💰 Sold CALL +$1,012.37 @ $497.00 Δ=0.068 exp 2025-04-30 contracts 17
-[2025-04-16] 🛒 TQQQ buy(FG=14) 27 @ $46.83, cash $12.71
-[2025-04-30] 💰 Contribution +$15,000, Cash: $15,012.71
+[2025-04-16] 🛒 TQQQ buy(FG=14) 21 @ $46.83, cash $38.17
+[2025-04-30] 💰 Contribution +$15,000, Cash: $15,038.17
 [2025-04-30] 💰 Sold CALL +$1,199.03 @ $505.00 Δ=0.079 exp 2025-05-16 contracts 17
-[2025-05-05] 🛡️ Buy Hedge PUT id=174 strike $485.00 exp 2025-05-16 cost $828.11
-[2025-05-06] 🛡️ Buy Hedge PUT id=175 strike $480.00 exp 2025-05-19 cost $904.41
-[2025-05-07] 🛡️ Buy Hedge PUT id=176 strike $482.00 exp 2025-05-19 cost $955.54
 [2025-05-16] ⚠️ CALL assigned: -1700 @ $505.00
-[2025-05-16] 🛡️ Hedge PUT expired (id=174): strike $485.00, payoff $0.00, ITM=False
 [2025-05-16] 💰 Sold CSP +$3,616.96 @ $521.00 exp 2025-05-19 contracts 16; reserved $833,600.00
 [2025-05-19] ✅ PUT assigned: +1600 @ $521.00
-[2025-05-19] 🛡️ Hedge PUT expired (id=175): strike $480.00, payoff $0.00, ITM=False
-[2025-05-19] 🛡️ Hedge PUT expired (id=176): strike $482.00, payoff $0.00, ITM=False
 [2025-05-20] 💰 Sold CALL +$686.70 @ $555.00 Δ=0.056 exp 2025-06-06 contracts 16
-[2025-06-04] ✅ TQQQ TP: sell 224 @ $73.58 (entry $36.75), P&L +$8,249.92
+[2025-06-04] ✅ TQQQ TP: sell 116 @ $73.58 (entry $36.75), P&L +$4,272.28
 [2025-06-04] 💰 Sold CSP +$302.89 @ $528.00 exp 2025-06-06 contracts 1; reserved $52,800.00
 [2025-06-06] ⏳ PUT expired worthless @ $528.00
 [2025-06-06] 💰 Sold CSP +$198.56 @ $530.00 exp 2025-06-09 contracts 1; reserved $53,000.00
@@ -651,40 +509,36 @@
 [2025-06-23] 📦 Dividend +$1,004.70 ($0.5910/sh on 1700)
 [2025-06-30] 💰 Sold CALL +$484.21 @ $585.00 Δ=0.044 exp 2025-07-18 contracts 17
 [2025-07-21] 💰 Sold CALL +$400.06 @ $600.00 Δ=0.036 exp 2025-08-08 contracts 17
-[2025-07-31] 💰 Contribution +$15,000, Cash: $24,017.82
-[2025-07-31] ✅ TQQQ TP: sell 109 @ $92.71 (entry $45.99), P&L +$5,092.48
-[2025-08-04] 🛡️ Buy Hedge PUT id=177 strike $559.00 exp 2025-08-15 cost $638.68
-[2025-08-05] 🛡️ Buy Hedge PUT id=178 strike $565.00 exp 2025-08-18 cost $833.93
+[2025-07-29] ✅ TQQQ TP: sell 63 @ $90.99 (entry $45.39), P&L +$2,872.80
+[2025-07-31] 💰 Contribution +$15,000, Cash: $24,517.08
 [2025-08-11] 💰 Sold CALL +$297.86 @ $610.00 Δ=0.030 exp 2025-08-29 contracts 17
-[2025-08-13] ✅ TQQQ TP: sell 27 @ $96.05 (entry $46.83), P&L +$1,328.94
-[2025-08-15] 🛡️ Hedge PUT expired (id=177): strike $559.00, payoff $0.00, ITM=False
-[2025-08-18] 🛡️ Hedge PUT expired (id=178): strike $565.00, payoff $0.00, ITM=False
+[2025-08-13] ✅ TQQQ TP: sell 21 @ $96.05 (entry $46.83), P&L +$1,033.62
 
 
 Backtest Summary (Costs ON)  |  Window: 2021-07-26 → 2025-08-21
 ---------------------------------------------------------------------------
 Costs: Commission $0.65/ctr | BUY slip +15% | SELL slip -10%
 
-Final equity (Strategy):    $1,059,105.91
+Final equity (Strategy):    $1,012,485.88
 Final equity (DCA):         $821,478.50
 Total invested capital:     $540,000.00
 
-Total return (Strategy):    96.13%
+Total return (Strategy):    87.50%
 Total return (DCA):         52.13%
-CAGR (Strategy):            17.98%
+CAGR (Strategy):            16.68%
 CAGR (DCA):                 10.85%
-Sharpe (Strategy):          1.31
+Sharpe (Strategy):          1.28
 Sharpe (DCA):               1.15
 
-Max Drawdown (Strategy):    -24.11%  (peak 2025-02-18 → trough 2025-04-07 → rec 2025-05-14)
+Max Drawdown (Strategy):    -24.29%  (peak 2025-02-18 → trough 2025-04-07 → rec 2025-06-10)
 Max Drawdown (DCA):         -25.69%  (peak 2021-11-22 → trough 2022-10-13 → rec 2023-03-27)
 
-Option premium collected (net):   $43,221.14
-TQQQ realized P&L:                $59,163.74
-TQQQ open position:               738 shares
+Option premium collected (net):   $42,842.47
+TQQQ realized P&L:                $50,662.02
+TQQQ open position:               302 shares
 
-Hedge premium paid (after costs): $123,763.10
-Hedge payouts received:           $216,448.00
-Hedge net P&L:                    $92,684.90
+Hedge premium paid (after costs): $94,305.94
+Hedge payouts received:           $165,475.50
+Hedge net P&L:                    $71,169.56
 Open hedge count:                 0
 ---------------------------------------------------------------------------

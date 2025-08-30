@@ -55,8 +55,8 @@ DELTA_BAND = 0.01
 CALL_STRIKE_FLOOR_PCT = 1.06     # 106% of spot
 
 # Hedge parameters
-HEDGE_DTE_LOWER = 11
-HEDGE_DTE_UPPER = 13
+HEDGE_DTE_LOWER = 7
+HEDGE_DTE_UPPER = 10
 
 # --------- Costs (options only) ---------
 COMMISSION_PER_CONTRACT = 0.65           # $/contract
@@ -104,7 +104,7 @@ qqq_raw    = pd.read_csv("data/QQQ_ohlcv_1d.csv")
 tqqq_raw   = pd.read_csv("data/TQQQ_ohlcv_1d.csv")
 div_df     = pd.read_csv("data/QQQ_dividends.csv")
 fg_raw     = pd.read_csv("data/Fear_and_greed.csv")
-put_sig    = pd.read_csv("data/put_signals.csv")
+put_sig    = pd.read_csv("data/put_signals_T1.csv")
 
 # Normalize
 df_options["date"] = normalize_date_series(df_options["date"])
@@ -294,7 +294,7 @@ for i, current_date in enumerate(dates):
                     else:
                         premium = float(vw) * 100.0
                         premium_paid = premium * (1.0 + BUY_SLIPPAGE_PCT) + COMMISSION_PER_CONTRACT * 1
-                        if premium_paid <= cash:
+                        if premium_paid > 0:
                             cash -= premium_paid; hedge_premium_paid += premium_paid
                             hedge_id_seq += 1
                             h = {"id": hedge_id_seq, "buy_date": current_date, "strike": strike,

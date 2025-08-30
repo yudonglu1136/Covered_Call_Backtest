@@ -160,20 +160,103 @@ def fetch_us10y(start: Optional[str], end: Optional[str]) -> pd.DataFrame:
     return df
 
 
-# -------------------- 5) DXY via FRED (DTWEXBGS) --------------------
-def fetch_dxy(start: Optional[str], end: Optional[str], years: int) -> pd.DataFrame:
-    fred = make_fred()
-    s = fred.get_series("DTWEXBGS", observation_start=start, observation_end=end)
-    df = s.to_frame(name="DXY_FRED")
-    df.index.name = "date"
-    df = df.sort_index()
-    if not start:
-        df = clamp_by_years(df, years)
-    out = DATA / "dxy.csv"
-    df.to_csv(out)
-    print(f"[OK] DXY -> {out}  shape={df.shape}")
-    return df
 
+def _to_two_cols(df: pd.DataFrame, ticker_hint: str) -> pd.DataFrame:
+    """
+    统一清洗：取 Adj Close（无则 Close），得到 (date,dxy) 两列，工作日频率并前向填充。
+    """
+    if df is None or df.empty:
+        raise ValueError("empty dataframe")
+
+    # 处理多层列名（少数情形 yfinance 会返回 MultiIndex）
+    if isinstance(df.columns, pd.MultiIndex):
+        # 优先 'Adj Close' 这一层
+        col_layer0 = [lev for lev in df.columns.levels[0]]
+        price = None
+        if "Adj Close" in col_layer0:
+            sub = df["Adj Close"]
+            # 如果还有第二层 ticker，则优先匹配
+            if isinstance(sub, pd.DataFrame):
+                if ticker_hint in sub.columns:
+                    price = sub[ticker_hint]
+                else:
+                    price = sub.iloc[:, 0]
+            else:
+                price = sub
+        else:
+            # 退化取 'Close'
+            sub = df["Close"] if "Close" in col_layer0 else df.xs(df.columns[0], axis=1, level=0)
+            price = sub[ticker_hint] if (isinstance(sub, pd.DataFrame) and ticker_hint in sub.columns) else sub.iloc[:, 0]
+        s = price.rename("dxy")
+    else:
+        # 常见情形：单层列
+        col = "Adj Close" if "Adj Close" in df.columns else ("Close" if "Close" in df.columns else df.columns[-1])
+        s = df[col].rename("dxy")
+
+    out = s.to_frame()
+    out.index = pd.to_datetime(out.index)
+    out.index.name = "date"
+    out = out.sort_index().asfreq("B").ffill()   # 对齐到工作日并前向填充
+    return out[["dxy"]]
+
+def fetch_dxy(*_args, **_kwargs) -> pd.DataFrame:
+    """
+    Yahoo-only DXY, last 10y, 1d bars -> data/dxy.csv
+    Clean to two columns: date,dxy
+    Ignores any passed arguments for backward compatibility.
+    """
+    from pathlib import Path
+    import pandas as pd
+    import yfinance as yf
+
+    TICKERS = ["^DXY", "DX-Y.NYB", "DX=F"]
+    PERIOD   = "10y"
+    INTERVAL = "1d"
+    DATA_DIR = Path("data"); DATA_DIR.mkdir(parents=True, exist_ok=True)
+    OUT_CSV  = DATA_DIR / "dxy.csv"
+
+    def _to_two_cols(df: pd.DataFrame, tk: str) -> pd.DataFrame:
+        if df is None or df.empty:
+            raise ValueError("empty dataframe")
+        if isinstance(df.columns, pd.MultiIndex):
+            # 优先 Adj Close，其次 Close
+            if "Adj Close" in df.columns.levels[0]:
+                sub = df["Adj Close"]
+            elif "Close" in df.columns.levels[0]:
+                sub = df["Close"]
+            else:
+                sub = df.xs(df.columns.levels[0][0], axis=1, level=0)
+            ser = sub[tk] if isinstance(sub, pd.DataFrame) and tk in sub.columns else sub.iloc[:, 0]
+            s = ser.rename("dxy")
+        else:
+            col = "Adj Close" if "Adj Close" in df.columns else ("Close" if "Close" in df.columns else df.columns[-1])
+            s = df[col].rename("dxy")
+        out = s.to_frame()
+        out.index = pd.to_datetime(out.index); out.index.name = "date"
+        out = out.sort_index().asfreq("B").ffill()
+        return out[["dxy"]]
+
+    last_ok = None
+    for tk in TICKERS:
+        try:
+            df = yf.download(tk, period=PERIOD, interval=INTERVAL,
+                             auto_adjust=False, progress=False,
+                             group_by="column", threads=False)
+            if df is not None and not df.empty:
+                clean = _to_two_cols(df, tk)
+                last_ok = (tk, clean)
+                if tk == "^DXY":  # 命中指数就直接用
+                    break
+        except Exception as e:
+            print(f"[WARN] Yahoo {tk} 失败：{e}；尝试下一个…")
+
+    if last_ok is None:
+        raise RuntimeError("无法从 Yahoo 获取 DXY（^DXY / DX-Y.NYB / DX=F 都失败）")
+
+    tk, out = last_ok
+    out.to_csv(OUT_CSV)
+    print(f"[OK] DXY (Yahoo {tk}) -> {OUT_CSV}  shape={out.shape}  last={out.index.max().date()}")
+    return out
 
 # -------------------- CLI --------------------
 CHOICES = ["yield_curve", "ig_hy", "vix", "us10y", "dxy"]
@@ -199,16 +282,30 @@ def main():
     print(f"[ARGS] what={sel}, start={args.start}, end={args.end}, years={args.years}")
 
     if "yield_curve" in sel:
-        build_yield_curve(args.start, args.end, args.years)
+        try:
+            build_yield_curve(args.start, args.end, args.years)
+        except Exception as e:
+            print(f"[ERR] yield_curve 失败: {e}")
 
     if "ig_hy" in sel:
-        fetch_ig_hy(args.start, args.end)
+        try:
+            fetch_ig_hy(args.start, args.end)
+        except Exception as e:
+            print(f"[ERR] ig_hy 失败: {e}")
 
     if "us10y" in sel:
-        fetch_us10y(args.start, args.end)
+        try:
+            fetch_us10y(args.start, args.end)
+        except Exception as e:
+            print(f"[ERR] us10y 失败: {e}")
 
     if "dxy" in sel:
-        fetch_dxy(args.start, args.end, args.years)
+        try:
+            fetch_dxy(args.start, args.end, args.years)
+            print(args.end)
+        except Exception as e:
+            print(f"[ERR] dxy 失败: {e}")
+
 
     print("[DONE] All requested datasets have been built ✅")
 

@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Covered Call Backtest (QQQ) — Calls only baseline, with CASH DEPLOYMENT via CSP (ATM 1–3 DTE).
-Only change vs your last version:
-  - When cash can buy ≥ 1 lot (100 shares), DO NOT buy shares immediately.
-  - Instead, sell cash-secured PUT(s), ATM with 1–3 DTE, sized by available cash.
-  - If PUT expires OTM => keep premium and free collateral; if ITM => assigned => add shares.
-All other logic (CC selling rules, dividends, DCA benchmark, Sharpe, etc.) unchanged.
+Covered Call Backtest (QQQ)
+Variant: CC baseline + CASH DEPLOYMENT via CSP (ATM 1–3 DTE)
+AND "rebuy-via-PUT" after CALL assignment, with loss computed as:
+  loss = (rebuy_price) - (assigned CALL strike), realized only when PUT is assigned.
+
+Changes from previous:
+  - Removed MTM loss on CALL assignment day.
+  - Added realized, reacquisition-based loss when the tagged PUT is assigned.
 """
 
 from pathlib import Path
@@ -19,8 +21,9 @@ sys.path.append(str(Path(__file__).resolve().parents[1]))
 from src.quant_utils import (
     normalize_date_series,
     iv_to_delta, price_on_or_before, shares_affordable_for_put,
-    sharpe_ratio,shares_affordable
+    sharpe_ratio, shares_affordable
 )
+
 # ============================
 # Config
 # ============================
@@ -29,30 +32,27 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 INITIAL_CASH = 300_000
 DCA_INTERVAL_TRADING_DAYS = 63   # ~ quarterly
-DCA_AMOUNT = 15000
+DCA_AMOUNT = 15_000
 TRADING_DAYS_PER_YEAR = 252
 RISK_FREE_ANNUAL = 0.00
 
-# ---- Strategy toggles for CALL leg (unchanged) ----
+# ---- CALL leg ----
 SELL_ONLY_ON_GAP_DOWN = False
 SELL_ONLY_ON_GAP_UP   = False
 DTE_MIN, DTE_MAX = 28, 31
 
-# Strike floor for CALL（原有机制，未更动）
 USE_STRIKE_FLOOR = True
 STRIKE_FLOOR_PCT = 0.07  # floor = 7% OTM
 
-# ---- NEW: CSP deployment window ----
-PUT_DTE_MIN, PUT_DTE_MAX = 1, 3   # 卖现金担保PUT的到期区间（1-3天）
-
-
+# ---- CSP window (1–3 DTE) ----
+PUT_DTE_MIN, PUT_DTE_MAX = 1, 3
 
 # ============================
 # Load Data
 # ============================
 DATA_DIR = Path("data")
 df_options = pd.read_csv(DATA_DIR / "options_with_iv_delta.csv")
-price_raw  = pd.read_csv(DATA_DIR / "QQQ_ohlcv_1d.csv")  # has: date, open, high, low, close, ...
+price_raw  = pd.read_csv(DATA_DIR / "QQQ_ohlcv_1d.csv")
 div_df     = pd.read_csv(DATA_DIR / "QQQ_dividends.csv")
 
 # Normalize
@@ -60,7 +60,7 @@ df_options["date"] = normalize_date_series(df_options["date"])
 df_options["expiration"] = normalize_date_series(df_options["expiration"])
 div_df["date"] = normalize_date_series(div_df["date"])
 
-# --- Prepare price dataframe & compute Gap label (before filtering) ---
+# Prepare price & gap label
 if "date" not in price_raw.columns:
     raise KeyError("price csv must contain a 'date' column")
 if "Open" not in price_raw.columns:
@@ -68,20 +68,17 @@ if "Open" not in price_raw.columns:
         price_raw = price_raw.rename(columns={"open": "Open"})
     else:
         raise KeyError("price csv must contain 'Open' (or 'open') column")
-
-price_raw["date"]  = normalize_date_series(price_raw["date"])
-price_raw["Open"]  = pd.to_numeric(price_raw["Open"], errors="coerce")
 if "close" not in price_raw.columns:
     raise KeyError("QQQ_ohlcv_1d.csv must contain 'close' for Gap calc")
 
-# Gap label on full daily series
+price_raw["date"]  = normalize_date_series(price_raw["date"])
+price_raw["Open"]  = pd.to_numeric(price_raw["Open"], errors="coerce")
 price_raw = price_raw.sort_values("date").set_index("date")
 price_raw["prev_close"] = price_raw["close"].shift(1)
 price_raw["gap_label"] = pd.NA
 price_raw.loc[price_raw["Open"] > price_raw["prev_close"], "gap_label"] = "Gap Up"
 price_raw.loc[price_raw["Open"] < price_raw["prev_close"], "gap_label"] = "Gap Down"
 
-# Filter prices to only option dates (for speed/consistency)
 opt_dates = pd.Index(df_options["date"].unique())
 price_df  = price_raw.loc[price_raw.index.isin(opt_dates), ["Open","gap_label"]].copy()
 
@@ -95,29 +92,40 @@ dates = price_df.index
 cash = float(INITIAL_CASH)
 shares = 0
 active_calls = []
+active_puts  = []   # each: {strike, expiration, contracts, type='put', exercised, rebuy_ref_strike: float|None}
+
+reserved_collateral = 0.0
+
+# Premium buckets
 total_premium = 0.0
+call_premium_collected = 0.0
+put_premium_collected  = 0.0
+
+# Contributions
 contribution_count = 0
 
-# NEW: cash-secured PUTs state
-active_puts = []                 # dict: strike, expiration, contracts, exercised
-reserved_collateral = 0.0        # sum of strike*100*contracts for open CSP
-
-# Benchmark
+# Benchmark (DCA)
 cash_bh = float(INITIAL_CASH)
 shares_bh = 0
 
+# Logs & curves
 log_lines = []
 portfolio_value = []
 buy_hold_value = []
 
-assignment_count = 0            # CALL assignments (kept consistent with prior stats)
-total_assignment_loss = 0.0
+# Stats
+call_assignment_count = 0
+put_assignment_count  = 0
+
+# >>> Realized loss based on reacquisition price <<<
+total_call_assignment_loss = 0.0  # accumulates only when a tagged PUT is assigned
+
 uncovered_days = 0
 held_100plus_days = 0
 floor_enforced_count = 0
 
 # ============================
-# Helper for rule gating
+# Helpers
 # ============================
 def rule_allows_today(gap_label) -> bool:
     if pd.isna(gap_label):
@@ -131,6 +139,21 @@ def rule_allows_today(gap_label) -> bool:
         return label == "Gap Down"
     return True
 
+def choose_put_for_assignment(df_today_puts, current_date, target_strike):
+    """Pick 1–3 DTE PUT: prefer exact strike==target_strike; else nearest, earliest expiry."""
+    cands = df_today_puts[
+        (df_today_puts["type"].str.lower() == "put") &
+        (df_today_puts["expiration"] >= current_date + pd.Timedelta(days=PUT_DTE_MIN)) &
+        (df_today_puts["expiration"] <= current_date + pd.Timedelta(days=PUT_DTE_MAX))
+    ].copy()
+    if cands.empty:
+        return None
+    exact = cands[np.isclose(cands["strike"].astype(float), float(target_strike), atol=1e-6)]
+    if not exact.empty:
+        return exact.sort_values("expiration").iloc[0]
+    cands["gap"] = (cands["strike"].astype(float) - float(target_strike)).abs()
+    return cands.sort_values(["gap","expiration"]).iloc[0]
+
 # ============================
 # Main Loop
 # ============================
@@ -139,49 +162,81 @@ for i, current_date in enumerate(dates):
     current_price = float(row_today["Open"])
     gap_today = row_today["gap_label"]
     df_today = df_options[df_options["date"] == current_date]
-    assignment_today = False  # 用于阻止“同日新卖CALL”（保持你原有的逻辑：仅在 CALL 被行权那天阻止）
+    assignment_today = False  # block selling new CALL the same day
 
-    # 1) Quarterly contribution
+    # 1) Contributions
     if i > 0 and i % DCA_INTERVAL_TRADING_DAYS == 0:
         cash += DCA_AMOUNT
         cash_bh += DCA_AMOUNT
         contribution_count += 1
-        log_lines.append(f"[{current_date.date()}] 💰 Contribution +${DCA_AMOUNT:,.0f}, Cash balance (Strategy): ${cash:,.2f}")
+        log_lines.append(f"[{current_date.date()}] 💰 Contribution +${DCA_AMOUNT:,.0f}, Cash=${cash:,.2f}")
 
     # 2) Dividends
     div_row = div_df[div_df["date"] == current_date]
-    if not div_row.empty and shares > 0:
-        dividend_per_share = float(div_row["dividend"].values[0])
-        credited = dividend_per_share * shares
-        cash += credited
-        log_lines.append(f"[{current_date.date()}] 📦 Dividend credited +${credited:,.2f} (${dividend_per_share:.4f}/share on {shares} shares)")
+    if not div_row.empty:
+        dps = float(div_row["dividend"].values[0])
+        if shares > 0:
+            credited = dps * shares
+            cash += credited
+            log_lines.append(f"[{current_date.date()}] 📦 Dividend +${credited:,.2f} (${dps:.4f}/sh x {shares})")
+        if shares_bh > 0:
+            cash_bh += dps * shares_bh
 
-    # 3) Handle expirations — CALL first (与你之前一致)
+    # 3) Expirations — CALL first
     for opt in active_calls[:]:
         if (current_date >= opt["expiration"]) and (not opt["exercised"]):
             price_at_exp = price_on_or_before(price_df, opt["expiration"], current_price)
             contracts = int(opt["contracts"])
-            if price_at_exp > float(opt["strike"]):
+            strike_val = float(opt["strike"])
+            if price_at_exp > strike_val:
                 # Called away
-                cash += float(opt["strike"]) * contracts * 100
+                proceeds = strike_val * contracts * 100
+                cash += proceeds
                 shares -= contracts * 100
                 assignment_today = True
-                log_lines.append(f"[{current_date.date()}] ⚠️ CALL assigned: -{contracts*100} shares @ ${float(opt['strike']):.2f}")
-                assignment_count += 1
-                total_assignment_loss += (price_at_exp - float(opt["strike"])) * contracts * 100
+                call_assignment_count += 1
+                log_lines.append(f"[{current_date.date()}] ⚠️ CALL assigned: -{contracts*100} sh @ ${strike_val:.2f} (px@exp={price_at_exp:.2f})")
 
-                # Repurchase immediately（保持原逻辑）
-                # 注意：这里不改变（不和 CSP 冲突）
-                lots = shares_affordable(cash, current_price)
-                if lots > 0:
-                    buy_shares = lots
-                    cost = buy_shares * current_price
-                    cash -= cost
-                    shares += buy_shares
-                    log_lines.append(f"[{current_date.date()}] 🔁 Post-assignment repurchase {buy_shares} shares @ ${current_price:.2f}")
+                # Rebuy via 1–3DTE PUT at same strike (or nearest)
+                if not df_today.empty:
+                    put_row = choose_put_for_assignment(df_today, current_date, strike_val)
+                    if put_row is not None:
+                        chosen_strike = float(put_row["strike"])
+                        expiry = pd.to_datetime(put_row["expiration"])
+                        # size up to assigned contracts, subject to collateral
+                        cash_available = cash - reserved_collateral
+                        max_by_collat = int(cash_available // (chosen_strike * 100))
+                        target_contracts = min(contracts, max_by_collat)
+                        if target_contracts > 0:
+                            premium = float(put_row["vw"]) * target_contracts * 100
+                            cash += premium
+                            total_premium += premium
+                            put_premium_collected += premium
+                            reserved_collateral += chosen_strike * target_contracts * 100
+                            active_puts.append({
+                                "strike": chosen_strike,
+                                "expiration": expiry,
+                                "contracts": int(target_contracts),
+                                "type": "put",
+                                "exercised": False,
+                                # tag this PUT as a rebuy for loss accounting
+                                "rebuy_ref_strike": float(strike_val),
+                            })
+                            clip_note = "" if target_contracts == contracts else f" (clipped by collateral from {contracts}→{target_contracts})"
+                            exact_note = "exact-strike" if np.isclose(chosen_strike, strike_val, atol=1e-6) else f"nearest-strike to {strike_val:.2f}"
+                            log_lines.append(
+                                f"[{current_date.date()}] 🔁 Rebuy-via-PUT: Sold {target_contracts} CSP @ ${chosen_strike:.2f} "
+                                f"(1–3DTE {expiry.date()}), +${premium:,.2f}; reserve ${chosen_strike*target_contracts*100:,.2f}{clip_note} [{exact_note}]"
+                            )
+                        else:
+                            log_lines.append(f"[{current_date.date()}] ⏸️ Rebuy-via-PUT skipped: insufficient collateral for strike ${chosen_strike:.2f}")
+                    else:
+                        log_lines.append(f"[{current_date.date()}] ⏸️ Rebuy-via-PUT skipped: no 1–3DTE PUT near strike ${strike_val:.2f}")
+                else:
+                    log_lines.append(f"[{current_date.date()}] ⏸️ Rebuy-via-PUT skipped: no option quotes today")
             opt["exercised"] = True
 
-    # 3b) Handle expirations — NEW: PUT assignments / expiry
+    # 3b) Expirations — PUTs
     for put in active_puts[:]:
         if (current_date >= put["expiration"]) and (not put["exercised"]):
             price_at_exp = price_on_or_before(price_df, put["expiration"], current_price)
@@ -189,62 +244,67 @@ for i, current_date in enumerate(dates):
             strike_val = float(put["strike"])
             collat = strike_val * contracts * 100
             if price_at_exp < strike_val:
-                # PUT assigned: buy shares at strike using reserved collateral
+                # Assigned — buy shares using collateral
                 cash -= collat
                 shares += contracts * 100
-                log_lines.append(f"[{current_date.date()}] ✅ PUT assigned: +{contracts*100} shares @ ${strike_val:.2f}")
+                put_assignment_count += 1
+
+                # If this PUT was tagged as "rebuy for a CALL assignment", realize loss = rebuy_price - call_strike
+                ref = put.get("rebuy_ref_strike", None)
+                if ref is not None:
+                    realized = (strike_val - float(ref)) * contracts * 100
+                    total_call_assignment_loss += realized
+                    sign = "loss" if realized >= 0 else "gain"
+                    log_lines.append(
+                        f"[{current_date.date()}] ✅ PUT assigned (rebuy): +{contracts*100} sh @ ${strike_val:.2f}; "
+                        f"reacq-{sign}: ${realized:,.2f} (rebuy {strike_val:.2f} - call {float(ref):.2f})"
+                    )
+                else:
+                    log_lines.append(f"[{current_date.date()}] ✅ PUT assigned: +{contracts*100} sh @ ${strike_val:.2f} (px@exp={price_at_exp:.2f})")
             else:
-                # Expired worthless, keep premium; nothing to pay
-                log_lines.append(f"[{current_date.date()}] ✅ PUT expired OTM: collateral released on {contracts} contract(s) @ ${strike_val:.2f}")
-            # In both cases, collateral is released
+                log_lines.append(f"[{current_date.date()}] ✅ PUT expired OTM: release collateral on {contracts}x @ ${strike_val:.2f}")
+
             reserved_collateral -= collat
             put["exercised"] = True
 
-    # 4) CASH DEPLOYMENT — REPLACED: sell ATM CSP(s) instead of immediate share buy
-    #    原逻辑在此会直接买入尽可能多的100股，这里改为：
-    #    若“可用现金 >= 当前价*100”则 卖 1–3DTE 的 ATM PUT，合约张数=以保证金可承受的最大张数
+    # 4) CASH DEPLOYMENT — idle cash via ATM CSP (untagged)
     cash_available = cash - reserved_collateral
     if cash_available >= current_price * 100 and not df_today.empty:
-        # 选择 1–3 DTE 的 PUT，接近 ATM（|strike - current_price| 最小）
-        df_puts = df_today[
+        df_puts_idle = df_today[
             (df_today["type"].str.lower() == "put") &
             (df_today["expiration"] >= current_date + pd.Timedelta(days=PUT_DTE_MIN)) &
             (df_today["expiration"] <= current_date + pd.Timedelta(days=PUT_DTE_MAX))
         ].copy()
-
-        if not df_puts.empty:
-            df_puts["atm_gap"] = (df_puts["strike"] - current_price).abs()
-            # 逐个候选到期日，尽量用满可用现金
-            # 这里简单选“最ATM”的一张到期/行权来做 sizing（与原“尽量满仓”一致）
-            put_choice = df_puts.sort_values(["atm_gap","expiration"]).iloc[0]
+        if not df_puts_idle.empty:
+            df_puts_idle["atm_gap"] = (df_puts_idle["strike"] - current_price).abs()
+            put_choice = df_puts_idle.sort_values(["atm_gap","expiration"]).iloc[0]
             strike_val = float(put_choice["strike"])
-            if strike_val > 0:
-                max_contracts = int(cash_available // (strike_val * 100))
-                if max_contracts > 0:
-                    premium = float(put_choice["vw"]) * max_contracts * 100
-                    cash += premium
-                    total_premium += premium
-                    reserved_collateral += strike_val * max_contracts * 100
-                    active_puts.append({
-                        "strike": strike_val,
-                        "expiration": pd.to_datetime(put_choice["expiration"]),
-                        "contracts": int(max_contracts),
-                        "type": "put",
-                        "exercised": False,
-                    })
-                    log_lines.append(
-                        f"[{current_date.date()}] 💰 Sold PUT (CSP) +${premium:,.2f} "
-                        f"@ strike ${strike_val:.2f}, expiry {pd.to_datetime(put_choice['expiration']).date()}, "
-                        f"contracts {max_contracts} (ATM, DTE {PUT_DTE_MIN}-{PUT_DTE_MAX})"
-                    )
-                else:
-                    log_lines.append(f"[{current_date.date()}] ⏸️ CSP skipped: collateral not enough for strike {strike_val:.2f}")
+            max_contracts = int(cash_available // (strike_val * 100))
+            if max_contracts > 0:
+                premium = float(put_choice["vw"]) * max_contracts * 100
+                cash += premium
+                total_premium += premium
+                put_premium_collected += premium
+                reserved_collateral += strike_val * max_contracts * 100
+                active_puts.append({
+                    "strike": strike_val,
+                    "expiration": pd.to_datetime(put_choice["expiration"]),
+                    "contracts": int(max_contracts),
+                    "type": "put",
+                    "exercised": False,
+                    "rebuy_ref_strike": None,  # idle-cash CSP not tied to CALL loss accounting
+                })
+                log_lines.append(
+                    f"[{current_date.date()}] 💰 Sold PUT (idle cash) +${premium:,.2f} "
+                    f"@ strike ${strike_val:.2f}, expiry {pd.to_datetime(put_choice['expiration']).date()}, "
+                    f"contracts {max_contracts} (ATM 1–3DTE)"
+                )
             else:
-                log_lines.append(f"[{current_date.date()}] ⏸️ CSP skipped: invalid strike")
+                log_lines.append(f"[{current_date.date()}] ⏸️ CSP skipped (idle): collateral not enough for strike {strike_val:.2f}")
         else:
-            log_lines.append(f"[{current_date.date()}] ⏸️ CSP skipped: no 1–3DTE ATM puts available")
+            log_lines.append(f"[{current_date.date()}] ⏸️ CSP skipped (idle): no 1–3DTE ATM puts available")
 
-    # 5) Sell covered CALL —（与原逻辑一致）
+    # 5) Sell covered CALL (unchanged rule)
     has_active_call_now = any((o["type"] == "call") and (not o["exercised"]) for o in active_calls)
     allow_sell_call_today = (not assignment_today) and (not has_active_call_now) and shares >= 100
     if allow_sell_call_today and (not df_today.empty) and rule_allows_today(gap_today):
@@ -285,6 +345,7 @@ for i, current_date in enumerate(dates):
                 premium = float(chosen["vw"]) * contracts * 100
                 cash += premium
                 total_premium += premium
+                call_premium_collected += premium
                 why = ("Gap-Up day" if gap_today == "Gap Up" else
                        "Gap-Down day" if gap_today == "Gap Down" else "rule off")
                 more = f", floor={STRIKE_FLOOR_PCT:.0%}" if (USE_STRIKE_FLOOR and reason == "floor-enforced") else ""
@@ -303,9 +364,9 @@ for i, current_date in enumerate(dates):
                 })
     elif allow_sell_call_today and (not df_today.empty) and not rule_allows_today(gap_today):
         note = "not Gap-Up" if SELL_ONLY_ON_GAP_UP else "not Gap-Down"
-        log_lines.append(f"[{current_date.date()}] ⏸️ Skip selling: {note} day.")
+        log_lines.append(f"[{current_date.date()}] ⏸️ Skip selling CALL: {note} day.")
 
-    # 6) DCA benchmark — unchanged
+    # 6) DCA benchmark
     if cash_bh >= current_price * 100:
         can_buy_bh = shares_affordable(cash_bh, current_price)
         if can_buy_bh > 0:
@@ -313,7 +374,7 @@ for i, current_date in enumerate(dates):
             shares_bh += can_buy_bh
             cash_bh -= cost_bh
 
-    # 7) Track equity + uncovered days（与原一致）
+    # 7) Curves & uncovered days
     portfolio_value.append(shares * current_price + cash)
     buy_hold_value.append(shares_bh * current_price + cash_bh)
 
@@ -343,54 +404,45 @@ excess_per_year = excess / years if years > 0 else 0.0
 sharpe_cc = sharpe_ratio(curve_cc, rf_annual=RISK_FREE_ANNUAL, periods_per_year=TRADING_DAYS_PER_YEAR)
 sharpe_bh = sharpe_ratio(curve_bh, rf_annual=RISK_FREE_ANNUAL, periods_per_year=TRADING_DAYS_PER_YEAR)
 
-# rule 描述（保持你的风格）
-if SELL_ONLY_ON_GAP_UP and not SELL_ONLY_ON_GAP_DOWN:
-    rule_desc_core = f"ONLY on Gap-Up days"
-elif SELL_ONLY_ON_GAP_DOWN and not SELL_ONLY_ON_GAP_UP:
-    rule_desc_core = f"ONLY on Gap-Down days"
-elif (not SELL_ONLY_ON_GAP_UP) and (not SELL_ONLY_ON_GAP_DOWN):
-    rule_desc_core = f"Every eligible day"
-else:
-    rule_desc_core = f"Gap-Up or Gap-Down days (both toggles ON)"
-rule_desc = f"{rule_desc_core}; monthly {DTE_MIN}-{DTE_MAX} DTE"
-
 period_text = f"{dates.min().date()} → {dates.max().date()}"
-net_premium_after_loss = total_premium - total_assignment_loss
 uncovered_ratio = (uncovered_days / held_100plus_days) if held_100plus_days > 0 else 0.0
 
-# ==== Summary ====
 summary = f"""
-Backtest Summary (Calls only + CSP cash deployment)
-Rule: Sell new call {rule_desc}
-Cash deployment: Sell ATM cash-secured PUT(s), DTE {PUT_DTE_MIN}-{PUT_DTE_MAX}
+Backtest Summary — CC + CSP, with CALL-assignment rebuy via PUT @ same strike (1–3 DTE)
 Period: {period_text}
-Strike floor (CALL): {"ON" if USE_STRIKE_FLOOR else "OFF"}{(f" (≥ {STRIKE_FLOOR_PCT:.0%}, enforced {floor_enforced_count}×)") if USE_STRIKE_FLOOR else ""}
+CALL strike floor: {"ON" if USE_STRIKE_FLOOR else "OFF"}{(f" (≥ {STRIKE_FLOOR_PCT:.0%}, enforced {floor_enforced_count}×)") if USE_STRIKE_FLOOR else ""}
+DCA contrib: ${DCA_AMOUNT:,.0f} every {DCA_INTERVAL_TRADING_DAYS} trading days
 --------------------------------------------------
-Option premium collected (CALL+PUT): ${total_premium:,.2f}
-CALL assignment count:                {assignment_count}
-CALL total assignment loss:           ${total_assignment_loss:,.2f}
-Net premium after CALL loss:          ${net_premium_after_loss:,.2f}
+CALL premium collected:       ${call_premium_collected:,.2f}
+PUT premium collected:        ${put_premium_collected:,.2f}
+Total option premium:         ${total_premium:,.2f}
 
-Days holding ≥100 shares w/o CC: {uncovered_days}  (out of {held_100plus_days}, {uncovered_ratio:.1%})
-Final equity (Strategy):    ${final_value_cc:,.2f}
-Final equity (DCA):         ${final_value_bh:,.2f}
-Total invested capital:     ${total_invested:,.2f}
+CALL assignment count:        {call_assignment_count}
+CALL assignment loss (reacq): ${total_call_assignment_loss:,.2f}
 
-Total return (Strategy):    {(final_value_cc / total_invested - 1.0):.2%}
-Total return (DCA):         {(final_value_bh / total_invested - 1.0):.2%}
-CAGR (Strategy):            {cagr_cc:.2%}
-CAGR (DCA):                 {cagr_bh:.2%}
+PUT assignment count:         {put_assignment_count}
+Reserved collateral (final):  ${reserved_collateral:,.2f}
 
-Sharpe (Strategy):          {sharpe_cc:.2f}
-Sharpe (DCA):               {sharpe_bh:.2f}
+Days ≥100sh w/o CC:           {uncovered_days}  (out of {held_100plus_days}, {uncovered_ratio:.1%})
 
-Excess over DCA:            ${excess:,.2f}
-Excess per year:            ${excess_per_year:,.2f}
+Final equity (Strategy):      ${final_value_cc:,.2f}
+Final equity (DCA):           ${final_value_bh:,.2f}
+Total invested capital:       ${total_invested:,.2f}
+
+Total return (Strategy):      {(final_value_cc / total_invested - 1.0):.2%}
+Total return (DCA):           {(final_value_bh / total_invested - 1.0):.2%}
+CAGR (Strategy):              {cagr_cc:.2%}
+CAGR (DCA):                   {cagr_bh:.2%}
+
+Sharpe (Strategy):            {sharpe_cc:.2f}
+Sharpe (DCA):                 {sharpe_bh:.2f}
+
+Excess over DCA:              ${excess:,.2f}  |  per year: ${excess_per_year:,.2f}
 --------------------------------------------------
 """
 print(summary)
 
-# Logs & outputs
+# Outputs
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 log_path = OUTPUT_DIR / "strategy_covered_call.log"
 with open(log_path, "w", encoding="utf-8") as f:
@@ -410,9 +462,9 @@ pdf_path = OUTPUT_DIR / f"strategy_comparison_{ts_label}.pdf"
 html_path = OUTPUT_DIR / "report.html"
 
 plt.figure(figsize=(12, 6))
-plt.plot(dates, curve_cc.values, label="Strategy (CC + CSP cash deployment)")
+plt.plot(dates, curve_cc.values, label="Strategy (CC + CSP; rebuy-via-PUT after CALL assignment)")
 plt.plot(dates, curve_bh.values, label="Buy & Hold (Quarterly DCA)")
-plt.title("Strategy Comparison: CC + CSP cash deployment vs DCA")
+plt.title("Strategy Comparison: CC + CSP vs DCA")
 plt.xlabel("Date")
 plt.ylabel("Portfolio Value (USD)")
 plt.legend()
@@ -425,7 +477,7 @@ html = f"""<!doctype html>
 <html lang="en">
 <head><meta charset="utf-8"><title>Backtest Report</title></head>
 <body style="font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial; max-width: 900px; margin: 40px auto;">
-  <h1>Strategy Comparison: CC + CSP cash deployment vs DCA</h1>
+  <h1>Strategy: CC + CSP (rebuy via PUT after CALL assignment)</h1>
   <pre style="background:#f6f8fa; padding:16px; border-radius:8px;">{summary}</pre>
   <figure>
     <img src="{png_path.name}" alt="Strategy Comparison" style="max-width:100%; height:auto;">
@@ -441,4 +493,5 @@ with open(html_path, "w", encoding="utf-8") as f:
 print(f"Figure saved to: {png_path} and {pdf_path}")
 print(f"HTML report saved to: {html_path}")
 plt.show()
+
 

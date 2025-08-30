@@ -1,27 +1,37 @@
 
 Backtest Summary (Calls only)
-Rule: Sell new call Every eligible day; monthly 28-31 DTE
-Period: 2021-07-26 → 2025-08-22
-Strike floor: ON (≥ 7%, enforced 19×)
+Rules:
+  - Early close: days_left > 20 & profit ≥ 80%
+  - Dynamic floor by 60d high:
+      within 5% -> floor 7%
+      5%~8% drop -> floor 5%
+      >8% drop -> skip sell
+  - T+2 repurchase after assignment (cash locked until T+2)
+Period: 2021-07-26 → 2025-08-29
 --------------------------------------------------
-Option premium collected:   $30,204.44
-Assignment count:           1
-Total assignment loss:      $10,464.00
-Net premium after loss:     $19,740.44
+Option premium collected:    $23,832.24
+Buyback cost (early close):  $653.92
+Assignment count:            3
+Total assignment loss:       $19,636.00
+Net premium after costs:     $3,542.32
+Early take-profit count:     9
+Floor used 7% days:          40
+Floor used 5% days:          23
+Skip (deep drop >8%) days:   0
 
-Days holding ≥100 shares w/o CC: 3  (out of 1025, 0.3%)
-Final equity (Strategy):    $849,231.54
-Final equity (DCA):         $821,926.50
-Total invested capital:     $540,000.00
+Days ≥100 sh w/o CC:         4  (out of 1024, 0.4%)
+Final equity (Strategy):     $478,527.12
+Final equity (DCA):          $473,516.00
+Total invested capital:      $300,000.00
 
-Total return (Strategy):    57.27%
-Total return (DCA):         52.21%
-CAGR (Strategy):            11.75%
-CAGR (DCA):                 10.85%
+Total return (Strategy):     59.51%
+Total return (DCA):          57.84%
+CAGR (Strategy):             12.08%
+CAGR (DCA):                  11.79%
 
-Sharpe (Strategy):          1.20
-Sharpe (DCA):               1.15
+Sharpe (Strategy):           0.61
+Sharpe (DCA):                0.60
 
-Excess over DCA:            $27,305.04
-Excess per year:            $6,697.81
+Excess over DCA:             $5,011.12
+Excess per year:             $1,223.45
 --------------------------------------------------

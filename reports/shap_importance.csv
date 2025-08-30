@@ -1,0 +1,12 @@
+feature,mean_abs_SHAP
+vol20d,1.6658934
+hyig_diff_bps,0.51975095
+FGI,0.53740585
+ig_level_pct,0.67701244
+dxy_ma_gap20,0.18414173
+vix_ma_gap20,0.37211457
+hy_vol_20d_bps,0.6968755
+fgi_hyig_inter,0.41558808
+yc_slope_sq,0.66856736
+vix_yc_inter,0.31998858
+dxy_vix_inter,0.21688461

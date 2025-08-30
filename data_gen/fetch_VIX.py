@@ -18,6 +18,5 @@ end   = datetime.date.today().strftime("%Y-%m-%d")
 vix = yf.download("^VIX", start=start, end=end)
 vix = vix[['Close']].rename(columns={'Close': 'close'})
 vix.reset_index(inplace=True)
-vix.to_csv(DATA / "VIX.csv", index=False)
+vix.to_csv("data/VIX.csv", index=False)
 print(f"[OK] VIX -> data/VIX.csv  shape={vix.shape}  range=({vix['Date'].min()} → {vix['Date'].max()})")
-
